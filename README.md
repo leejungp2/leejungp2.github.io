@@ -37,6 +37,17 @@ Pages → **Source: Deploy from a branch**, `main` / root). Just push to `main`;
 the live site updates in ~1–2 minutes. No Actions workflow or build step needed
 (the CSS is plain hand-written CSS, not a Tailwind build).
 
+## Traffic reports
+
+`.github/workflows/traffic-report.yml` creates a weekly GitHub traffic report in
+an issue named `Traffic report`. It also supports manual runs from the Actions
+tab.
+
+GitHub traffic data is limited to a rolling recent window, so the report is a
+snapshot rather than a permanent full-history analytics database. If the
+workflow fails with a traffic API permission error, add a repository secret named
+`TRAFFIC_TOKEN` from a GitHub account with push access to this repository.
+
 ## TODO
 
 - Replace `assets/img/logo.svg` with a real logo.

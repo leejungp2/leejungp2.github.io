@@ -1,0 +1,26 @@
+name: Traffic report
+
+on:
+  schedule:
+    # Mondays at 09:00 KST.
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Create traffic report issue comment
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          REPORT_ISSUE_TITLE: Traffic report
+        run: node scripts/report-github-traffic.mjs
