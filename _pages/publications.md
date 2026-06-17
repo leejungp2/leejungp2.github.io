@@ -10,6 +10,7 @@ description: Selected papers and manuscripts in human-AI interaction and HCI.
     <div class="item-kicker">Under Review</div>
     <h3>InterAICion: Multi-turn Simulation Framework for Relational Harm in AI Companions</h3>
     <p>M. Kim*, <span class="cv-accent">J. Lee*</span>, M. Shin, K. Kim, B. Suh. Submitted to <em>the 2026 Conference on Empirical Methods in Natural Language Processing</em>.</p>
+    <p class="publication-note">*contributed equally</p>
   </section>
 
   <section class="soft-item">

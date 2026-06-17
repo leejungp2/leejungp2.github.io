@@ -12,9 +12,9 @@ description: Activities, studies, training, and hobbies.
     <ul class="cv-bullets">
       <li>Led the <a href="https://pinnate-emoji-c00.notion.site/mml-study?source=copy_link" target="_blank" rel="noopener">Mathematics for Machine Learning Study</a>.</li>
     </ul>
-    <p><span class="entry-head"><strong>LangChain Study</strong><span class="entry-date">Feb 2025 - Aug 2025</span></span></p>
+    <p><span class="entry-head"><strong>LangChain & LangGraph Study</strong><span class="entry-date">Feb 2025 - Aug 2025</span></span></p>
     <ul class="cv-bullets">
-      <li>Participated in a LangChain study in the Human-Centered Computing Lab.</li>
+      <li>Participated in a LangChain & LangGraph study in the Human-Centered Computing Lab.</li>
     </ul>
     <p><span class="entry-head"><strong>JAPPU NLP Paper Review Study</strong><span class="entry-date">Oct 2024 - Feb 2025</span></span></p>
     <ul class="cv-bullets">
@@ -26,38 +26,40 @@ description: Activities, studies, training, and hobbies.
     </ul>
     <p><span class="entry-head"><strong>OUTTA Deep Learning Advanced Bootcamp</strong><span class="entry-date">Jul 2024 - Aug 2024</span></span></p>
     <ul class="cv-bullets">
-      <li>Studied deep learning theory and implemented Python models covering gradient descent, CNNs, GANs, RNNs, seq2seq, transformers, BERT, and GPT. Built an image inpainting model in a team project.</li>
+      <li>Studied deep learning theory and implemented Python models with PyTorch and Hugging Face, covering gradient descent, CNNs, GANs, RNNs, seq2seq, transformers, BERT, and GPT.</li>
+      <li>Built an image inpainting model using an LLM in a team project, implementing a multimodal model workflow.</li>
     </ul>
   </section>
 
   <section class="soft-item misc-section-activities">
     <h3>Activities</h3>
+    <p><span class="entry-head"><strong>SNU Venture Startup Network (SNUSV)</strong><span class="entry-date">Sep 2024 - Jan 2025</span></span></p>
+    <ul class="cv-bullets">
+      <li>Advanced to SNUSV Demo Day while leading proof-of-concept validation for MoAgent, an AI agent orchestration B2B SaaS concept, as product manager.</li>
+    </ul>
     <p><span class="entry-head"><strong>The Ventures Student Venture Scout Program</strong><span class="entry-date">Mar 2024 - Jun 2024</span></span></p>
     <ul class="cv-bullets">
       <li>Sourced promising early-stage startups, reviewed investment memos, and evaluated investment fit as a student venture capitalist.</li>
     </ul>
-    <p><span class="entry-head"><strong>SNUSV 35th Cohort</strong><span class="entry-date">2024 - 2025</span></span></p>
+    <p><span class="entry-head"><strong>SNU Social Contribution Consulting Society (T-um)</strong><span class="entry-date">Sep 2020 - Dec 2020</span></span></p>
     <ul class="cv-bullets">
-      <li>Advanced to SNUSV Demo Day while validating MoAgent as product manager.</li>
+      <li>Consulted for local food-service and cultural-arts businesses through analysis of the Nokdu commercial district and surrounding market.</li>
     </ul>
-    <p><span class="entry-head"><strong>Triple-H</strong><span class="entry-date">2019 - 2023</span></span></p>
+    <p><span class="entry-head"><strong>SNU Vocal & Hiphop Club (Triple-H)</strong><span class="entry-date">Mar 2019 - Sep 2023</span></span></p>
     <ul class="cv-bullets">
       <li>Performed, busked, and recorded music with SNU's hip-hop and vocal club.</li>
     </ul>
-    <p><span class="entry-head"><strong>Social Contribution Consulting Society T-um</strong><span class="entry-date">2020</span></span></p>
+    <p><span class="entry-head"><strong>SNU Student Society for Social Responsibility (SNUSR)</strong><span class="entry-date">Sep 2018 - Dec 2019</span></span></p>
     <ul class="cv-bullets">
-      <li>Consulted for local food-service and cultural-arts businesses through market and district analysis.</li>
-    </ul>
-    <p><span class="entry-head"><strong>Student Society for Social Responsibility (SNUSR)</strong><span class="entry-date">Sep 2018 - Dec 2019</span></span></p>
-    <ul class="cv-bullets">
-      <li>Planned social contribution programs and helped donate approximately KRW 1,000,000 through team project activities.</li>
+      <li>Served as an assistant team lead, planning and carrying out more than 150 hours of social contribution activities.</li>
+      <li>Collaborated with a senior self-reliance group to generate and donate approximately KRW 1,000,000 through an on-campus booth project.</li>
     </ul>
   </section>
 
   <section class="soft-item misc-section-hobbies">
     <h3>Hobbies</h3>
     <ul class="cv-bullets">
-      <li>I still make music sometimes on <a href="https://soundcloud.com/jjunglee" target="_blank" rel="noopener">SoundCloud</a>.</li>
+      <li>I still post my music sometimes on <a href="https://soundcloud.com/jjunglee" target="_blank" rel="noopener">SoundCloud</a>.</li>
     </ul>
   </section>
 </div>
