@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Final Langchain Project
-description: Streamlit project built as the final output of a Langchain study.
+title: Final LangChain Project
+description: Streamlit project built as the final output of a LangChain study.
 thumbnail: /assets/img/projects/final-langchain-project.svg
 order: 7
 ---
 
 ## Overview
 
-Final Langchain Project is a Streamlit-based project developed as the final
-output of a Langchain study.
+Final LangChain Project is a Streamlit-based project developed as the final
+output of a LangChain study.
 
 ## Link
 
@@ -17,6 +17,6 @@ output of a Langchain study.
 
 ## Highlights
 
-- Built a final applied project using Langchain concepts.
+- Built a final applied project using LangChain concepts.
 - Packaged the output as a Streamlit project.
 - Documented the project in Notion for review and sharing.

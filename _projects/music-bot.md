@@ -19,5 +19,5 @@ Chief Researcher in a two-person research team, 2021.
 ## Highlights
 
 - Designed the research question around conversational recommendation and emotional support.
-- Built an empathetic chatbot with music recommendations based on emotion and situation.
+- Built an empathetic chatbot that recommended music based on users' emotions and situations.
 - Preprocessed a Kaggle pop-song dataset in Python for the recommendation mechanism.
