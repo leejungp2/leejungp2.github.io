@@ -13,7 +13,7 @@ site (no external theme gems) and deployed via GitHub Pages.
 | `_data/nav.yml` | Navigation menu order |
 | `_data/socials.yml` | Social link URLs (LinkedIn, GitHub) |
 | `_layouts/`, `_includes/` | Page templates and partials |
-| `assets/css/style.css` | Design system (light + dark), from `style-print-design.md` |
+| `assets/css/main.css` | Design system (light + dark), from `DESIGN.md` |
 | `assets/js/theme.js` | Dark-mode toggle |
 | `assets/img/logo.svg` | Site logo (placeholder — replace with your own) |
 

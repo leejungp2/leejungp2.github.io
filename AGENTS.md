@@ -13,7 +13,7 @@ Repo-specific notes for Codex and other coding agents working on this portfolio.
 
 ## Local Build And Verification
 
-- Use Ruby 3.x. The GitHub Actions workflow uses Ruby `3.3`.
+- Use Ruby 3.x. GitHub Pages deploys from the `main` branch per `README.md`.
 - Run `bundle exec jekyll build` before finishing changes that affect templates, config, assets, or content rendering.
 - Use `bundle exec jekyll serve` for local preview when visual/layout changes need browser verification.
 - `_site/`, `.jekyll-cache/`, and `Gemfile.lock` are currently ignored. Do not commit generated build output or cache files unless the user changes repo policy.
@@ -28,13 +28,12 @@ Repo-specific notes for Codex and other coding agents working on this portfolio.
 
 ## Design Notes
 
-- The visual system is defined mainly in `assets/css/style.css` and documented in `DEISGN.md`.
-- Preserve the current direction: light frosted header, centered nav, cool gray/white surfaces, pink/violet emphasis, and dark-mode support.
+- The visual system is defined mainly in `assets/css/style.css` and documented in `DESIGN.md`.
+- Preserve the current direction: light frosted header, centered nav, cool gray/white surfaces, cool rose/blue/orange gradients, lo-fi texture, and dark-mode support.
 - Keep layout responsive around desktop widths and mobile widths near `390px`.
 - Use existing classes such as `app-surface`, `interactive-card`, `empty-state`, `btn`, `btn-primary`, and `btn-outline` before adding new patterns.
 - Theme behavior is split between the no-flash inline script in `_includes/head.html` and the click handler in `assets/js/theme.js`; update both only when changing theme semantics.
 
 ## Known Notes
 
-- `README.md` references `style-print-design.md`, but the current design document present in the repo is `DEISGN.md`.
 - The LinkedIn URL in `_data/socials.yml`, profile copy, CV, publications, and example project are placeholders.

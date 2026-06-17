@@ -1,13 +1,15 @@
-# StylePrint Design Guide
+# Portfolio Design Guide
 
-This guide captures the StylePrint visual language so it can be reused across new screens and generated UI. The tone is a work-focused design tool: a light frosted header, cool gray surfaces, white panels, and vivid pink as the emphasis color (gradients reserved for the page wash, CTAs, and accents). Navy is kept for dark mode and high-emphasis chrome.
+This guide captures the portfolio visual language so it can be reused across new pages and generated UI. The tone is editorial and lo-fi: a light frosted header, cool gray surfaces, white panels, diffuse rose/blue light, subtle film grain, and warm orange/yellow accents. Navy is kept for dark mode and high-emphasis chrome.
 
 ## Design Direction
 
-- Use a light, frosted header (translucent white over the page) with centered nav; emphasize nav text with the pink point color rather than a dark band. Reserve navy-to-slate for dark mode and high-emphasis containers.
-- Use soft gray page backgrounds and white panels for the working surface, with an emphasized pink wash behind hero content.
-- Use pink as the primary action and emphasis color; let the gradient pink read strongly in the page wash, CTAs, and the active nav accent.
-- Use gradients for emphasis: headers, primary buttons, progress, active steps, and preview chrome.
+- Use a light, frosted header (translucent white over the page) with centered nav; emphasize nav text with the rose point color rather than a dark band. Reserve navy-to-slate for dark mode and high-emphasis containers.
+- Use soft gray page backgrounds and white panels for the working surface, with diffuse rose, blue, and warm orange light behind hero content.
+- Use muted cool rose as the primary action/emphasis color. Avoid hot magenta or neon pink.
+- Use blue as a real partner color in page washes, CTA gradients, and active nav accents.
+- Use orange/yellow as a warm light source, not as a dominant UI color.
+- Use gradients for emphasis: primary buttons, active nav underlines, and ambient page washes.
 - Keep the UI dense and operational. Avoid landing-page hero layouts, oversized decorative cards, or purely ornamental blobs.
 - Prefer crisp 8px radius cards and controls. Large rounded pills are reserved for badges and status chips.
 
@@ -21,11 +23,12 @@ This guide captures the StylePrint visual language so it can be reused across ne
 | Page | `#f6f7fb` | App background base |
 | Panel | `#ffffff` | Cards, modals, form panels |
 | Line | `#dbe2ea` | Borders, dividers, preview grid |
-| Pink | `#ff5c7a` | Primary accents, active state, key icons |
-| Pink Strong | `#ff4267` | Primary gradient start, CTA emphasis |
-| Blue | `#2563eb` | Supporting gradient/status accent |
-| Mint | `#3ddc97` | Fresh status accent (replaces the old green) |
-| Amber | `#f59e0b` | Warning/progress accent |
+| Rose | `#e78fb0` | Primary accents, active state, key icons |
+| Rose Strong | `#d96f9f` | Primary gradient start, CTA emphasis |
+| Blue | `#4f83f1` | Main gradient partner and diffuse light color |
+| Blue Deep | `#2f6fed` | Stronger blue emphasis when needed |
+| Orange | `#f49a4d` | Warm secondary light/accent |
+| Yellow | `#ffd36a` | Soft warm glow, used sparingly |
 
 ## CSS Tokens
 
@@ -39,19 +42,19 @@ Use these as the shared Tailwind/shadcn theme values.
   --card-foreground: 220 39% 11%;
   --popover: 0 0% 100%;
   --popover-foreground: 220 39% 11%;
-  --primary: 347 100% 63%;
+  --primary: 335 55% 64%;
   --primary-foreground: 210 40% 98%;
   --secondary: 214 32% 93%;
   --secondary-foreground: 220 39% 11%;
   --muted: 210 40% 96%;
   --muted-foreground: 215 19% 42%;
-  --accent: 345 100% 95%;
-  --accent-foreground: 345 80% 39%;
+  --accent: 336 72% 97%;
+  --accent-foreground: 335 48% 42%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
   --border: 211 36% 89%;
   --input: 211 36% 89%;
-  --ring: 347 100% 63%;
+  --ring: 335 55% 64%;
   --radius: 0.5rem;
 }
 ```
@@ -61,23 +64,24 @@ Use these as the shared Tailwind/shadcn theme values.
 Use gradients sparingly and consistently.
 
 ```css
-/* Page background — pink emphasized (radial top wash + diagonal tint) */
+/* Page background — diffuse rose, blue, and warm orange light */
 background:
-  radial-gradient(900px circle at 50% -8%, rgba(255, 66, 103, 0.2), transparent 60%),
-  linear-gradient(135deg, rgba(255, 92, 122, 0.16), transparent 34%),
-  linear-gradient(180deg, #f6f7fb 0%, #f8fafc 46%, #ffffff 100%);
+  radial-gradient(42% 36% at 19% 28%, rgba(217, 111, 159, 0.48), transparent 64%),
+  radial-gradient(44% 36% at 82% 18%, rgba(79, 131, 241, 0.46), transparent 64%),
+  radial-gradient(44% 38% at 72% 74%, rgba(244, 154, 77, 0.38), transparent 64%),
+  linear-gradient(180deg, #f8f8fb 0%, #ffffff 100%);
 
 /* Primary CTA */
-background: linear-gradient(135deg, #ff4267, #ff5c7a);
+background: linear-gradient(135deg, #d96f9f 0%, #4f83f1 68%, #f49a4d 130%);
 
 /* Dark chrome (reserved for dark mode + high-emphasis containers) */
 background: linear-gradient(135deg, #151826, #1f2937);
 
-/* Multi-status accent (pink → blue → mint → amber) */
-background: linear-gradient(90deg, #ff4267, #2563eb, #3ddc97, #f59e0b);
+/* Thin header accent, not a rainbow */
+background: linear-gradient(90deg, #e78fb0, #4f83f1 56%, #f49a4d);
 
 /* Light panel accent */
-background: linear-gradient(135deg, #ffffff, #fff7fa);
+background: linear-gradient(135deg, #ffffff, #fff6f9);
 ```
 
 ## Typography
@@ -139,10 +143,10 @@ Use cards for repeated content, panels, preview wrappers, and compact analysis b
 
 ## Buttons
 
-Primary buttons use the pink gradient and should be reserved for the main next action.
+Primary buttons use the rose-to-blue gradient and should be reserved for the main next action.
 
 ```tsx
-className="bg-[linear-gradient(135deg,#ff4267,#ff5c7a)] text-primary-foreground shadow-accent hover:brightness-105 active:translate-y-px"
+className="bg-[linear-gradient(135deg,#d96f9f_0%,#4f83f1_68%,#f49a4d_130%)] text-primary-foreground shadow-accent hover:brightness-105 active:translate-y-px"
 ```
 
 Button rules:
@@ -170,9 +174,9 @@ Generated preview areas use a dark browser-like toolbar and a light grid canvas.
 Preview toolbar rules:
 
 - Use dark chrome: `linear-gradient(135deg,#151826,#1f2937)`.
-- Include three small window dots in pink, amber, and mint.
+- Include three small window dots in rose, blue, and warm orange.
 - Keep zoom controls icon-first: `Minus`, `Plus`, and a compact zoom select.
-- Show loading as a centered white overlay with a pink spinner, not as plain text on an empty canvas.
+- Show loading as a centered white overlay with a rose spinner, not as plain text on an empty canvas.
 
 ## Empty States
 
@@ -182,7 +186,7 @@ Empty states should be quiet but visible.
 className="rounded-lg border border-dashed bg-muted/45 p-8 text-center text-muted-foreground"
 ```
 
-Use a single pink-tinted icon, one concise title, and one helper line. Avoid explanatory paragraphs.
+Use a single rose-tinted icon, one concise title, and one helper line. Avoid explanatory paragraphs.
 
 ## Motion
 
@@ -198,7 +202,7 @@ Motion should clarify state changes, not decorate the page.
 }
 
 .shadow-accent {
-  box-shadow: 0 16px 35px rgba(255, 66, 103, 0.24);
+  box-shadow: 0 16px 35px rgba(217, 111, 159, 0.22);
 }
 
 @keyframes fade-up {
@@ -226,16 +230,16 @@ Use:
 ### App Header
 
 - Light, frosted full-width band (translucent white + backdrop blur), with a hairline bottom border. In dark mode it becomes a translucent dark surface.
-- Thin top accent bar using the multi-status gradient (pink → blue → mint → amber).
+- Thin top accent bar using a restrained rose → blue → orange gradient, not a rainbow strip.
 - Left: logo/wordmark. Center: nav links. Right: pill-shaped theme toggle.
-- Nav links sit in muted ink; hover and the active item are emphasized in the pink point color, with a short pink underline marking the active page.
+- Nav links sit in muted ink; hover and the active item are emphasized in the rose point color, with a short rose-to-blue underline marking the active page.
 - On mobile, the nav wraps to a horizontally scrollable row rather than squeezing labels.
 
 ### Step Rail
 
 - Sticky white/translucent rail under the header.
-- Active step uses the primary pink gradient.
-- Completed step uses a mint-tinted surface.
+- Active step uses the primary rose-to-blue gradient.
+- Completed step uses a blue-tinted surface.
 - Disabled step uses muted text and no hover emphasis.
 - On mobile, allow horizontal scroll rather than squeezing labels.
 
@@ -249,16 +253,16 @@ Use:
 ## Accessibility And Responsiveness
 
 - All icon-only buttons need `aria-label`.
-- Keep focus rings visible with `ring: 347 100% 63%`.
+- Keep focus rings visible with `ring: 335 55% 64%`.
 - Avoid text clipping by using `min-w-0`, `truncate`, or wrapping where needed.
 - Verify at desktop width around `1440px` and mobile width around `390px`.
 - Keep touch targets at least `h-8`; primary actions should be `h-10` or `h-11`.
 
 ## Quick Reuse Checklist
 
-- Page background uses the soft gray base with an emphasized pink wash.
-- Header is light/frosted with centered nav; active/hover nav text uses the pink point color.
-- CTA uses pink gradient with the tactile inset shadow.
+- Page background uses the soft gray base with diffuse rose, blue, and warm orange light plus subtle grain.
+- Header is light/frosted with centered nav; active/hover nav text uses the rose point color.
+- CTA uses a rose-to-blue gradient with the tactile inset shadow.
 - Cards use white panels, 8px radius, cool gray border, and subtle shadow.
 - Empty states use dashed border and muted gray fill.
 - Preview or canvas areas use the 24px grid.

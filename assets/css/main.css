@@ -3,25 +3,25 @@
 ---
 
 /* =============================================================================
-   StylePrint design system → portfolio CSS
-   Navy chrome · pink CTA · cool-gray surfaces · light + dark.
-   Tokens adapted from style-print-design.md.
+   Portfolio design system
+   Cool rose · blue diffuse light · warm orange accents · light + dark.
+   Tokens adapted from DESIGN.md.
    ========================================================================== */
 
 :root {
   /* Brand constants (do not change between themes) */
   --navy: #151826;
   --navy-2: #1f2937;
-  /* Cooler, mysterious pink (less peach) + a bluish/violet partner for
-     pink↔blue gradient blends. */
-  --pink: #ff79ad;
-  --pink-strong: #ff3d8b;
-  --violet: #9a6bff;
-  --periwinkle: #6c8cff;
-  --peach: #ff9a76;
-  --blue: #2563eb;
-  --mint: #3ddc97;
-  --amber: #f59e0b;
+  /* Muted reference-inspired rose with a clear blue partner. */
+  --pink: #e78fb0;
+  --pink-strong: #d96f9f;
+  --blue: #4f83f1;
+  --blue-deep: #2f6fed;
+  --orange: #f49a4d;
+  --yellow: #ffd36a;
+  --violet: #8e8ee8;
+  --periwinkle: #a9b9ee;
+  --peach: #f4b08b;
 
   --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
 
@@ -33,12 +33,12 @@
   --muted: #eef1f6;
   --muted-foreground: #64748b;
   --border: #dbe2ea;
-  --accent-soft: #fff7fa;        /* pink-tinted panel wash */
+  --accent-soft: #fff6f9;        /* rose-tinted panel wash */
   --header-bg: rgba(255, 255, 255, 0.85);   /* light, frosted header */
   /* Lovable-inspired depth: lean on borders, keep shadows shallow & soft. */
   --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04);
   --shadow-card-hover: 0 4px 12px rgba(15, 23, 42, 0.10);
-  --shadow-accent: 0 6px 18px rgba(255, 61, 139, 0.24);
+  --shadow-accent: 0 6px 18px rgba(217, 111, 159, 0.22);
   /* Signature inset shadow for tactile, pressed-in buttons. */
   --shadow-inset: rgba(255, 255, 255, 0.22) 0 0.5px 0 0 inset,
     rgba(0, 0, 0, 0.2) 0 0 0 0.5px inset, rgba(0, 0, 0, 0.06) 0 1px 2px 0;
@@ -49,9 +49,10 @@
   --radius: 8px;
   --radius-pill: 9999px;
   --maxw: 960px;
+  --grain-opacity: 0.18;
 
   /* Calm base; the diffuse aurora layer (body::before) supplies the color. */
-  --page-bg: linear-gradient(180deg, #f7f7fb 0%, #ffffff 100%);
+  --page-bg: linear-gradient(180deg, #f8f8fb 0%, #ffffff 100%);
 }
 
 [data-theme="dark"] {
@@ -67,8 +68,9 @@
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-focus: rgba(0, 0, 0, 0.5) 0 4px 12px;
+  --grain-opacity: 0.14;
 
-  --page-bg: linear-gradient(180deg, #0f1320 0%, #151826 100%);
+  --page-bg: linear-gradient(180deg, #101522 0%, #151826 100%);
 }
 
 /* ----------------------------------------------------------------- base ---- */
@@ -81,6 +83,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  background: var(--page-bg);
 }
 
 body {
@@ -88,6 +91,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  isolation: isolate;
   font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR",
     sans-serif;
@@ -96,13 +101,17 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--foreground);
-  background: var(--page-bg);
+  background: transparent;
   background-attachment: fixed;
   letter-spacing: 0;
 }
 
-/* Diffuse "弥散光" aurora: soft, heavily-blurred color blobs (pink + bluish),
-   fixed behind everything, drifting in once on load. */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Diffuse light: soft, heavily blurred rose + blue + warm orange fields. */
 body::before {
   content: "";
   position: fixed;
@@ -110,19 +119,19 @@ body::before {
   z-index: -2;
   pointer-events: none;
   background:
-    radial-gradient(42% 36% at 20% 26%, rgba(255, 61, 139, 0.55), transparent 62%),
-    radial-gradient(40% 34% at 80% 20%, rgba(108, 140, 255, 0.50), transparent 62%),
-    radial-gradient(46% 42% at 68% 72%, rgba(154, 107, 255, 0.45), transparent 64%),
-    radial-gradient(40% 40% at 28% 82%, rgba(255, 154, 118, 0.42), transparent 62%);
-  filter: blur(70px) saturate(118%);
+    radial-gradient(42% 36% at 19% 28%, rgba(217, 111, 159, 0.48), transparent 64%),
+    radial-gradient(44% 36% at 82% 18%, rgba(79, 131, 241, 0.46), transparent 64%),
+    radial-gradient(44% 38% at 72% 74%, rgba(244, 154, 77, 0.38), transparent 64%),
+    radial-gradient(40% 34% at 24% 80%, rgba(255, 211, 106, 0.28), transparent 64%);
+  filter: blur(62px) saturate(108%) contrast(104%);
   animation: aurora-in 1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 [data-theme="dark"] body::before {
-  filter: blur(70px) saturate(125%) brightness(0.8);
-  opacity: 0.7;
+  filter: blur(68px) saturate(116%) brightness(0.74);
+  opacity: 0.8;
 }
 
-/* Lo-fi film grain over the aurora. */
+/* Lo-fi film grain over the diffuse background. */
 body::after {
   content: "";
   position: fixed;
@@ -130,19 +139,21 @@ body::after {
   z-index: -1;
   pointer-events: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity: 0.4;
-  mix-blend-mode: overlay;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: multiply;
   animation: grain-in 1.8s ease-out both;
 }
-[data-theme="dark"] body::after { opacity: 0.28; }
+[data-theme="dark"] body::after {
+  mix-blend-mode: screen;
+}
 
 @keyframes aurora-in {
-  from { opacity: 0; transform: scale(1.12) translateY(-12px); filter: blur(120px) saturate(118%); }
+  from { opacity: 0; transform: scale(1.12) translateY(-12px); filter: blur(120px) saturate(108%); }
   to   { opacity: 1; transform: scale(1) translateY(0); }
 }
 @keyframes grain-in {
   from { opacity: 0; }
-  to   { opacity: 0.4; }
+  to   { opacity: var(--grain-opacity); }
 }
 
 a {
@@ -221,10 +232,11 @@ img { max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--border);
 }
 
-/* thin multi-status accent bar (pink → blue → mint → amber) */
+/* Thin reference accent: rose → blue → warm orange, not a rainbow strip. */
 .accent-bar {
-  height: 3px;
-  background: linear-gradient(90deg, var(--pink-strong), var(--blue), var(--mint), var(--amber));
+  height: 2px;
+  background: linear-gradient(90deg, var(--pink), var(--blue) 56%, var(--orange));
+  opacity: 0.75;
 }
 
 .header-inner {
@@ -276,7 +288,7 @@ img { max-width: 100%; height: auto; }
   color: var(--pink-strong);
   text-decoration: none;
 }
-/* Active item: emphasized in the point color + a pink underline accent. */
+/* Active item: emphasized in the point color + a rose/blue underline accent. */
 .site-nav a.is-active {
   color: var(--pink-strong);
   font-weight: 600;
@@ -289,7 +301,7 @@ img { max-width: 100%; height: auto; }
   bottom: 1px;
   height: 2px;
   border-radius: 2px;
-  background: linear-gradient(90deg, var(--pink-strong), var(--violet));
+  background: linear-gradient(90deg, var(--pink-strong), var(--blue));
 }
 
 .header-actions {
@@ -478,9 +490,9 @@ img { max-width: 100%; height: auto; }
     border-color 0.2s ease;
 }
 .btn svg { width: 18px; height: 18px; }
-/* Primary: pink surface with the tactile inset highlight/ring. */
+/* Primary: cool rose into blue, with a small warm lift at the far edge. */
 .btn-primary {
-  background: linear-gradient(135deg, var(--pink-strong) 0%, var(--violet) 100%);
+  background: linear-gradient(135deg, var(--pink-strong) 0%, var(--blue) 68%, var(--orange) 130%);
   color: #fff;
   box-shadow: var(--shadow-inset), var(--shadow-accent);
 }
