@@ -3,18 +3,23 @@ layout: default
 ---
 
 <section class="about">
-  {%- if page.profile_image -%}
-    <img class="profile-pic" src="{{ page.profile_image | relative_url }}" alt="{{ site.author | default: site.title }}" />
-  {%- endif -%}
+  <div class="about-copy">
+    <h1>{{ page.heading | default: site.title }}</h1>
+    {%- if page.subtitle -%}
+      <p class="about-subtitle">{{ page.subtitle }}</p>
+    {%- endif -%}
 
-  <h1>{{ page.heading | default: site.title }}</h1>
-  {%- if page.subtitle -%}
-    <p class="about-subtitle">{{ page.subtitle }}</p>
-  {%- endif -%}
-
-  <div class="bio">
-    {{ content }}
+    <div class="bio">
+      {{ content }}
+    </div>
   </div>
 
-  {%- include social-buttons.html -%}
+  {%- if page.profile_image -%}
+    <div class="about-media">
+      <figure class="profile-frame">
+        <img class="profile-pic" src="{{ page.profile_image | relative_url }}" alt="{{ site.author | default: site.title }}" />
+      </figure>
+      {%- include social-buttons.html -%}
+    </div>
+  {%- endif -%}
 </section>

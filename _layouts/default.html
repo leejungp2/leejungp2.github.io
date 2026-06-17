@@ -4,7 +4,7 @@
     {%- include head.html -%}
     <title>{% if page.title and page.url != '/' %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   </head>
-  <body>
+  <body{% if page.url == '/' %} class="is-home"{% endif %}>
     {%- include header.html -%}
 
     <main class="site-main">
