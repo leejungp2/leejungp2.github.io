@@ -11,8 +11,11 @@ description: Selected papers and preprints. <!-- TODO -->
   Authors · *Venue*, Year · [PDF](#) · [Code](#)
 -->
 
-<div class="empty-state">
-  <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-  <strong>No publications yet</strong>
-  Add entries here as they appear.
+<div class="soft-list publication-list">
+  <div class="soft-item">
+    <div class="item-kicker">Preprint / Conference / Journal</div>
+    <h3>Publication title goes here</h3>
+    <p>Authors. Venue, year. Add a one-line note about the contribution or result.</p>
+    <p class="item-links"><a href="#">PDF</a> <span>/</span> <a href="#">Code</a> <span>/</span> <a href="#">Project</a></p>
+  </div>
 </div>

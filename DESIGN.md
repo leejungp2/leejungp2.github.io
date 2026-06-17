@@ -80,6 +80,12 @@ background: linear-gradient(135deg, #151826, #1f2937);
 /* Thin header accent, not a rainbow */
 background: linear-gradient(90deg, #e78fb0, #4f83f1 56%, #f49a4d);
 
+/* Pink-only variant, saved for experiments */
+background: linear-gradient(90deg, #d96f9f 0%, #e78fb0 58%, #f0aec6 100%);
+
+/* Blue-only variant, saved for experiments */
+background: linear-gradient(135deg, #2f6fed 0%, #4f83f1 58%, #a9b9ee 100%);
+
 /* Light panel accent */
 background: linear-gradient(135deg, #ffffff, #fff6f9);
 ```
