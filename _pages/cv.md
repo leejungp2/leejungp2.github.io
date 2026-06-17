@@ -10,19 +10,19 @@ action_disabled: true
 <div class="soft-list cv-list">
   <section class="soft-item">
     <h3>Education</h3>
-    <p><span class="entry-head"><strong>Integrated M.S./Ph.D. in Intelligence and Information Convergence</strong><span class="entry-date">2025 - Present</span></span></p>
+    <p><span class="entry-head"><strong>Integrated M.S./Ph.D. in HCI at Seoul National University</strong><span class="entry-date">Mar 2025 - Present</span></span></p>
     <ul class="cv-bullets">
-      <li>Seoul National University, Graduate School of Convergence Science and Technology</li>
-      <li>Advisor: Professor Bongwon Suh. I conduct human-AI interaction research at the Human-Centered Computing Lab.</li>
+      <li>Graduate School of Convergence Science and Technology</li>
+      <li>Advisor: Professor Bongwon Suh, Human-Centered Computing Lab</li>
     </ul>
-    <p><span class="entry-head"><strong>B.A. in Psychology; Double Major in Information Science and Culture</strong><span class="entry-date">Mar 2018 - Feb 2024</span></span></p>
+    <p><span class="entry-head"><strong>B.A. in Psychology & Information Science and Culture at Seoul National University</strong><span class="entry-date">Mar 2018 - Feb 2024</span></span></p>
     <ul class="cv-bullets">
-      <li>Seoul National University, College of Social Sciences. Cumulative GPA: 3.82/4.3; double-major GPA: 4.04/4.3.</li>
-      <li>Relevant coursework: psychological statistics, cognitive process and lab, programming usable interfaces, information-culture technology, virtual reality, psychology of language and lab, and mathematical and statistical foundations for data science.</li>
+      <li>College of Social Sciences</li>
+
     </ul>
-    <p><span class="entry-head"><strong>English/French Department</strong><span class="entry-date">Mar 2015 - Feb 2018</span></span></p>
+    <p><span class="entry-head"><strong>Pusan Foreign Language High School</strong><span class="entry-date">Mar 2015 - Feb 2018</span></span></p>
     <ul class="cv-bullets">
-      <li>Pusan Foreign Language High School, Busan, Republic of Korea</li>
+      <li>English/French Department</li>
     </ul>
   </section>
 
@@ -51,7 +51,7 @@ action_disabled: true
 
   <section class="soft-item">
     <h3>Work Experience</h3>
-    <p><span class="entry-head"><strong>Pie Company</strong><span class="entry-date">2025 - Present</span></span>
+    <p><span class="entry-head"><strong>Pie Company</strong><span class="entry-date">Nov 2025 - Present</span></span>
     <em>Founder</em></p>
     <ul class="cv-bullets">
       <li>Founded and operate an AI content service business, leading product planning, development, and marketing.</li>
