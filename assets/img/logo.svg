@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="112" height="32" viewBox="0 0 112 32" role="img" aria-label="Jung Lee">
   <defs>
     <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ff3d8b"/>
-      <stop offset="1" stop-color="#9a6bff"/>
+      <stop offset="0" stop-color="#d96f9f"/>
+      <stop offset="0.68" stop-color="#4f83f1"/>
+      <stop offset="1" stop-color="#f49a4d"/>
     </linearGradient>
   </defs>
   <rect x="0" y="0" width="32" height="32" rx="8" fill="url(#pink)"/>
   <text x="16" y="22" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="800" fill="#ffffff">JL</text>
-  <text x="42" y="21" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#ff3d8b" letter-spacing="0.2">Jung Lee</text>
+  <text x="42" y="21" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#d96f9f" letter-spacing="0.2">Jung Lee</text>
 </svg>

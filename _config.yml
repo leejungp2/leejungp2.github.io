@@ -41,7 +41,7 @@ plugins:
 
 exclude:
   - README.md
-  - DEISGN.md
+  - DESIGN.md
   - references
   - Gemfile
   - Gemfile.lock
