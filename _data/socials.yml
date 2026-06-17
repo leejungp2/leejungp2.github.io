@@ -1,0 +1,6 @@
+# Social links rendered as buttons at the bottom of the about page.
+# Set `url` to empty string to hide a button.
+github: "https://github.com/leejungp2"
+
+# TODO: replace with your real LinkedIn profile URL.
+linkedin: "https://www.linkedin.com/"
