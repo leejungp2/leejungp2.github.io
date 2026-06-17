@@ -285,12 +285,12 @@ img { max-width: 100%; height: auto; }
   transition: color 0.2s ease;
 }
 .site-nav a:hover {
-  color: var(--pink-strong);
+  color: var(--blue-deep);
   text-decoration: none;
 }
-/* Active item: emphasized in the point color + a rose/blue underline accent. */
+/* Active item: blue text + the same blue-only gradient as primary buttons. */
 .site-nav a.is-active {
-  color: var(--pink-strong);
+  color: var(--blue-deep);
   font-weight: 600;
 }
 .site-nav a.is-active::after {
@@ -301,7 +301,7 @@ img { max-width: 100%; height: auto; }
   bottom: 1px;
   height: 2px;
   border-radius: 2px;
-  background: linear-gradient(90deg, var(--pink-strong), var(--blue));
+  background: linear-gradient(135deg, var(--blue-deep) 0%, var(--blue) 58%, var(--periwinkle) 100%);
 }
 
 .header-actions {
@@ -369,18 +369,70 @@ img { max-width: 100%; height: auto; }
   color: var(--muted-foreground);
   margin: 0;
 }
+.page-shell .page-header {
+  margin-bottom: 2rem;
+}
+.page-shell .page-header h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2.7rem, 6vw, 4.6rem);
+  letter-spacing: -0.015em;
+}
+.page-shell .page-header p {
+  max-width: 34rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+.soft-list {
+  display: grid;
+  gap: 0.9rem;
+  width: 100%;
+}
+.soft-item {
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  background: color-mix(in srgb, var(--card) 66%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  padding: 1.25rem;
+}
+.soft-item h3 {
+  margin-top: 0;
+}
+.soft-item p:last-child {
+  margin-bottom: 0;
+}
+.item-kicker {
+  color: var(--pink-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.item-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+}
 
 /* repeated interactive cards */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1.25rem;
 }
 .interactive-card {
   border-radius: 12px;
-  border: 1px solid var(--border);
-  background: var(--card);
-  box-shadow: var(--shadow-card);
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  background: color-mix(in srgb, var(--card) 66%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
   padding: 1.5rem;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
@@ -388,8 +440,8 @@ img { max-width: 100%; height: auto; }
 @media (hover: hover) {
   .interactive-card:hover {
     transform: translateY(-2px);
-    border-color: rgba(28, 28, 28, 0.18);
-    box-shadow: var(--shadow-card-hover);
+    border-color: color-mix(in srgb, var(--blue) 28%, var(--border));
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
   }
 }
 [data-theme="dark"] .interactive-card:hover {
