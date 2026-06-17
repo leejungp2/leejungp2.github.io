@@ -28,7 +28,7 @@ Repo-specific notes for Codex and other coding agents working on this portfolio.
 
 ## Design Notes
 
-- The visual system is defined mainly in `assets/css/style.css` and documented in `DESIGN.md`.
+- The visual system is defined mainly in `assets/css/main.css` and documented in `DESIGN.md`.
 - Preserve the current direction: light frosted header, centered nav, cool gray/white surfaces, cool rose/blue/orange gradients, lo-fi texture, and dark-mode support.
 - Keep layout responsive around desktop widths and mobile widths near `390px`.
 - Use existing classes such as `app-surface`, `interactive-card`, `empty-state`, `btn`, `btn-primary`, and `btn-outline` before adding new patterns.
