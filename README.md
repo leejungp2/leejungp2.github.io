@@ -32,9 +32,10 @@ bundle exec jekyll serve   # → http://localhost:4000/
 
 ## Deploy
 
-Pushing to `main` triggers `.github/workflows/pages.yml`, which builds with
-Jekyll 4 and deploys to GitHub Pages. One-time setup: in the repo's
-**Settings → Pages**, set **Source = GitHub Actions**.
+GitHub Pages builds this site automatically from the `main` branch (Settings →
+Pages → **Source: Deploy from a branch**, `main` / root). Just push to `main`;
+the live site updates in ~1–2 minutes. No Actions workflow or build step needed
+(the CSS is plain hand-written CSS, not a Tailwind build).
 
 ## TODO
 
