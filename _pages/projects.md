@@ -2,16 +2,21 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Things I've built and explored. <!-- TODO -->
+description: Selected research, product, and AI interface projects.
 ---
 
 {%- if site.projects.size > 0 -%}
-  <div class="card-grid">
+  <div class="card-grid project-card-grid">
     {%- assign sorted = site.projects | sort: "order" -%}
     {%- for project in sorted -%}
-      <a class="interactive-card" href="{{ project.url | relative_url }}" style="text-decoration:none;color:inherit;display:block">
-        <h3>{{ project.title }}</h3>
-        <p class="muted">{{ project.description }}</p>
+      <a class="interactive-card project-card" href="{{ project.url | relative_url }}">
+        {%- if project.thumbnail -%}
+          <img class="project-card-thumb" src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" />
+        {%- endif -%}
+        <div class="project-card-body">
+          <h3>{{ project.title }}</h3>
+          <p class="muted">{{ project.description }}</p>
+        </div>
       </a>
     {%- endfor -%}
   </div>

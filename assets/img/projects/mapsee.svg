@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">mapsee thumbnail</title>
+  <desc id="desc">Abstract map and location marker illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef4ff"/>
+      <stop offset="0.54" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffe7d1"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <path d="M104 464c146-132 244-146 392-70 136 70 226 40 354-82" fill="none" stroke="#4f83f1" stroke-width="32" stroke-linecap="round" opacity="0.32"/>
+  <path d="M90 232c118 68 218 70 332 8 148-80 268-52 416 86" fill="none" stroke="#d96f9f" stroke-width="28" stroke-linecap="round" opacity="0.26"/>
+  <rect x="156" y="116" width="648" height="368" rx="38" fill="#ffffff" opacity="0.82"/>
+  <path d="M290 150v300M480 150v300M670 150v300" stroke="#151826" stroke-width="10" opacity="0.08"/>
+  <path d="M202 270h560M202 382h560" stroke="#151826" stroke-width="10" opacity="0.08"/>
+  <path d="M482 184c-72 0-130 58-130 130 0 96 130 204 130 204s130-108 130-204c0-72-58-130-130-130z" fill="#4f83f1"/>
+  <circle cx="482" cy="312" r="48" fill="#ffffff" opacity="0.94"/>
+</svg>
