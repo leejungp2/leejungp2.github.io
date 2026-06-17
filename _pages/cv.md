@@ -40,7 +40,7 @@ action_disabled: true
       <li>Investigated how emotion-based and situation-based music recommendation chatbots affect negative-emotion alleviation.</li>
       <li>Built Musicbot, an empathetic chatbot that recommends music based on users' emotions and situations after preprocessing the Kaggle pop-song dataset in Python.</li>
     </ul>
-    <p><span class="entry-head"><strong>Human Factors Psychology Lab (Applied Cognitive Psychology Lab), Seoul National University</strong><span class="entry-date">Mar 2021 - Jan 2022</span></span>
+    <p><span class="entry-head"><strong>SNU Human Factors Psychology Lab (Applied Cognitive Psychology Lab)</strong><span class="entry-date">Mar 2021 - Jan 2022</span></span>
     <em>Research Assistant</em></p>
     <ul class="cv-bullets">
       <li>Participated in emotion-diary data validation and sentiment classification.</li>
