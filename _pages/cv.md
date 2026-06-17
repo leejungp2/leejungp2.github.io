@@ -2,7 +2,7 @@
 layout: page
 title: CV
 permalink: /cv/
-description: Education, research experiences, work experiences, and skills.
+description: Education, research experience, work experience, and skills.
 action_label: Full Resume (Coming soon)
 action_disabled: true
 ---
@@ -13,11 +13,12 @@ action_disabled: true
     <p><span class="entry-head"><strong>Integrated M.S./Ph.D. in Intelligence and Information Convergence</strong><span class="entry-date">2025 - Present</span></span></p>
     <ul class="cv-bullets">
       <li>Seoul National University, Graduate School of Convergence Science and Technology</li>
-      <li>Advisor: Professor Bongwon Suh. Conducting human-AI interaction research at the Human-Centered Computing Lab.</li>
+      <li>Advisor: Professor Bongwon Suh. I conduct human-AI interaction research at the Human-Centered Computing Lab.</li>
     </ul>
     <p><span class="entry-head"><strong>B.A. in Psychology; Double Major in Information Science and Culture</strong><span class="entry-date">Mar 2018 - Feb 2024</span></span></p>
     <ul class="cv-bullets">
-      <li>Seoul National University, College of Social Sciences</li>
+      <li>Seoul National University, College of Social Sciences. Cumulative GPA: 3.82/4.3; double-major GPA: 4.04/4.3.</li>
+      <li>Relevant coursework: psychological statistics, cognitive process and lab, programming usable interfaces, information-culture technology, virtual reality, psychology of language and lab, and mathematical and statistical foundations for data science.</li>
     </ul>
     <p><span class="entry-head"><strong>English/French Department</strong><span class="entry-date">Mar 2015 - Feb 2018</span></span></p>
     <ul class="cv-bullets">
@@ -26,30 +27,30 @@ action_disabled: true
   </section>
 
   <section class="soft-item">
-    <h3>Research Experiences</h3>
+    <h3>Research Experience</h3>
     <p><span class="entry-head"><strong>SNU Undergraduate Social Science Research Grant</strong><span class="entry-date">Oct 2023 - Dec 2023</span></span>
     <em>Chief Researcher</em></p>
     <ul class="cv-bullets">
-      <li>Studied the effect of gratitude-diary writing on positive emotions through a chatbot interface.</li>
+      <li>Investigated how writing gratitude diaries through a chatbot interface affects positive emotions.</li>
       <li>Built Diarybot, a ChatGPT API-based chatbot that helps users write gratitude diaries.</li>
     </ul>
     <p><span class="entry-head"><strong>SNU Undergraduate Research Opportunity Program</strong><span class="entry-date">May 2021 - Jan 2022</span></span>
     <em>Chief Researcher</em></p>
     <ul class="cv-bullets">
-      <li>Studied how emotion-based and situation-based music recommendation chatbots affect negative-emotion alleviation.</li>
-      <li>Built Musicbot, an empathetic chatbot that recommends music by emotion and situation after preprocessing the Kaggle pop song dataset in Python.</li>
+      <li>Investigated how emotion-based and situation-based music recommendation chatbots affect negative-emotion alleviation.</li>
+      <li>Built Musicbot, an empathetic chatbot that recommends music based on users' emotions and situations after preprocessing the Kaggle pop-song dataset in Python.</li>
     </ul>
     <p><span class="entry-head"><strong>Human Factors Psychology Lab (Applied Cognitive Psychology Lab), Seoul National University</strong><span class="entry-date">Mar 2021 - Jan 2022</span></span>
     <em>Research Assistant</em></p>
     <ul class="cv-bullets">
       <li>Participated in emotion-diary data validation and sentiment classification.</li>
-      <li>Reviewed literature on AI abuse, chatbot humanization, and text mining.</li>
-      <li>Analyzed emotion-related social media text through word2vec and topic modeling workshops in Python.</li>
+      <li>Reviewed literature on AI abuse, chatbot humanization, and text mining on pandemic-related distress.</li>
+      <li>Analyzed emotion-related social media text through word2vec and topic modeling in Python workshops.</li>
     </ul>
   </section>
 
   <section class="soft-item">
-    <h3>Work Experiences</h3>
+    <h3>Work Experience</h3>
     <p><span class="entry-head"><strong>Pie Company</strong><span class="entry-date">2025 - Present</span></span>
     <em>Founder</em></p>
     <ul class="cv-bullets">
@@ -60,7 +61,7 @@ action_disabled: true
     <em>Research Assistant</em></p>
     <ul class="cv-bullets">
       <li>Researched AI, drone, biotech, and green-tech market prospects for investment review.</li>
-      <li>Investigated target startups, market size, and competitive positioning.</li>
+      <li>Investigated target startups, market sizes, business proposals, and competitive positioning.</li>
     </ul>
     <p><span class="entry-head"><strong>Dream Impact</strong><span class="entry-date">Jul 2021 - Sep 2021</span></span>
     <em>Strategic Planning Intern</em></p>
@@ -71,7 +72,7 @@ action_disabled: true
     <p><span class="entry-head"><strong>Fit-account</strong><span class="entry-date">Jul 2021 - Aug 2021</span></span>
     <em>Content Planning Intern</em></p>
     <ul class="cv-bullets">
-      <li>Created mobile-app solution content by organizing happiness interventions based on Big Five personality traits and consumption-type data.</li>
+      <li>Created solution content for a mobile app by organizing happiness interventions based on Big Five personality traits and consumption-type data.</li>
     </ul>
   </section>
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mini Game
-description: Depression indirect-experience mini game designed for Introduction to Information, Culture, and Technology.
+description: Mini game designed to create an indirect experience of depression for Introduction to Information, Culture, and Technology.
 thumbnail: /assets/img/projects/tteokbokki.svg
 order: 6
 ---
@@ -10,7 +10,7 @@ order: 6
 
 Mini Game documents "I want to eat tteokbokki, but I want to die"
 ("떡볶이는 먹고 싶지만 죽고싶어"), a small game project from the Introduction to
-Information, Culture, and Technology course. The game was planned as an
+Information, Culture, and Technology course. The game was planned to create an
 indirect experience of depression through everyday actions and emotional
 friction.
 

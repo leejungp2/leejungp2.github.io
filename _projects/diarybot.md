@@ -9,7 +9,7 @@ order: 4
 ## Overview
 
 diaryBot is a chatbot built for the SNU Undergraduate Social Science Research
-Grant. The project studied how writing a gratitude diary through a chatbot
+Grant. The project investigated how writing gratitude diaries through a chatbot
 interface affects positive emotions.
 
 ## Role
