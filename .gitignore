@@ -7,3 +7,7 @@ vendor/
 Gemfile.lock
 .DS_Store
 references/
+.env
+.env.*
+!.env.example
+.translation-cache/
