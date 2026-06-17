@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="about">
+  {%- if page.profile_image -%}
+    <img class="profile-pic" src="{{ page.profile_image | relative_url }}" alt="{{ site.author | default: site.title }}" />
+  {%- endif -%}
+
+  <h1>{{ page.heading | default: site.title }}</h1>
+  {%- if page.subtitle -%}
+    <p class="about-subtitle">{{ page.subtitle }}</p>
+  {%- endif -%}
+
+  <div class="bio">
+    {{ content }}
+  </div>
+
+  {%- include social-buttons.html -%}
+</section>
