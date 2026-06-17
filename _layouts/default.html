@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="{{ site.lang | default: 'en' }}"{% if page.url == '/' %} class="is-home"{% endif %}>
   <head>
     {%- include head.html -%}
     <title>{% if page.title and page.url != '/' %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   </head>
-  <body{% if page.url == '/' %} class="is-home"{% endif %}>
+  <body class="{% if page.url == '/' %}is-home {% endif %}page-{{ page.title | default: page.layout | slugify }}">
     {%- include header.html -%}
+    {%- if page.url == '/' -%}
+      <div class="home-bubbles" aria-hidden="true">
+        <span class="home-bubble bubble-1"></span>
+        <span class="home-bubble bubble-2"></span>
+        <span class="home-bubble bubble-3"></span>
+        <span class="home-bubble bubble-4"></span>
+        <span class="home-bubble bubble-5"></span>
+        <span class="home-bubble bubble-6"></span>
+        <span class="home-bubble bubble-7"></span>
+        <span class="home-bubble bubble-8"></span>
+        <span class="home-bubble bubble-9"></span>
+        <span class="home-bubble bubble-10"></span>
+      </div>
+    {%- endif -%}
 
     <main class="site-main">
       <div class="container fade-up">

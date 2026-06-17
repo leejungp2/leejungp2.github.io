@@ -6,7 +6,7 @@ layout: default
   <div class="about-copy">
     <h1>{{ page.heading | default: site.title }}</h1>
     {%- if page.subtitle -%}
-      <p class="about-subtitle">{{ page.subtitle }}</p>
+      <p class="about-subtitle">{{ page.subtitle | replace: ' Researcher at ', ' Researcher<span class="mobile-subtitle-break"></span> at ' }}</p>
     {%- endif -%}
 
     <div class="bio">
