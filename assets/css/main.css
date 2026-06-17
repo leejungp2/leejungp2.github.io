@@ -490,11 +490,12 @@ img { max-width: 100%; height: auto; }
     border-color 0.2s ease;
 }
 .btn svg { width: 18px; height: 18px; }
-/* Primary: cool rose into blue, with a small warm lift at the far edge. */
+/* Primary: blue-only gradient for colored social/action buttons. */
 .btn-primary {
-  background: linear-gradient(135deg, var(--pink-strong) 0%, var(--blue) 68%, var(--orange) 130%);
+  border: 0;
+  background: linear-gradient(135deg, var(--blue-deep) 0%, var(--blue) 58%, var(--periwinkle) 100%);
   color: #fff;
-  box-shadow: var(--shadow-inset), var(--shadow-accent);
+  box-shadow: 0 10px 24px rgba(79, 131, 241, 0.22);
 }
 .btn-primary:hover { filter: brightness(1.04); text-decoration: none; }
 .btn-primary:active { opacity: 0.8; }
