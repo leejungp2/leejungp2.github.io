@@ -3,14 +3,17 @@ layout: about
 title: about
 permalink: /
 heading: Jung Lee
-subtitle: Researcher — add your field & affiliation
-# Drop a square photo at assets/img/prof_pic.jpg, then uncomment:
-# profile_image: /assets/img/prof_pic.jpg
+subtitle: Human-AI Interaction Researcher at Seoul National University
+profile_image: /assets/img/IMG_9374.jpg
 ---
 
-<!-- TODO: replace with your own statement. _italics_ become emphasis. -->
+I am a M.S. student researching human-computer interaction in Intelligence and
+Information Convergence at Seoul National University, advised by Professor
+Bongwon Suh at the Human-Centered Computing Lab.
 
-Research and writing on _your research areas_ — building toward
-**TODO**. This site gathers my CV, publications, projects, and notes.
+My research explores how human and AI systems interact, with a focus
+on cognitive psychology, human-AI relationships and LLM-based tools.
 
-Currently at _TODO_.
+Before graduate school, I studied Psychology and Information Science and Culture
+at Seoul National University and built projects across chatbots, mobile apps,
+and AI productivity tools.
