@@ -2,17 +2,31 @@
 layout: page
 title: blog
 permalink: /blog/
-description: Notes, write-ups, and the occasional thought. <!-- TODO -->
+description: Notes, write-ups, and occasional research reflections.
 ---
 
-{%- if site.posts.size > 0 -%}
+<nav class="blog-tabs" aria-label="Blog sections">
+  <a class="blog-tab is-active" href="{{ '/blog/' | relative_url }}">Writing</a>
+  <a class="blog-tab" href="{{ '/blog/archives/' | relative_url }}">Archives</a>
+</nav>
+
+{%- assign has_posts = false -%}
+{%- for post in site.posts -%}
+  {%- unless post.archive == true or post.hidden == true -%}
+    {%- assign has_posts = true -%}
+  {%- endunless -%}
+{%- endfor -%}
+
+{%- if has_posts -%}
   <ul class="post-list">
     {%- for post in site.posts -%}
-      <li>
-        <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-        <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {%- if post.excerpt -%}<p class="muted">{{ post.excerpt | strip_html | truncate: 140 }}</p>{%- endif -%}
-      </li>
+      {%- unless post.archive == true or post.hidden == true -%}
+        <li>
+          <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {%- if post.excerpt -%}<p class="muted">{{ post.excerpt | strip_html | truncate: 140 }}</p>{%- endif -%}
+        </li>
+      {%- endunless -%}
     {%- endfor -%}
   </ul>
 {%- else -%}
