@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Musicbot thumbnail</title>
+  <desc id="desc">Abstract music recommendation chatbot illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8f8fb"/>
+      <stop offset="0.5" stop-color="#f7d9e6"/>
+      <stop offset="1" stop-color="#dbe7ff"/>
+    </linearGradient>
+    <linearGradient id="disc" x1="0" x2="1">
+      <stop offset="0" stop-color="#151826"/>
+      <stop offset="1" stop-color="#4f83f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <circle cx="300" cy="300" r="168" fill="url(#disc)" opacity="0.9"/>
+  <circle cx="300" cy="300" r="74" fill="#ffffff" opacity="0.92"/>
+  <circle cx="300" cy="300" r="24" fill="#d96f9f"/>
+  <path d="M564 174v184c0 52-42 94-94 94" fill="none" stroke="#151826" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" opacity="0.78"/>
+  <path d="M564 174h152v68H564z" fill="#151826" opacity="0.78"/>
+  <circle cx="470" cy="452" r="54" fill="#151826" opacity="0.78"/>
+  <rect x="570" y="342" width="238" height="92" rx="30" fill="#ffffff" opacity="0.92"/>
+  <path d="M620 382h132M620 412h74" stroke="#151826" stroke-width="12" stroke-linecap="round" opacity="0.22"/>
+</svg>
