@@ -7,7 +7,7 @@ description: Activities, studies, training, and hobbies.
 
 <div class="soft-list misc-list">
   <section class="soft-item misc-section-studies">
-    <h3>Studies and Training</h3>
+    <h3>Studies</h3>
     <p><span class="entry-head"><strong>MML Study</strong><span class="entry-date">Jan 2025 - Dec 2025</span></span></p>
     <ul class="cv-bullets">
       <li>Led the <a href="https://pinnate-emoji-c00.notion.site/mml-study?source=copy_link" target="_blank" rel="noopener">Mathematics for Machine Learning Study</a>.</li>
@@ -16,18 +16,13 @@ description: Activities, studies, training, and hobbies.
     <ul class="cv-bullets">
       <li>Participated in a LangChain & LangGraph study in the Human-Centered Computing Lab.</li>
     </ul>
-    <p><span class="entry-head"><strong>JAPPU NLP Paper Review Study</strong><span class="entry-date">Oct 2024 - Feb 2025</span></span></p>
+    <p><span class="entry-head"><strong>AI Paper Review Studies</strong><span class="entry-date">Oct 2024 - Jul 2025</span></span></p>
     <ul class="cv-bullets">
-      <li>Participated in the <a href="https://github.com/NLP-Study-JAPPU" target="_blank" rel="noopener">JAPPU natural language processing paper review study</a>.</li>
-    </ul>
-    <p><span class="entry-head"><strong>Foundational AI Paper Reading Study</strong><span class="entry-date">Dec 2024 - Jul 2025</span></span></p>
-    <ul class="cv-bullets">
-      <li>Led a <a href="https://app.notion.com/p/9700208b26784e2e9c04f92e2893663e?pvs=21" target="_blank" rel="noopener">foundational AI paper reading study</a>.</li>
+      <li>Participated in the <a href="https://github.com/NLP-Study-JAPPU" target="_blank" rel="noopener">JAPPU NLP paper review study</a> and led a <a href="https://app.notion.com/p/9700208b26784e2e9c04f92e2893663e?pvs=21" target="_blank" rel="noopener">foundational AI paper reading study</a>.</li>
     </ul>
     <p><span class="entry-head"><strong>OUTTA Deep Learning Advanced Bootcamp</strong><span class="entry-date">Jul 2024 - Aug 2024</span></span></p>
     <ul class="cv-bullets">
-      <li>Studied deep learning theory and implemented Python models with PyTorch and Hugging Face, covering gradient descent, CNNs, GANs, RNNs, seq2seq, transformers, BERT, and GPT.</li>
-      <li>Built an image inpainting model using an LLM in a team project, implementing a multimodal model workflow.</li>
+      <li>Completed an advanced deep learning bootcamp covering PyTorch/Hugging Face workflows and a team image-inpainting project.</li>
     </ul>
   </section>
 
@@ -51,8 +46,7 @@ description: Activities, studies, training, and hobbies.
     </ul>
     <p><span class="entry-head"><strong>SNU Student Society for Social Responsibility (SNUSR)</strong><span class="entry-date">Sep 2018 - Dec 2019</span></span></p>
     <ul class="cv-bullets">
-      <li>Served as an assistant team lead, planning and carrying out more than 150 hours of social contribution activities.</li>
-      <li>Collaborated with a senior self-reliance group to generate and donate approximately KRW 1,000,000 through an on-campus booth project.</li>
+      <li>Served as an assistant team lead, planning 150+ hours of social contribution activities and raising approximately KRW 1,000,000 for donation through an on-campus booth project.</li>
     </ul>
   </section>
 
