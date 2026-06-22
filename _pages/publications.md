@@ -2,7 +2,7 @@
 layout: page
 title: publications
 permalink: /publications/
-description: Selected papers and manuscripts in human-AI interaction and HCI.
+description: Publications and project-related manuscripts.
 ---
 
 <div class="soft-list publication-list">
