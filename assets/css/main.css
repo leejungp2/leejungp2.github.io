@@ -1261,6 +1261,11 @@ img { max-width: 100%; height: auto; }
   gap: 0.75rem;
   margin-top: 2.5rem;
 }
+.social-buttons .btn {
+  width: 44px;
+  padding: 0;
+  justify-content: center;
+}
 .btn {
   display: inline-flex;
   align-items: center;
@@ -1293,7 +1298,14 @@ img { max-width: 100%; height: auto; }
 [data-theme="dark"] .btn-outline { border-color: rgba(255, 255, 255, 0.28); }
 .btn-outline:hover { background: var(--muted); text-decoration: none; }
 .btn-outline:active { opacity: 0.8; }
-
+.btn-linkedin {
+  color: var(--blue);
+  border-color: color-mix(in srgb, var(--blue) 62%, transparent);
+}
+.btn-mail {
+  color: var(--pink-strong);
+  border-color: color-mix(in srgb, var(--pink-strong) 62%, transparent);
+}
 /* ---------------------------------------------------------------- blog ----- */
 
 .blog-tabs {

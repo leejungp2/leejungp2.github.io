@@ -31,6 +31,8 @@ Design lead and planning support, 2021.
 
 ## Game Design
 
+[Open the design concept portfolio PDF](/assets/img/projects/tteokbokki/portfolio1_fin.pdf)
+
 <div class="project-media-grid">
   <a href="/assets/img/projects/tteokbokki/tteokbokki-01.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-01.png" alt="Mini Game opening screen"></a>
   <a href="/assets/img/projects/tteokbokki/tteokbokki-02.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-02.png" alt="Mini Game screen"></a>
@@ -43,7 +45,3 @@ Design lead and planning support, 2021.
   <a href="/assets/img/projects/tteokbokki/IMG_1076.png"><img src="/assets/img/projects/tteokbokki/IMG_1076.png" alt="Mini Game mobile design screen"></a>
   <a href="/assets/img/projects/tteokbokki/IMG_0278.png"><img src="/assets/img/projects/tteokbokki/IMG_0278.png" alt="Mini Game mobile design screen"></a>
 </div>
-
-## Concept Portfolio
-
-[Open the design concept portfolio PDF](/assets/img/projects/tteokbokki/portfolio1_fin.pdf)
