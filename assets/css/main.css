@@ -747,95 +747,235 @@ img { max-width: 100%; height: auto; }
   }
 }
 
-.misc-list .soft-item h3 {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--pink-deep);
+.misc-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
 }
-.misc-list .soft-item h3::before {
-  content: "";
-  width: 0.52rem;
-  height: 0.52rem;
+.misc-note {
+  position: relative;
+  display: flex;
+  min-height: 355px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--card) 74%, transparent);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+  padding: clamp(1.35rem, 3vw, 2rem);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+.misc-note::before {
+  position: absolute;
+  right: -20%;
+  bottom: -35%;
+  width: 75%;
+  aspect-ratio: 1;
   border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--periwinkle) 28%, transparent), transparent 68%);
+  content: "";
+  pointer-events: none;
 }
-.misc-section-studies h3::before {
-  background: var(--pink-deep);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--pink-deep) 14%, transparent);
+.misc-note-hobbies::before {
+  background: radial-gradient(circle, color-mix(in srgb, var(--pink-strong) 24%, transparent), transparent 68%);
 }
-.misc-section-activities h3::before {
-  background: var(--pink-deep);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--pink-deep) 14%, transparent);
+.misc-note:hover {
+  border-color: color-mix(in srgb, var(--periwinkle) 54%, var(--border));
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--periwinkle) 14%, transparent);
+  transform: translateY(-4px);
 }
-.misc-section-hobbies h3::before {
-  background: var(--pink-deep);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--pink-deep) 14%, transparent);
+.misc-note-hobbies:hover {
+  border-color: color-mix(in srgb, var(--pink-strong) 54%, var(--border));
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--pink-strong) 13%, transparent);
 }
-.misc-list a {
-  color: var(--pink-strong);
-}
-.misc-list a:hover {
-  color: var(--pink-deep);
-}
-.item-kicker {
-  color: var(--pink-strong);
-  font-size: 0.78rem;
+.misc-note-kicker {
+  margin: 0 0 0.6rem;
+  color: var(--muted-foreground);
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.publication-list .item-kicker {
+.misc-note h2 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 4vw, 2.35rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.misc-note-list {
+  display: grid;
+  gap: 0.1rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.misc-note-list li,
+.misc-note-list a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+  color: var(--foreground);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+.misc-note-list li {
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 66%, transparent);
+  padding: 0.58rem 0;
+}
+.misc-note-list a:hover {
+  color: var(--blue-deep);
+  text-decoration: none;
+}
+.misc-note-list li > span:last-child,
+.misc-note-list a span {
+  flex: 0 0 auto;
+  color: var(--muted-foreground);
+  font-size: 0.74rem;
+  text-align: right;
+}
+.misc-note-copy {
+  max-width: 19rem;
+  margin: 1rem 0 1.35rem;
+  color: var(--muted-foreground);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+.misc-note-cta {
   display: inline-flex;
   align-items: center;
-  gap: 0.42rem;
-  width: fit-content;
-  margin-bottom: 0.78rem;
-  padding: 0.28rem 0.62rem;
-  border: 1px solid color-mix(in srgb, var(--pink-strong) 34%, var(--border));
-  border-radius: var(--radius-pill);
-  background: color-mix(in srgb, var(--accent-soft) 82%, transparent);
-  font-family: var(--font-serif);
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: 0.015em;
-  text-transform: none;
+  gap: 0.35rem;
+  color: var(--pink-deep);
+  font-size: 0.9rem;
+  font-weight: 700;
 }
-.publication-list .item-kicker::before {
-  content: "";
-  width: 0.42rem;
-  height: 0.42rem;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  background: var(--pink-strong);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--pink-strong) 16%, transparent);
+.misc-note-cta:hover {
+  color: var(--pink-strong);
+  text-decoration: none;
+}
+.misc-note-visual {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  margin-top: 1.2rem;
+}
+.misc-study-visual rect,
+.misc-study-visual path,
+.misc-study-visual circle {
+  stroke: var(--blue-deep);
+  stroke-width: 1.5;
+}
+.misc-study-visual rect {
+  fill: color-mix(in srgb, var(--periwinkle) 24%, transparent);
+}
+.misc-study-visual .misc-pen {
+  stroke: var(--blue-deep);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: misc-write 3.5s ease-in-out infinite;
+  transform-origin: center;
+}
+.misc-hobby-visual circle,
+.misc-hobby-visual path {
+  stroke: var(--pink-deep);
+  stroke-width: 1.5;
+}
+.misc-hobby-visual circle:first-child {
+  fill: color-mix(in srgb, var(--pink-strong) 16%, transparent);
+}
+.misc-wave-line {
+  animation: misc-wave 2.8s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes misc-write {
+  50% { transform: translate(3px, -3px) rotate(-2deg); }
+}
+@keyframes misc-wave {
+  50% { transform: scaleY(0.72); }
+}
+@media (max-width: 680px) {
+  .misc-notes-grid {
+    grid-template-columns: 1fr;
+  }
+  .misc-note {
+    min-height: 315px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .misc-study-visual .misc-pen,
+  .misc-wave-line {
+    animation: none;
+  }
+}
+.publication-list {
+  display: block;
+  border-top: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
+}
+.publication-list .soft-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(8rem, 10rem) minmax(0, 1fr);
+  column-gap: clamp(1.25rem, 4vw, 3.25rem);
+  align-items: start;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  padding: 1.45rem 0.65rem;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.publication-thumbnail {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  min-height: 1px;
 }
 .publication-list .soft-item h3 {
-  margin-top: 0;
-  margin-bottom: 0.85rem;
+  grid-column: 2;
+  margin: 0 0 0.55rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  font-weight: 400;
+  line-height: 1.22;
+  letter-spacing: -0.012em;
 }
-.publication-list .publication-author-link {
-  color: var(--foreground);
+.publication-list .soft-item p {
+  grid-column: 2;
+  margin: 0;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.62;
 }
+.publication-list .soft-item .publication-note {
+  margin-top: 0.35rem;
+  font-size: 0.76rem;
+}
+.publication-list .cv-accent {
+  color: var(--blue-deep);
+  font-weight: 500;
+  text-decoration: none;
+}
+.publication-list .publication-author-link,
 .publication-list .publication-author-link:hover {
-  color: var(--foreground);
+  color: inherit;
 }
 .publication-list .publication-card {
-  position: relative;
   cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
-.publication-list .publication-card:hover,
-.publication-list .publication-card:has(.publication-card-link:focus-visible) {
-  border-color: #f4dce5;
-  background: #fffafd;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.09);
+.publication-list .soft-item:hover,
+.publication-list .soft-item:has(.publication-card-link:focus-visible) {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--periwinkle) 12%, transparent), color-mix(in srgb, var(--pink-strong) 9%, transparent));
+  box-shadow: 0 10px 22px color-mix(in srgb, var(--periwinkle) 12%, transparent);
   transform: translateY(-2px);
 }
 .publication-card-link {
   position: absolute;
   inset: 0;
-  border-radius: inherit;
 }
 .publication-note {
   margin-top: -0.35rem;
@@ -843,6 +983,15 @@ img { max-width: 100%; height: auto; }
   color: var(--muted-foreground);
   font-size: 0.78rem;
   line-height: 1.35;
+}
+@media (max-width: 600px) {
+  .publication-list .soft-item {
+    display: block;
+    padding: 1.3rem 0.35rem;
+  }
+  .publication-thumbnail {
+    display: none;
+  }
 }
 /* repeated interactive cards */
 .card-grid {
@@ -1290,7 +1439,7 @@ img { max-width: 100%; height: auto; }
   margin-top: 2.5rem;
 }
 .social-buttons .btn {
-  width: 44px;
+  width: 40px;
   padding: 0;
   justify-content: center;
 }
@@ -1330,66 +1479,33 @@ img { max-width: 100%; height: auto; }
   color: var(--blue);
   border-color: color-mix(in srgb, var(--blue) 62%, transparent);
 }
+.btn-cv {
+  border-color: transparent;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(135deg, var(--blue-deep), var(--periwinkle) 52%, var(--pink-strong)) border-box;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--periwinkle) 18%, transparent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.btn-cv:hover {
+  background:
+    linear-gradient(color-mix(in srgb, var(--periwinkle) 10%, var(--card)), color-mix(in srgb, var(--periwinkle) 10%, var(--card))) padding-box,
+    linear-gradient(135deg, var(--blue-deep), var(--periwinkle) 52%, var(--pink-strong)) border-box;
+}
+.btn-cv span {
+  background: linear-gradient(135deg, var(--blue-deep), var(--periwinkle) 52%, var(--pink-strong));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 .btn-mail {
   color: var(--pink-strong);
   border-color: color-mix(in srgb, var(--pink-strong) 62%, transparent);
 }
 /* ---------------------------------------------------------------- blog ----- */
-
-.blog-tabs {
-  display: inline-flex;
-  gap: 0.35rem;
-  margin: 0 0 1.5rem;
-  padding: 0.25rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: color-mix(in srgb, var(--muted) 52%, transparent);
-}
-.blog-tab {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  padding: 0 0.85rem;
-  border-radius: calc(var(--radius) - 2px);
-  color: var(--muted-foreground);
-  font-size: 0.92rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-.blog-tab:hover {
-  color: var(--foreground);
-  background: var(--card);
-  text-decoration: none;
-}
-.blog-tab.is-active {
-  color: var(--blue-deep);
-  background: var(--card);
-  box-shadow: var(--shadow-card);
-}
-.archive-toggle-input {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  opacity: 0;
-  pointer-events: none;
-}
-.archive-panel {
-  display: none;
-  margin-top: 0;
-}
-.archive-toggle {
-  margin-bottom: 1.5rem;
-}
-#archive-classes:checked ~ .archive-toggle label[for="archive-classes"],
-#archive-paper-reviews:checked ~ .archive-toggle label[for="archive-paper-reviews"] {
-  color: var(--foreground);
-  background: var(--card);
-  box-shadow: var(--shadow-card);
-}
-#archive-classes:checked ~ .archive-panel-classes,
-#archive-paper-reviews:checked ~ .archive-panel-paper-reviews {
-  display: block;
-}
 
 .post-list {
   list-style: none;

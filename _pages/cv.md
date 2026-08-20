@@ -3,16 +3,15 @@ layout: page
 title: CV
 permalink: /cv/
 description: Education, research experience, work experience, and skills.
-action_label: Full Resume (Coming soon)
-action_disabled: true
+action_label: Download CV
+action_url: /assets/files/Jung_Lee_CV.pdf
 ---
 
 <div class="soft-list cv-list">
   <section class="soft-item">
     <h3>Education</h3>
-    <p><span class="entry-head"><strong>Integrated M.S./Ph.D. in HCI at Seoul National University</strong><span class="entry-date">Mar 2025 - Present</span></span></p>
+    <p><span class="entry-head"><strong>M.S. in Intelligence and Information at Seoul National University</strong><span class="entry-date">Mar 2025 - Present</span></span></p>
     <ul class="cv-bullets">
-      <li>Graduate School of Convergence Science and Technology</li>
       <li>Advisor: Professor Bongwon Suh, Human-Centered Computing Lab</li>
     </ul>
     <p><span class="entry-head"><strong>B.A. in Psychology & Information Science and Culture at Seoul National University</strong><span class="entry-date">Mar 2018 - Feb 2024</span></span></p>
@@ -51,11 +50,10 @@ action_disabled: true
 
   <section class="soft-item">
     <h3>Work Experience</h3>
-    <p><span class="entry-head"><strong>Pie Company</strong><span class="entry-date">Nov 2025 - Present</span></span>
-    <em>Founder</em></p>
+    <p><span class="entry-head"><strong>Pie Company</strong><span class="entry-date">Nov 2025 - Aug 2026</span></span>
+    <em>Sole Developer, AI Content Service</em></p>
     <ul class="cv-bullets">
-      <li>Founded and operate an AI content service business, leading product planning, development, and marketing.</li>
-      <li>Launched an AI fortune-telling service that reached 500+ monthly active users within two months.</li>
+      <li>Planned, built, and marketed an AI fortune-telling service that reached 500+ monthly active users within two months.</li>
     </ul>
     <p><span class="entry-head"><strong>Doosan CVC Team</strong><span class="entry-date">Sep 2022 - Dec 2022</span></span>
     <em>Research Assistant</em></p>

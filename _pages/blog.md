@@ -5,11 +5,6 @@ permalink: /blog/
 description: Notes, write-ups, and occasional research reflections.
 ---
 
-<nav class="blog-tabs" aria-label="Blog sections">
-  <a class="blog-tab is-active" href="{{ '/blog/' | relative_url }}">Writing</a>
-  <a class="blog-tab" href="{{ '/blog/archives/' | relative_url }}">Archives</a>
-</nav>
-
 {%- assign has_posts = false -%}
 {%- for post in site.posts -%}
   {%- unless post.archive == true or post.hidden == true -%}
