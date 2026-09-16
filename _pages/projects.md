@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Selected research, product, and AI interface projects.
+description: Products, experiments, and AI interfaces.
 ---
 
 {%- if site.projects.size > 0 -%}

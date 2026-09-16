@@ -2,7 +2,7 @@
 layout: page
 title: publications
 permalink: /publications/
-description: Publications and project-related manuscripts.
+description: Research publications and conference papers.
 ---
 
 <div class="soft-list publication-list">

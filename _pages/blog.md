@@ -2,7 +2,7 @@
 layout: page
 title: blog
 permalink: /blog/
-description: Notes, write-ups, and occasional research reflections.
+description: Paper reviews, technical notes, and research reflections.
 ---
 
 {%- assign has_posts = false -%}
