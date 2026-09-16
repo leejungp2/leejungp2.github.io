@@ -2,7 +2,7 @@
 layout: page
 title: misc
 permalink: /misc/
-description: Learning notes and after-hours projects.
+description: Learning notes and creative work beyond the lab.
 ---
 
 <div class="misc-notes-grid">

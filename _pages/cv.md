@@ -2,7 +2,7 @@
 layout: page
 title: CV
 permalink: /cv/
-description: Education, research experience, work experience, and skills.
+description: Education, research, professional experience, and skills.
 action_label: Download CV
 action_url: /assets/files/Jung_Lee_CV.pdf
 ---
