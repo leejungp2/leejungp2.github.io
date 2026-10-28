@@ -1,22 +1,24 @@
 ---
 layout: page
-title: Final LangChain Project
-description: Streamlit project built as the final output of a LangChain study.
-thumbnail: /assets/img/projects/final-langchain-project.svg
+title: DART LangChain Project
+description: AI interface for analyzing and asking questions about data from Korea's DART electronic disclosure system.
+thumbnail: /assets/img/projects/dart-langchain-thumbnail.png
 order: 7
 ---
 
 ## Overview
 
-Final LangChain Project is a Streamlit-based project developed as the final
-output of a LangChain study.
+DART LangChain Project is an AI interface for analyzing data from Korea's DART
+electronic disclosure system and answering questions about corporate disclosures.
+It uses LangChain and Streamlit to support exploration through natural-language
+questions.
 
-## Link
+## Links
 
-[View the project](https://app.notion.com/p/Chapter-19-Final-Streamlit-Project-1f4a0c3183f580f48f6bc4044ead29c5?pvs=21)
+[View the repository](https://github.com/leejungp2/langchain-dart-prj)
 
 ## Highlights
 
-- Built a final applied project using LangChain concepts.
-- Packaged the output as a Streamlit project.
-- Documented the project in Notion for review and sharing.
+- Built an AI interface for exploring DART disclosure data with LangChain.
+- Supported data analysis and natural-language questions about corporate disclosures.
+- Presented the workflow through a Streamlit interface.

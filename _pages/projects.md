@@ -9,9 +9,11 @@ description: Products, experiments, and AI interfaces.
   <div class="card-grid project-card-grid">
     {%- assign sorted = site.projects | sort: "order" -%}
     {%- for project in sorted -%}
-      <a class="interactive-card project-card" href="{{ project.url | relative_url }}">
+      <a class="interactive-card project-card project-card--{{ project.slug }}" href="{{ project.url | relative_url }}">
         {%- if project.thumbnail -%}
-          <img class="project-card-thumb" src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" />
+          <div class="project-card-thumbnail">
+            <img class="project-card-thumb" src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" />
+          </div>
         {%- endif -%}
         <div class="project-card-body">
           <h3>{{ project.title }}</h3>

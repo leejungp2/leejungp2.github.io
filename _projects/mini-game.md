@@ -1,18 +1,16 @@
 ---
 layout: page
-title: Mini Game
-description: Mini game designed to create an indirect experience of depression for Introduction to Information, Culture, and Technology.
-thumbnail: /assets/img/projects/tteokbokki.svg
+title: I Want to Eat Tteokbokki, but I Want to Die
+description: A mini game designed to create an indirect experience of depression.
+thumbnail: /assets/img/projects/tteokbokki/tteokbokki-01.png
 order: 6
 ---
 
 ## Overview
 
-Mini Game documents "I want to eat tteokbokki, but I want to die"
-("떡볶이는 먹고 싶지만 죽고싶어"), a small game project from the Introduction to
-Information, Culture, and Technology course. The game was planned to create an
-indirect experience of depression through everyday actions and emotional
-friction.
+I Want to Eat Tteokbokki, but I Want to Die ("떡볶이는 먹고 싶지만 죽고싶어")
+is a mini game designed to create an indirect experience of depression through
+everyday actions and emotional friction.
 
 ## Role
 

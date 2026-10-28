@@ -2,6 +2,8 @@
 # `about` is the homepage, reached via the logo and the first nav item.
 - name: about
   url: /
+- name: CV
+  url: /cv/
 - name: publications
   url: /publications/
 - name: projects

@@ -27,6 +27,11 @@
       </div>
     </main>
 
+    {%- include visitor-counter.html -%}
+
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+    {%- if jekyll.environment == 'production' -%}
+    <script src="{{ '/assets/js/visitor-counter.js' | relative_url }}"></script>
+    {%- endif -%}
   </body>
 </html>

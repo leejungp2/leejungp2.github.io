@@ -2,7 +2,7 @@
 layout: page
 title: diaryBot
 description: ChatGPT-powered gratitude diary chatbot for positive emotion research.
-thumbnail: /assets/img/projects/diarybot.svg
+thumbnail: /assets/img/projects/diarybot-thumbnail-en.png
 order: 4
 ---
 
@@ -16,8 +16,27 @@ interface affects positive emotions.
 
 Chief Researcher, 2023.
 
+## Chatbot Interface
+
+<figure class="project-figure">
+  <a href="{{ '/assets/img/projects/diarybot-thumbnail-en.png' | relative_url }}"><img src="{{ '/assets/img/projects/diarybot-thumbnail-en.png' | relative_url }}" alt="diaryBot Instagram conversation guiding a user through three grateful moments and reflecting on their emotions" width="1354" height="1161"></a>
+  <figcaption>diaryBot guides gratitude writing through an Instagram DM conversation.</figcaption>
+</figure>
+
 ## Highlights
 
 - Designed the research question and study flow around gratitude diary writing.
 - Built diaryBot with the ChatGPT API to help users write gratitude diaries.
 - Framed the project as an HCI study on reflective chatbot interfaces.
+
+## Study Design
+
+The five-day study involved 85 participants and compared gratitude diary writing
+through diaryBot, a Google Form, and a control condition. The Instagram DM
+interface was built with Chatfuel. Evaluation covered well-being (K-PERMA),
+gratitude propensity (K-GQ-6), and perceived stress (K-PSS).
+
+## Research Materials
+
+- [Read the research report (PDF)]({{ '/assets/files/diarybot-paper.pdf' | relative_url }})
+- [English abstract, page 1]({{ '/assets/files/diarybot_1.png' | relative_url }}) · [page 2]({{ '/assets/files/diarybot_2.png' | relative_url }})

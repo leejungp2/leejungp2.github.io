@@ -11,10 +11,9 @@ description: Learning notes and creative work beyond the lab.
       <p class="misc-note-kicker">Ongoing curiosities</p>
       <h2>Learning Notes</h2>
       <ul class="misc-note-list">
+        <li><a href="https://pinnate-emoji-c00.notion.site/Pytorch-Study-2e5a0c3183f580ae98dce649dfa4f7d5?source=copy_link" target="_blank" rel="noopener">PyTorch Study <span>2026</span></a></li>
         <li><a href="https://pinnate-emoji-c00.notion.site/mml-study?source=copy_link" target="_blank" rel="noopener">Mathematics for Machine Learning <span>2025</span></a></li>
         <li><span>LangChain & LangGraph Study</span><span>2025</span></li>
-        <li><a href="https://github.com/NLP-Study-JAPPU" target="_blank" rel="noopener">JAPPU NLP Paper Review Study <span>2024 - 2025</span></a></li>
-        <li><a href="https://app.notion.com/p/9700208b26784e2e9c04f92e2893663e?pvs=21" target="_blank" rel="noopener">Foundational AI Paper Reading <span>2024 - 2025</span></a></li>
       </ul>
     </div>
     <svg class="misc-note-visual misc-study-visual" viewBox="0 0 260 90" fill="none" aria-hidden="true">

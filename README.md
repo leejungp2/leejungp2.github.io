@@ -22,13 +22,24 @@ site (no external theme gems) and deployed via GitHub Pages.
 ## Run locally
 
 Needs Ruby ≥ 3.0 (the macOS system Ruby 2.6 is too old). Installed here via
-Homebrew (`brew install ruby`); add it to your PATH first:
+Homebrew (`brew install ruby`). From a new terminal, run:
 
 ```bash
+cd /Users/Owner/git_inside/leejungp2.github.io
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-bundle install
-bundle exec jekyll serve   # → http://localhost:4000/
+bundle install # First run, or after changing the Gemfile
+bundle exec jekyll serve
 ```
+
+Open <http://localhost:4000/> in your browser, or
+<http://localhost:4000/projects/> to review the projects section. Keep the
+terminal running; Jekyll rebuilds when files change, then refresh the browser
+to see the update. Press **Ctrl+C** in the terminal to stop the server.
+
+For later previews, run `bundle exec jekyll serve` from the repository directory
+with the Homebrew Ruby PATH set as above. If port 4000 is already in use, stop
+the existing preview with **Ctrl+C**, or use `bundle exec jekyll serve --port 4001`
+and open <http://localhost:4001/>.
 
 ## Deploy
 
@@ -37,16 +48,18 @@ Pages → **Source: Deploy from a branch**, `main` / root). Just push to `main`;
 the live site updates in ~1–2 minutes. No Actions workflow or build step needed
 (the CSS is plain hand-written CSS, not a Tailwind build).
 
-## Traffic reports
+## Website counter
 
-`.github/workflows/traffic-report.yml` creates a weekly GitHub traffic report in
-an issue named `Traffic report`. It also supports manual runs from the Actions
-tab.
+Each page displays `Today 1 / Total 3,000` at the bottom. The counter uses
+[HitsCounter](https://hitscounter.dev/) without an account, API key, or GitHub
+token. One request records the page view and returns both counts; every page
+shares the same counter using `url` from `_config.yml`.
 
-GitHub traffic data is limited to a rolling recent window, so the report is a
-snapshot rather than a permanent full-history analytics database. If the
-workflow fails with a traffic API permission error, add a repository secret named
-`TRAFFIC_TOKEN` from a GitHub account with push access to this repository.
+`Today` resets at midnight in `Asia/Seoul`; `Total` accumulates from when this
+counter was added. These are page views, including reloads, rather than unique
+visitors. The shared counts are stored by HitsCounter, so its availability and
+data retention govern the totals. Local previews do not send count requests.
+The display remains `—` when the service is unavailable.
 
 ## TODO
 
