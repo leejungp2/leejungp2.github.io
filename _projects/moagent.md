@@ -6,6 +6,12 @@ thumbnail: /assets/img/projects/moagent/thumbnail-en.png
 order: 3
 ---
 
+## Highlights
+
+- Led proof-of-concept validation for the product direction.
+- Advanced to SNUSV 35th Demo Day.
+- Worked across product planning, customer problem framing, and venture validation.
+
 ## Overview
 
 MoAgent is an AI agent orchestration B2B SaaS concept validated through the
@@ -48,12 +54,6 @@ notes, reviewing related sources, and saving the discussion for later reference.
   </figure>
 </div>
 
-## Highlights
-
-- Led proof-of-concept validation for the product direction.
-- Advanced to SNUSV 35th Demo Day.
-- Worked across product planning, customer problem framing, and venture validation.
-
-## Materials
+## Links
 
 - [Demo Day presentation (PDF)]({{ '/assets/files/moagent-demo-day.pdf' | relative_url }})
