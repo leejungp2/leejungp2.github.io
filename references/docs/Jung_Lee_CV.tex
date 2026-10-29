@@ -1,0 +1,372 @@
+%==============================================================================
+%  Jung Lee — Academic CV
+%  Compile with pdfLaTeX (Overleaf: Menu → Compiler → pdfLaTeX)
+%
+%  Publication link — right after the final period, no space before it:
+%    ... (CHI EA '26)}.\pub{https://dl.acm.org/doi/...}
+%  (no space before \paper — the icon should sit tight against the period)
+%  If a URL contains &, escape it as \&
+%==============================================================================
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% Latin Modern = the classic LaTeX/Computer Modern look, used for headings.
+% Bold small caps needs lmodern; without it we drop to medium weight so the
+% small caps survive rather than silently turning into ordinary letters.
+\IfFileExists{lmodern.sty}%
+  {\usepackage{lmodern}\newcommand{\headfont}{\fontfamily{lmr}\selectfont\bfseries}}%
+  {\newcommand{\headfont}{\fontfamily{cmr}\selectfont}}
+
+%------------------------------------------------------------------- typefaces
+% Body text: Times, or the LaTeX default. Section headings stay Latin Modern
+% either way, so the small-caps headings keep the look you picked.
+%   \TIMEStrue  -> Times body   |   \TIMESfalse -> Latin Modern body
+\newif\ifTIMES  \TIMEStrue
+\ifTIMES
+  \IfFileExists{newtxtext.sty}%
+    {\usepackage{newtxtext}\usepackage{newtxmath}}%
+    {\usepackage{mathptmx}}%   fallback: also a Times clone, ships everywhere
+\fi
+\usepackage{textcomp}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+% Publication link. One label for all of them: \pub{url} -> [link]
+% Want different labels later (e.g. [ACM DL], [PDF])? Edit this one line only.
+\newcommand{\pub}[1]{\,\href{#1}{\small [link]}}
+
+%--------------------------------------------------------------- header icons
+% Pick ONE mode by flipping the switches below.
+%
+%   (a) fontawesome5  -- real GitHub / LinkedIn / globe icons, nothing to
+%       download. Works on Overleaf out of the box. This is the default.
+%   (b) your own PNGs -- put the files in a  figures/  folder next to this
+%       .tex file, then set ICONFA false and ICONIMG true.
+%   (c) plain text    -- set both false; the URLs are printed instead.
+%
+\newif\ifICONFA   \ICONFAtrue
+\newif\ifICONIMG  \ICONIMGfalse
+
+\ifICONFA\IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{\ICONFAfalse}\fi
+\ifICONIMG\usepackage{graphicx}\fi
+
+% --- image mode: change these three paths to match your own filenames --------
+\newcommand{\imgWeb}{figures/homepage.png}
+\newcommand{\imgGit}{figures/github.png}
+\newcommand{\imgIn}{figures/linkedin.png}
+
+\newcommand{\incico}[1]{\raisebox{-0.22ex}{\includegraphics[height=0.95em]{#1}}}
+\newcommand{\icoWeb}{\ifICONFA\faGlobe\else\ifICONIMG\incico{\imgWeb}\else leejungp2.github.io\fi\fi}
+\newcommand{\icoGit}{\ifICONFA\faGithub\else\ifICONIMG\incico{\imgGit}\else github.com/leejungp2\fi\fi}
+\newcommand{\icoIn}{\ifICONFA\faLinkedin\else\ifICONIMG\incico{\imgIn}\else linkedin.com/in/jjung-lee\fi\fi}
+\newcommand{\btnsep}{\ifICONFA\;\else\ifICONIMG\;\else\quad\textbullet\quad\fi\fi}
+
+\newcommand{\btnWeb}{\href{https://leejungp2.github.io/}{\icoWeb}}
+\newcommand{\btnGit}{\href{https://github.com/leejungp2}{\icoGit}}
+\newcommand{\btnIn}{\href{https://www.linkedin.com/in/jjung-lee/}{\icoIn}}
+
+%------------------------------------------------------------------ page setup
+%--------------------------------------------------------------------- density
+% AIRY  : reference-like leading and margins. Runs to 3 pages.
+% COMPACT: everything tightened to fit 2 pages.
+\newif\ifAIRY  \AIRYtrue
+
+\ifAIRY
+  \geometry{left=0.85in, right=0.85in, top=0.8in, bottom=0.7in}
+  \linespread{1.06}
+  \newcommand{\ENTRYSEP}{0.4em}\newcommand{\PLAINSEP}{0.3em}
+  \newcommand{\DETSEP}{0.14em}\newcommand{\TOPSEP}{0.35em}
+  \newcommand{\ENTRYDROP}{-0.15em}
+\else
+  \geometry{left=0.78in, right=0.78in, top=0.7in, bottom=0.45in}
+  \linespread{1.0}
+  \newcommand{\ENTRYSEP}{0.18em}\newcommand{\PLAINSEP}{0.15em}
+  \newcommand{\DETSEP}{0.06em}\newcommand{\TOPSEP}{0.18em}
+  \newcommand{\ENTRYDROP}{-0.35em}
+\fi
+\selectfont
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\definecolor{linkblue}{HTML}{2A5DB0}
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+
+%--------------------------------------------------------------- section style
+% Small-caps heading with a rule underneath — the reference's signature look.
+\titleformat{\section}
+  {\Large\headfont\scshape\raggedright}{}{0em}{}[\vspace{-0.5em}\rule{\textwidth}{0.9pt}]
+\ifAIRY\titlespacing{\section}{0pt}{0.9em}{0.45em}\else\titlespacing{\section}{0pt}{0.45em}{0.25em}\fi
+
+% Never strand a heading (or half an entry) at the foot of a page.
+\let\oldsection\section
+\renewcommand{\section}[1]{\needspace{8\baselineskip}\oldsection{#1}}
+
+%-------------------------------------------------------------- entry commands
+% \entry{title}{right (place)}{subtitle}{right (dates)}
+\newcommand{\entry}[4]{%
+  \needspace{3.2\baselineskip}\item
+  \begin{tabularx}{\linewidth}[t]{@{}>{\raggedright\arraybackslash}X@{\hspace{1.2em}}r@{}}
+    \textbf{#1} & #2 \\[0.05em]
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabularx}\vspace{\ENTRYDROP}%
+}
+
+% \edu{institution}{location} then one \degree{...}{...} per degree beneath it
+\newcommand{\edu}[2]{%
+  \needspace{4\baselineskip}\item
+  \begin{tabularx}{\linewidth}[t]{@{}>{\raggedright\arraybackslash}X@{\hspace{1.2em}}r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabularx}\vspace{0.05em}%
+}
+\newcommand{\degree}[2]{%
+  \par\vspace{0.2em}\needspace{2.5\baselineskip}%
+  \begin{tabularx}{\linewidth}[t]{@{}>{\raggedright\arraybackslash}X@{\hspace{1.2em}}r@{}}
+    \textbf{#1} & \textit{\small #2} \\
+  \end{tabularx}\vspace{-0.4em}%
+}
+
+% \entryone{title}{dates} -- for entries that need no subtitle row
+\newcommand{\entryone}[2]{%
+  \needspace{2.5\baselineskip}\item
+  \begin{tabularx}{\linewidth}[t]{@{}>{\raggedright\arraybackslash}X@{\hspace{1.2em}}r@{}}
+    \textbf{#1} & \textit{\small #2} \\
+  \end{tabularx}\vspace{\ENTRYDROP}%
+}
+
+% Bullet list for the top level (entries)
+\newenvironment{entries}
+  {\begin{itemize}[leftmargin=1.2em, itemsep=\ENTRYSEP, parsep=0pt, topsep=\TOPSEP]}
+  {\end{itemize}}
+
+% Sub-bullets under an entry (hollow circles, like the reference)
+\newenvironment{details}
+  {\begin{itemize}[label=$\circ$, leftmargin=1.4em, itemsep=\DETSEP, parsep=0pt, topsep=\TOPSEP]}
+  {\end{itemize}\vspace{-0.2em}}
+
+% Flat bullet list (publications, service, skills)
+\newenvironment{plain}
+  {\begin{itemize}[leftmargin=1.2em, itemsep=\PLAINSEP, parsep=0pt, topsep=\TOPSEP]}
+  {\end{itemize}}
+
+\newcommand{\me}{\textbf{Jung Lee}}   % bold self-name in author lists
+
+%==============================================================================
+\begin{document}
+
+%---------------------------------------------------------------------- header
+\begin{center}
+  {\Huge\headfont Jung Lee}\\[0.45em]
+  M.S.\ Student, Seoul National University Human-Centered Computing Lab (HCCL)\\[0.3em]
+  \href{mailto:leejungp2@snu.ac.kr}{leejungp2@snu.ac.kr}
+  \quad\textbullet\quad +82 10-8800-3243 \\[0.15em]
+  {\large\btnWeb\btnsep\btnGit\btnsep\btnIn}
+\end{center}
+\vspace{-1.2em}
+
+%------------------------------------------------------------ research interests
+\section{Research Interests}
+My research examines how people build and revise mental models of AI systems as
+collaborators, as relational partners, and as tools in the workplace. I design and empirically evaluate LLM-based interactive systems to understand how
+interaction design shapes these models, and how such systems can augment people at work and
+support their well-being.
+
+%------------------------------------------------------------------- education
+\section{Education}
+\begin{entries}
+  \edu{Seoul National University}{Seoul, Republic of Korea}
+  \degree{M.S.\ in Intelligence and Information}{March 2025 -- Present}
+  \begin{details}
+    \item Advisor: Prof.\ Bongwon Suh
+    \item Coursework: Statistical Analysis for Information Studies; Math and Statistics
+          Foundations for Data Science; Conversational AI; Computing Foundations for Data
+          Science; AI-assisted Frontend Development
+  \end{details}
+
+  \degree{B.A.\ in Psychology, double major in Information Science and Culture}{March 2018 -- February 2024}
+  \begin{details}
+    \item Thesis: The Effect of Writing a Gratitude Diary Through a Chatbot Interface
+          on Positive Affect
+    \item Coursework: Psychological Statistics; Programming Usable Interfaces; Introduction
+          to Information-Culture Technology; Introduction to Virtual Reality
+  \end{details}
+\end{entries}
+
+%----------------------------------------------------------------- publications
+\section{Research in Progress}
+\begin{plain}
+
+  \item Minchae Kim*, \textbf{Jung Lee*}, Minjeong Shin, Kyusik Kim, and Bongwon Suh.
+        \textbf{InterAICion: Multi-turn Simulation Framework for Relational Harm in AI Companions.}
+        \textit{Under review at the Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL '27).}
+
+    \item \textbf{Jung Lee*}, Junghwan Kim*, Junyoung Jeon, and Bongwon Suh.
+        \textbf{Patchwork: Making Document Synthesis Visible and Reusable in Generative Knowledge Work.}
+        \textit{Under review at the ACM Conference on Human Factors in Computing Systems (CHI '27).}
+\end{plain}
+%----------------------------------------------------------------- publications
+
+\section{Publications}
+\begin{plain}
+
+  \item Junghwan Kim, Hyeonseok Jeon, \me, Dongseok Heo, and Bongwon Suh.
+        \textbf{CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual
+        Exploration.} \textit{Proceedings of the 39th Annual ACM Symposium on User Interface
+        Software and Technology (UIST '26)}.\pub{https://uist.from.so/authors/9669/PpjiLop9__pd}
+
+  \item Junghwan Kim*, Dongseok Heo*, Kyusik Kim, \me, and Bongwon Suh.
+        \textbf{Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team
+        Composition.} \textit{Proceedings of the 48th Annual Meeting of the Cognitive Science
+        Society (CogSci '26)}. \textbf{Oral Presentation (top 9.3\%).} \pub{https://escholarship.org/uc/item/39n1g8g6}
+
+  \item \me, Jaehoon Choi, Hyungwoo Song, Minjeong Shin, and Bongwon Suh.
+        \textbf{``What Can I Control?'': Designing an Attribution Reframing Chatbot for
+        Early-Career Employees' Workplace Stress Management.} \textit{Extended Abstracts of the
+        2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26)}.\pub{https://dl.acm.org/doi/10.1145/3772363.3798873}
+
+  \item Minchae Kim, Hyungwoo Song, \me, and Bongwon Suh.
+        \textbf{``Just Listening Was Enough---Until It Wasn't'': Relationship-Stage-Aware
+        Cognitive Scaffolding in AI Companions.} \textit{Extended Abstracts of the 2026 CHI
+        Conference on Human Factors in Computing Systems (CHI EA '26)}.\pub{https://dl.acm.org/doi/10.1145/3772363.3798512}
+
+  \item \me, Jaehoon Choi, Minjeong Shin, Hyungwoo Song, and Bongwon Suh.
+        \textbf{Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress
+        Management Among Early-Career Employees.} \textit{Proceedings of HCI Korea 2026}, pp.~667--673.\pub{https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745858}
+
+  \item Junghwan Kim*, Hyeonseok Jeon*, Dongseok Heo, \me, and Bongwon Suh.
+        \textbf{LegisFlow: Enhancing Korean Legal Research with Temporal-Aware LLM Interfaces.}
+        \textit{Proceedings of the 38th Annual ACM Symposium on User Interface Software and
+        Technology (UIST '25)}.\pub{https://dl.acm.org/doi/10.1145/3746059.3747752}
+
+  \item Kyochul Jang, Jaehoon Choi, Minjeong Shin, \me, and Bongwon Suh.
+        \textbf{A Framework for Evaluating and Analyzing the Political Orientation of Large
+        Language Models Using Laddering Interview Techniques.} \textit{Proceedings of the 2025 KICS
+        Conference on Artificial Intelligence}.\pub{https://scholar.google.com/scholar?oi=bibs\&cluster=6252816665032242407\&btnI=1\&hl=ko}
+\end{plain}
+\vspace{0.3em}
+{\small\textit{* Equal contribution.}}
+
+%---------------------------------------------------------- research experience
+\section{Research Experience}
+\begin{entries}
+  \entry{Graduate Researcher, SNU Human-Centered Computing Lab}{Seoul, Republic of Korea}
+        {Advisor: Prof.\ Bongwon Suh}{March 2025 -- Present}
+  \begin{details}
+    \item Studied how users' models of an AI partner shift across interaction, spanning team
+          collaboration, companion relationships, and expert tools
+  \end{details}
+
+  \entry{Lead Researcher, SNU Research Grant for the Social Sciences}{Seoul, Republic of Korea}
+        {Advisor: Prof.\ Sowon Hahn}{October 2023 -- December 2023}
+  \begin{details}
+    \item Designed and ran a between-subjects study with 87 participants as sole investigator, examining the effect of writing a gratitude diary through a chatbot interface on positive emotions
+    \item Built `diaryBot', a chatbot that helps users write a gratitude diary, using the ChatGPT API
+  \end{details}
+
+  \entry{Lead Researcher, SNU Undergraduate Research Opportunity Program}{Seoul, Republic of Korea}
+        {Advisor: Prof.\ Sowon Hahn; Mentor: Dr.\ Yoon Kyung Lee}{May 2021 -- January 2022}
+  \begin{details}
+    \item Led a two-person team in a between-subjects study with 94 participants, investigating whether emotion-based or situation-based music recommendation better alleviates negative affect
+    \item Built `Music-bot', a music recommendation chatbot based on a preprocessed Kaggle
+          dataset using Python
+  \end{details}
+
+  \entry{Research Intern, SNU Human Factors Psychology Lab}{Seoul, Republic of Korea}
+        {Advisor: Prof.\ Sowon Hahn}{March 2021 -- January 2022}
+  \begin{details}
+    \item Participated in data validation and sentiment classification for emotion diary research
+    \item Analyzed emotion words from social media through word2vec and topic modeling in
+          Python workshops
+  \end{details}
+\end{entries}
+
+%--------------------------------------------------------- honors and awards
+\section{Honors and Awards}
+\begin{plain}
+  \item \textbf{Research Grant for the Social Sciences}, Seoul National University
+        \hfill \textit{\small 2023}
+  \item \textbf{Undergraduate Research Opportunity Program}, Seoul National University
+        \hfill \textit{\small 2021}
+\end{plain}
+
+%---------------------------------------------------------------- teaching
+\section{Teaching}
+\begin{entries}
+  \entry{Teaching Assistant, AI Transformation (AX) Accelerating Program}{Asan, Republic of Korea}
+        {Asan City Local Creator Support Program}{Aug 2026 -- Sep 2026}
+  \begin{details}
+    \item Ran hands-on practicum sessions helping local founders apply AI tools to their own
+          products and operations
+  \end{details}
+\end{entries}
+
+%-------------------------------------------------------------- work experience
+\section{Work Experience}
+\begin{entries}
+  \entry{Research Assistant, Doosan CVC (Korean Industrial Conglomerate)}{Seoul, Republic of Korea}
+        {Startup and market research for early-stage investment review}{September 2022 -- December 2022}
+  \begin{details}
+    \item Investigated AI, drone, biotech, and green-tech market prospects and sized startups
+          under investment review
+  \end{details}
+
+  \entry{Strategic Planning Intern, Allprep (Edutech Startup)}{Seoul, Republic of Korea}
+        {Business model and marketing planning for online test-prep services}{July 2021 -- September 2021}
+  \begin{details}
+    \item Planned a new business model for online TOEIC and TOEFL education services
+    \item Analyzed industry trends and competitors to develop marketing strategies
+  \end{details}
+
+  \entry{Content Planning Intern, Fit-account (Mental Healthcare Startup)}{Busan, Republic of Korea}
+        {Translating personality and consumption data into in-app well-being content}{July 2021 -- August 2021}
+  \begin{details}
+    \item Created solution content for the mobile application `Fit-account'
+    \item Organized happiness solutions based on Big Five personality traits and
+          consumption-type data
+  \end{details}
+\end{entries}
+
+%----------------------------------------------------------- project experience
+\section{Project Experience}
+\begin{entries}
+  \entry{Sole Developer, Pie Company (AI Content Service)}{Seoul, Republic of Korea}
+        {End-to-end product work}{November 2025 -- August 2026}
+  \begin{details}
+    \item Planned, built, and marketed an AI fortune-telling service, reaching 500+ monthly
+          active users within two months
+  \end{details}
+
+  \entry{Product Manager, Mapsee (App Store Application)}{Seoul, Republic of Korea}
+        {Location-based diary app built at Happetite (SNU App Development Club)}{February 2022 -- August 2023}
+  \begin{details}
+    \item Led a five-person team of designers, developers, and planners to launch `mapsee',
+          a location-based diary application, on the App Store
+    \item Conducted user interviews and usability tests, created wireframes, and built the MVP
+  \end{details}
+\end{entries}
+
+%--------------------------------------------------------- service & leadership
+\section{Service and Leadership}
+\begin{plain}
+  \item \textbf{Student Volunteer}, ACM Symposium on User Interface Software and Technology
+        (UIST 2025) \hfill \textit{\small 2025}
+  \item \textbf{Member}, SNU Venture Startup Network (SNUSV) \hfill \textit{\small 2024 -- 2025}
+  \item \textbf{Consultant}, SNU Social Contribution Consulting Society (T-um) \hfill \textit{\small 2020}
+  \item \textbf{Member}, SNU Student Society for Social Responsibility (SNUSR) \hfill \textit{\small 2018 -- 2019}
+\end{plain}
+
+%---------------------------------------------------------------------- skills
+\section{Skills}
+\begin{plain}
+  \item \textbf{Programming}: Python, TypeScript, JavaScript, Swift, R, C
+  \item \textbf{ML \& NLP}: PyTorch, Hugging Face Transformers, LangChain, LangGraph
+  \item \textbf{Tools}: Claude Code, Codex, Unity, Figma, Logic Pro, Final Cut Pro
+  \item \textbf{Languages}: Korean (native), English (fluent),
+        French (intermediate)
+\end{plain}
+
+\end{document}
