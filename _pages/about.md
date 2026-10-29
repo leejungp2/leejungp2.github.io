@@ -11,11 +11,11 @@ University, advised by Professor Bongwon Suh at the Human-Centered Computing
 Lab (HCCL).
 
 I design and evaluate context-sensitive AI systems that people can understand
-and shape. My research focuses on:
+and shape. My research focuses on these areas.
 
-- <span class="text-highlight-pink">**Inspectable and revisable context:**</span> helping people articulate evolving goals and correct the assumptions guiding AI responses.
-- <span class="text-highlight-pink">**Adaptive AI support:**</span> responding to personal, social, and task contexts, from AI companions to knowledge work.
-- <span class="text-highlight-pink">**Human agency and behavior:**</span> evaluating how AI interactions influence people's judgment, decisions, and actions.
+- <span class="text-highlight-pink">**Helping**</span> people articulate evolving goals and correct the assumptions guiding AI responses.
+- <span class="text-highlight-pink">**Responding**</span> to personal, social, and task contexts, from AI companions to knowledge work.
+- <span class="text-highlight-pink">**Evaluating**</span> how AI interactions influence people's judgment, decisions, and actions.
 
 Before graduate school, I studied Psychology and Information Science and Culture
 at Seoul National University.
