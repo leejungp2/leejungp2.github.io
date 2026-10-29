@@ -52,14 +52,22 @@ the live site updates in ~1–2 minutes. No Actions workflow or build step neede
 
 Each page displays `Today 1 / Total 3,000` at the bottom. The counter uses
 [HitsCounter](https://hitscounter.dev/) without an account, API key, or GitHub
-token. One request records the page view and returns both counts; every page
+token. One request records a visit and returns both counts; every page
 shares the same counter using `url` from `_config.yml`.
 
 `Today` resets at midnight in `Asia/Seoul`; `Total` accumulates from when this
-counter was added. These are page views, including reloads, rather than unique
-visitors. The shared counts are stored by HitsCounter, so its availability and
-data retention govern the totals. Local previews do not send count requests.
-The display remains `—` when the service is unavailable.
+counter was added. Each browser records at most one visit per Korean calendar
+day using `localStorage`. Navigation, reloads, and new tabs reuse that day's
+saved counts; the display may therefore lag visits from other browsers. Web
+Locks serialize requests from simultaneous tabs in supported browsers. Clearing
+site data, private browsing, or using another browser/device can count another
+visit, so these are approximate daily browser visits, not unique people. Totals
+recorded before this change still include page views.
+
+The shared counts are stored by HitsCounter, so its availability and data
+retention govern the totals. Local previews do not send count requests. The
+display remains `—` when no saved counts exist and the service or browser
+storage is unavailable.
 
 ## TODO
 
