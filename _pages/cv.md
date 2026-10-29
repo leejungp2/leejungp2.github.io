@@ -8,13 +8,6 @@ action_url: /assets/files/Jung_Lee_CV.pdf
 ---
 
 <div class="app-surface cv-document">
-  <section class="cv-section" aria-labelledby="cv-interests">
-    <h2 id="cv-interests">Research Interests</h2>
-    <div class="cv-section-content">
-      <p>My research examines how people build and revise mental models of AI systems as collaborators, as relational partners, and as tools in the workplace. I design and empirically evaluate LLM-based interactive systems to understand how interaction design shapes these models, and how such systems can augment people at work and support their well-being.</p>
-    </div>
-  </section>
-
   <section class="cv-section" aria-labelledby="cv-education">
     <h2 id="cv-education">Education</h2>
     <div class="cv-section-content">
