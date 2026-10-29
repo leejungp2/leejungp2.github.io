@@ -2,7 +2,7 @@
 layout: page
 title: Musicbot
 description: Empathetic chatbot comparing emotion-based and situation-based music recommendations.
-thumbnail: /assets/img/projects/musicbot-thumbnail-en.png
+thumbnail: /assets/img/projects/musicbot-thumbnail-en.webp
 order: 5
 ---
 
@@ -25,7 +25,7 @@ Chief Researcher in a two-person research team, 2021.
 ## Chatbot Interface
 
 <figure class="project-figure">
-  <a href="{{ '/assets/img/projects/musicbot-thumbnail-en.png' | relative_url }}"><img src="{{ '/assets/img/projects/musicbot-thumbnail-en.png' | relative_url }}" alt="Musicbot Instagram conversation asking about a difficult situation, recommending music, and collecting feedback" width="1530" height="1028"></a>
+  <a href="{{ '/assets/img/projects/musicbot-thumbnail-en.webp' | relative_url }}"><img src="{{ '/assets/img/projects/musicbot-thumbnail-en.webp' | relative_url }}" alt="Musicbot Instagram conversation asking about a difficult situation, recommending music, and collecting feedback" width="1530" height="1028"></a>
   <figcaption>Conversation, music recommendation, and user feedback in Instagram DMs.</figcaption>
 </figure>
 
@@ -43,4 +43,4 @@ The study examined chatbot satisfaction alongside music use for mood regulation
 - [Emotion-based recommendation](https://youtu.be/3XUsIBwVnRI)
 - [Online poster presentation](https://youtu.be/__iEef7Lw_0)
 - [Read the research report (PDF)]({{ '/assets/files/musicbot-paper.pdf' | relative_url }})
-- [Read the Korean abstract]({{ '/assets/files/musicbot_abstract.png' | relative_url }})
+- [Read the Korean abstract]({{ '/assets/files/musicbot_abstract.webp' | relative_url }})

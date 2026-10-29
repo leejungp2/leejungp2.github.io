@@ -3,7 +3,7 @@ layout: about
 permalink: /
 heading: Jung Lee
 subtitle: Human-AI Interaction Researcher at Seoul National University
-profile_image: /assets/img/IMG_9374.jpg
+profile_image: /assets/img/IMG_9374.webp
 ---
 
 I am an M.S. student in Intelligence and Information at Seoul National

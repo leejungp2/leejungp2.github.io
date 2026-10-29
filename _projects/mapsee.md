@@ -30,11 +30,11 @@ so the screenshots below document the original release.
 
 <div class="project-media-grid project-media-grid--natural">
   <figure>
-    <a href="{{ '/assets/img/projects/mapsee/app-store.png' | relative_url }}"><img src="{{ '/assets/img/projects/mapsee/app-store.png' | relative_url }}" alt="Original App Store listing for mapsee, a map-based diary app" loading="lazy" width="1170" height="2532"></a>
+    <a href="{{ '/assets/img/projects/mapsee/app-store.webp' | relative_url }}"><img src="{{ '/assets/img/projects/mapsee/app-store.webp' | relative_url }}" alt="Original App Store listing for mapsee, a map-based diary app" loading="lazy" width="1170" height="2532"></a>
     <figcaption>April 2023 App Store release.</figcaption>
   </figure>
   <figure>
-    <a href="{{ '/assets/img/projects/mapsee/instagram.png' | relative_url }}"><img src="{{ '/assets/img/projects/mapsee/instagram.png' | relative_url }}" alt="mapsee's Instagram profile and launch marketing posts" loading="lazy" width="1170" height="2532"></a>
+    <a href="{{ '/assets/img/projects/mapsee/instagram.webp' | relative_url }}"><img src="{{ '/assets/img/projects/mapsee/instagram.webp' | relative_url }}" alt="mapsee's Instagram profile and launch marketing posts" loading="lazy" width="1170" height="2532"></a>
     <figcaption>Product identity and launch marketing.</figcaption>
   </figure>
 </div>

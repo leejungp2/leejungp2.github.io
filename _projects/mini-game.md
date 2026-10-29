@@ -2,7 +2,7 @@
 layout: page
 title: I Want to Eat Tteokbokki, but I Want to Die
 description: A mini game designed to create an indirect experience of depression.
-thumbnail: /assets/img/projects/tteokbokki/tteokbokki-01.png
+thumbnail: /assets/img/projects/tteokbokki/tteokbokki-01.webp
 order: 6
 ---
 
@@ -26,16 +26,16 @@ Design lead and planning support, 2021.
 ## Game Design
 
 <div class="project-media-grid">
-  <a href="/assets/img/projects/tteokbokki/tteokbokki-01.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-01.png" alt="Mini Game opening screen"></a>
-  <a href="/assets/img/projects/tteokbokki/tteokbokki-02.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-02.png" alt="Mini Game screen"></a>
-  <a href="/assets/img/projects/tteokbokki/tteokbokki-03.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-03.png" alt="Mini Game screen"></a>
-  <a href="/assets/img/projects/tteokbokki/tteokbokki-04.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-04.png" alt="Mini Game screen"></a>
-  <a href="/assets/img/projects/tteokbokki/tteokbokki-05.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-05.png" alt="Mini Game screen"></a>
-  <a href="/assets/img/projects/tteokbokki/tteokbokki-06.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-06.png" alt="Mini Game screen"></a>
-  <a href="/assets/img/projects/tteokbokki/tteokbokki-07.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-07.png" alt="Mini Game screen"></a>
-  <a href="/assets/img/projects/tteokbokki/tteokbokki-08.png"><img src="/assets/img/projects/tteokbokki/tteokbokki-08.png" alt="Mini Game screen"></a>
-  <a href="/assets/img/projects/tteokbokki/IMG_1076.png"><img src="/assets/img/projects/tteokbokki/IMG_1076.png" alt="Mini Game mobile design screen"></a>
-  <a href="/assets/img/projects/tteokbokki/IMG_0278.png"><img src="/assets/img/projects/tteokbokki/IMG_0278.png" alt="Mini Game mobile design screen"></a>
+  <a href="/assets/img/projects/tteokbokki/tteokbokki-01.webp"><img src="/assets/img/projects/tteokbokki/tteokbokki-01.webp" alt="Mini Game opening screen"></a>
+  <a href="/assets/img/projects/tteokbokki/tteokbokki-02.webp"><img src="/assets/img/projects/tteokbokki/tteokbokki-02.webp" alt="Mini Game screen"></a>
+  <a href="/assets/img/projects/tteokbokki/tteokbokki-03.webp"><img src="/assets/img/projects/tteokbokki/tteokbokki-03.webp" alt="Mini Game screen"></a>
+  <a href="/assets/img/projects/tteokbokki/tteokbokki-04.webp"><img src="/assets/img/projects/tteokbokki/tteokbokki-04.webp" alt="Mini Game screen"></a>
+  <a href="/assets/img/projects/tteokbokki/tteokbokki-05.webp"><img src="/assets/img/projects/tteokbokki/tteokbokki-05.webp" alt="Mini Game screen"></a>
+  <a href="/assets/img/projects/tteokbokki/tteokbokki-06.webp"><img src="/assets/img/projects/tteokbokki/tteokbokki-06.webp" alt="Mini Game screen"></a>
+  <a href="/assets/img/projects/tteokbokki/tteokbokki-07.webp"><img src="/assets/img/projects/tteokbokki/tteokbokki-07.webp" alt="Mini Game screen"></a>
+  <a href="/assets/img/projects/tteokbokki/tteokbokki-08.webp"><img src="/assets/img/projects/tteokbokki/tteokbokki-08.webp" alt="Mini Game screen"></a>
+  <a href="/assets/img/projects/tteokbokki/IMG_1076.webp"><img src="/assets/img/projects/tteokbokki/IMG_1076.webp" alt="Mini Game mobile design screen"></a>
+  <a href="/assets/img/projects/tteokbokki/IMG_0278.webp"><img src="/assets/img/projects/tteokbokki/IMG_0278.webp" alt="Mini Game mobile design screen"></a>
 </div>
 
 ## Links

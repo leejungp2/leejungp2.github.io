@@ -2,7 +2,7 @@
 layout: page
 title: diaryBot
 description: ChatGPT-powered gratitude diary chatbot for positive emotion research.
-thumbnail: /assets/img/projects/diarybot-thumbnail-en.png
+thumbnail: /assets/img/projects/diarybot-thumbnail-en.webp
 order: 4
 ---
 
@@ -25,7 +25,7 @@ Chief Researcher, 2023.
 ## Chatbot Interface
 
 <figure class="project-figure">
-  <a href="{{ '/assets/img/projects/diarybot-thumbnail-en.png' | relative_url }}"><img src="{{ '/assets/img/projects/diarybot-thumbnail-en.png' | relative_url }}" alt="diaryBot Instagram conversation guiding a user through three grateful moments and reflecting on their emotions" width="1354" height="1161"></a>
+  <a href="{{ '/assets/img/projects/diarybot-thumbnail-en.webp' | relative_url }}"><img src="{{ '/assets/img/projects/diarybot-thumbnail-en.webp' | relative_url }}" alt="diaryBot Instagram conversation guiding a user through three grateful moments and reflecting on their emotions" width="1354" height="1161"></a>
   <figcaption>diaryBot guides gratitude writing through an Instagram DM conversation.</figcaption>
 </figure>
 
@@ -39,4 +39,4 @@ gratitude propensity (K-GQ-6), and perceived stress (K-PSS).
 ## Links
 
 - [Read the research report (PDF)]({{ '/assets/files/diarybot-paper.pdf' | relative_url }})
-- [English abstract, page 1]({{ '/assets/files/diarybot_1.png' | relative_url }}) · [page 2]({{ '/assets/files/diarybot_2.png' | relative_url }})
+- [English abstract, page 1]({{ '/assets/files/diarybot_1.webp' | relative_url }}) · [page 2]({{ '/assets/files/diarybot_2.webp' | relative_url }})

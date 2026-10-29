@@ -2,7 +2,7 @@
 layout: page
 title: DART LangChain Project
 description: AI interface for analyzing and asking questions about data from Korea's DART electronic disclosure system.
-thumbnail: /assets/img/projects/dart-langchain-thumbnail.png
+thumbnail: /assets/img/projects/dart-langchain-thumbnail.webp
 order: 7
 ---
 
