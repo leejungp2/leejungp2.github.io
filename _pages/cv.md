@@ -3,7 +3,7 @@ layout: page
 title: CV
 permalink: /cv/
 description: Research, publications, teaching, and professional experience.
-action_label: Download PDF
+action_label: View PDF
 action_url: /assets/files/Jung_Lee_CV.pdf
 ---
 
@@ -15,9 +15,6 @@ action_url: /assets/files/Jung_Lee_CV.pdf
         <div class="entry-head"><h3>Seoul National University</h3><span class="entry-date">Mar 2025 - Present</span></div>
         <p class="cv-role">M.S. in Intelligence and Information</p>
         <p class="cv-meta">Seoul, Republic of Korea · Advisor: Prof. Bongwon Suh</p>
-        <ul class="cv-bullets">
-          <li>Coursework: Statistical Analysis for Information Studies; Math and Statistics Foundations for Data Science; Conversational AI; Computing Foundations for Data Science; AI-assisted Frontend Development</li>
-        </ul>
       </article>
       <article class="cv-entry">
         <div class="entry-head"><h3>Seoul National University</h3><span class="entry-date">Mar 2018 - Feb 2024</span></div>
@@ -25,7 +22,6 @@ action_url: /assets/files/Jung_Lee_CV.pdf
         <p class="cv-meta">Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Thesis: The Effect of Writing a Gratitude Diary Through a Chatbot Interface on Positive Affect</li>
-          <li>Coursework: Psychological Statistics; Programming Usable Interfaces; Introduction to Information-Culture Technology; Introduction to Virtual Reality</li>
         </ul>
       </article>
     </div>
@@ -38,13 +34,13 @@ action_url: /assets/files/Jung_Lee_CV.pdf
         <span class="cv-status">Under review</span>
         <h3>InterAICion: Multi-turn Simulation Framework for Relational Harm in AI Companions</h3>
         <p class="cv-authors">Minchae Kim*, <strong>Jung Lee*</strong>, Minjeong Shin, Kyusik Kim, and Bongwon Suh.</p>
-        <p class="cv-meta">Under review at the Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL '27).</p>
+        <p class="cv-meta">Under review.</p>
       </article>
       <article class="cv-entry">
         <span class="cv-status">Under review</span>
         <h3>Patchwork: Making Document Synthesis Visible and Reusable in Generative Knowledge Work</h3>
         <p class="cv-authors"><strong>Jung Lee*</strong>, Junghwan Kim*, Junyoung Jeon, and Bongwon Suh.</p>
-        <p class="cv-meta">Under review at the ACM Conference on Human Factors in Computing Systems (CHI '27).</p>
+        <p class="cv-meta">Under review.</p>
       </article>
     </div>
   </section>
@@ -249,7 +245,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
     <div class="cv-section-content">
       <dl class="cv-skills">
         <div><dt>Programming</dt><dd>Python, TypeScript, JavaScript, Swift, R, C</dd></div>
-        <div><dt>ML &amp; NLP</dt><dd>PyTorch, Hugging Face Transformers, LangChain, LangGraph</dd></div>
+        <div><dt>ML &amp; NLP</dt><dd>PyTorch, Hugging Face, LangChain, LangGraph</dd></div>
         <div><dt>Tools</dt><dd>Claude Code, Codex, Unity, Figma, Logic Pro, Final Cut Pro</dd></div>
         <div><dt>Languages</dt><dd>Korean (native), English (fluent), French (intermediate)</dd></div>
       </dl>

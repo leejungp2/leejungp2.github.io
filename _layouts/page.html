@@ -11,7 +11,7 @@ layout: default
           {{ page.action_label }}
         </span>
       {%- elsif page.action_label and page.action_url -%}
-        <a class="page-header-action" href="{{ page.action_url | relative_url }}" download>
+        <a class="page-header-action" href="{{ page.action_url | relative_url }}" target="_blank" rel="noopener">
           {{ page.action_label }}
         </a>
       {%- endif -%}
