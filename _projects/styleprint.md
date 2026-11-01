@@ -21,7 +21,7 @@ from the selected references.
 
 ## Interface Screens
 
-<div class="project-media-grid project-media-grid--natural">
+<div class="project-media-grid project-media-grid--natural project-media-grid--uniform">
   <figure>
     <a href="{{ '/assets/img/projects/styleprint/01-recommended-recipes.webp' | relative_url }}"><img src="{{ '/assets/img/projects/styleprint/01-recommended-recipes.webp' | relative_url }}" alt="StylePrint recommended recipes and custom facet sources" loading="lazy" width="2940" height="1590"></a>
     <figcaption>Compare recommended recipes and begin a custom mix.</figcaption>

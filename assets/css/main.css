@@ -1290,6 +1290,10 @@ img { max-width: 100%; height: auto; }
 .project-media-grid--natural img {
   aspect-ratio: auto;
 }
+.project-media-grid--uniform img {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+}
 .project-figure img {
   display: block;
   width: 100%;
