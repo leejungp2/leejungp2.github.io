@@ -203,7 +203,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
         <p class="cv-role">Sole Developer · AI Content Service</p>
         <p class="cv-meta">End-to-end product work · Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
-          <li>Planned, built, and marketed an AI fortune-telling service, reaching 500+ monthly active users within two months.</li>
+          <li>Planned, built, and marketed an AI fortune-telling service, attracting 2,000+ new users in a single month.</li>
         </ul>
       </article>
       <article class="cv-entry">
