@@ -1573,7 +1573,8 @@ img { max-width: 100%; height: auto; }
   text-wrap: pretty;
 }
 .about .bio li + li { margin-top: 0.65em; }
-.about .bio a { text-decoration: underline; text-underline-offset: 3px; }
+.about .bio a { color: var(--foreground); text-decoration: none; }
+.about .bio a:hover { color: var(--pink-strong); text-decoration: underline; text-underline-offset: 3px; }
 .about .bio .text-highlight-pink {
   color: var(--pink-strong);
   font-weight: 600;
