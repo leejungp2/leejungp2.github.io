@@ -7,8 +7,7 @@ profile_image: /assets/img/IMG_9374.webp
 ---
 
 I am an M.S. student in Intelligence and Information at Seoul National
-University, advised by Professor Bongwon Suh at the Human-Centered Computing
-Lab (HCCL).
+University, advised by [Professor Bongwon Suh](https://scholar.google.com/citations?hl=en&user=-nlhtEkAAAAJ&view_op=list_works&sortby=pubdate) at the [Human-Centered Computing Lab (HCCL)](https://hcc.snu.ac.kr/).
 
 I design and evaluate context-sensitive AI systems that people can understand
 and shape. My research focuses on these areas:
