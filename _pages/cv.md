@@ -51,7 +51,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
       <h3 class="cv-publication-group">International</h3>
       <ol class="cv-publications">
         <li>
-          <h4><a href="https://uist.from.so/authors/9669/PpjiLop9__pd">CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration</a></h4>
+          <h4><a href="https://dl.acm.org/doi/10.1145/3830398.3830479">CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration</a></h4>
           <p class="cv-authors">Junghwan Kim, Hyeonseok Jeon, <strong>Jung Lee</strong>, Dongseok Heo, and Bongwon Suh.</p>
           <p class="cv-meta"><em>Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26).</em></p>
         </li>

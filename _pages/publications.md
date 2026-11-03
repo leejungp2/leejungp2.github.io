@@ -6,17 +6,18 @@ description: Research publications and conference papers.
 ---
 
 <div class="soft-list publication-list">
-  <section class="soft-item">
+  <section class="soft-item publication-card">
     <div class="publication-thumbnail" aria-hidden="true"><img src="{{ '/assets/img/publications/coovercooked.webp' | relative_url }}" alt=""></div>
     <h3>Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team Composition</h3>
-    <p>Junghwan Kim*, <a class="publication-author-link" href="https://www.linkedin.com/in/dongseok-heo-907133171/">Dongseok Heo*</a>, <a class="publication-author-link" href="https://www.linkedin.com/in/kyusik-kim-2309892b1/">Kyusik Kim</a>, <a href="https://www.linkedin.com/in/jjung-lee/" class="cv-accent">Jung Lee</a>, Bongwon Suh. <em>To appear in the 2026 Annual Meeting of the Cognitive Science Society (CogSci '26).</em></p>
+    <p>Junghwan Kim*, Dongseok Heo*, Kyusik Kim, <span class="cv-accent">Jung Lee</span>, Bongwon Suh. <em>To appear in the 2026 Annual Meeting of the Cognitive Science Society (CogSci '26).</em></p>
+    <a class="publication-card-link" href="https://escholarship.org/uc/item/39n1g8g6" target="_blank" rel="noopener" aria-label="View Co-Overcooked paper"></a>
   </section>
 
   <section class="soft-item publication-card">
     <div class="publication-thumbnail" aria-hidden="true"><img src="{{ '/assets/img/publications/casesense.webp' | relative_url }}" alt=""></div>
     <h3>CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration</h3>
     <p>Junghwan Kim, Hyeonseok Jeon, <span class="cv-accent">Jung Lee</span>, Dongseok Heo, Bongwon Suh. <em>Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26).</em></p>
-    <a class="publication-card-link" href="https://uist.from.so/authors/9669/PpjiLop9__pd" target="_blank" rel="noopener" aria-label="View CaseSense paper"></a>
+    <a class="publication-card-link" href="https://dl.acm.org/doi/10.1145/3830398.3830479" target="_blank" rel="noopener" aria-label="View CaseSense paper"></a>
   </section>
 
   <section class="soft-item publication-card">
