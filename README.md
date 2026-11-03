@@ -50,7 +50,20 @@ the live site updates in ~1–2 minutes. No Actions workflow or build step neede
 
 ## Website counter
 
-Each page displays `Today 1 / Total 3,000` at the bottom. The counter uses
+Each page records visits with a `Today / Total` counter that is hidden by default.
+To show it in your browser, open the developer console on the live site and run:
+
+```js
+localStorage.setItem("visitor-counter-visible", "true");
+location.reload();
+```
+
+To hide it again, run `localStorage.removeItem("visitor-counter-visible")` and reload.
+This preference is saved per browser and origin; it only controls visibility.
+Visits are still counted while hidden, and the counts remain accessible through
+the public API.
+
+The counter uses
 [HitsCounter](https://hitscounter.dev/) without an account, API key, or GitHub
 token. One request records a visit and returns both counts; every page
 shares the same counter using `url` from `_config.yml`.

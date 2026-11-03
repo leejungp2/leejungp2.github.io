@@ -19,6 +19,7 @@
   }
 
   async function countVisit() {
+    counter.hidden = localStorage.getItem("visitor-counter-visible") !== "true";
     var day = new Intl.DateTimeFormat("en-CA", {
       timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit"
     }).format(new Date());

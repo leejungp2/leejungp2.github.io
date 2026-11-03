@@ -1814,6 +1814,7 @@ img { max-width: 100%; height: auto; }
   color: var(--muted-foreground);
   font-size: 0.75rem;
 }
+.visitor-counter[hidden] { display: none; }
 .visitor-counter [data-views-today],
 .visitor-counter [data-views-total] {
   color: var(--foreground);
