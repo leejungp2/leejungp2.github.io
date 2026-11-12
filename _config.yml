@@ -30,6 +30,10 @@ include:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /assets/img/IMG_9374.jpg
+  - scope:
+      path: ""
       type: projects
     values:
       layout: page

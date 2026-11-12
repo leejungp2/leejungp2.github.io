@@ -14,7 +14,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
       <article class="cv-entry">
         <div class="entry-head"><h3>Seoul National University</h3><span class="entry-date">Mar 2025 - Present</span></div>
         <p class="cv-role">M.S. in Intelligence and Information</p>
-        <p class="cv-meta">Seoul, Republic of Korea · Advisor: Prof. Bongwon Suh</p>
+        <p class="cv-meta">Advisor: Prof. Bongwon Suh | Seoul, Republic of Korea</p>
       </article>
       <article class="cv-entry">
         <div class="entry-head"><h3>Seoul National University</h3><span class="entry-date">Mar 2018 - Feb 2024</span></div>
@@ -34,13 +34,11 @@ action_url: /assets/files/Jung_Lee_CV.pdf
         <span class="cv-status">Under review</span>
         <h3>InterAICion: Multi-turn Simulation Framework for Relational Harm in AI Companions</h3>
         <p class="cv-authors">Minchae Kim*, <strong>Jung Lee*</strong>, Minjeong Shin, Kyusik Kim, and Bongwon Suh.</p>
-        <p class="cv-meta">Under review.</p>
       </article>
       <article class="cv-entry">
         <span class="cv-status">Under review</span>
         <h3>Patchwork: Making Document Synthesis Visible and Reusable in Generative Knowledge Work</h3>
         <p class="cv-authors"><strong>Jung Lee*</strong>, Junghwan Kim*, Junyoung Jeon, and Bongwon Suh.</p>
-        <p class="cv-meta">Under review.</p>
       </article>
     </div>
   </section>
@@ -77,7 +75,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
           <p class="cv-meta"><em>Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST '25).</em></p>
         </li>
       </ol>
-      <h3 class="cv-publication-group">Domestic · Korea</h3>
+      <h3 class="cv-publication-group">Domestic | Korea</h3>
       <ol class="cv-publications">
         <li>
           <h4><a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745858">Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management Among Early-Career Employees</a></h4>
@@ -100,7 +98,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
       <article class="cv-entry">
         <div class="entry-head"><h3>SNU Human-Centered Computing Lab</h3><span class="entry-date">Mar 2025 - Present</span></div>
         <p class="cv-role">Graduate Researcher</p>
-        <p class="cv-meta">Seoul, Republic of Korea · Advisor: Prof. Bongwon Suh</p>
+        <p class="cv-meta">Advisor: Prof. Bongwon Suh | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Studied how users' models of an AI partner shift across interaction, spanning team collaboration, companion relationships, and expert tools.</li>
         </ul>
@@ -108,7 +106,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
       <article class="cv-entry">
         <div class="entry-head"><h3>SNU Research Grant for the Social Sciences</h3><span class="entry-date">Oct 2023 - Dec 2023</span></div>
         <p class="cv-role">Lead Researcher</p>
-        <p class="cv-meta">Seoul, Republic of Korea · Advisor: Prof. Sowon Hahn</p>
+        <p class="cv-meta">Advisor: Prof. Sowon Hahn | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Designed and ran a between-subjects study with 87 participants as sole investigator, examining the effect of writing a gratitude diary through a chatbot interface on positive emotions.</li>
           <li>Built diaryBot, a chatbot that helps users write a gratitude diary, using the ChatGPT API.</li>
@@ -117,7 +115,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
       <article class="cv-entry">
         <div class="entry-head"><h3>SNU Undergraduate Research Opportunity Program</h3><span class="entry-date">May 2021 - Jan 2022</span></div>
         <p class="cv-role">Lead Researcher</p>
-        <p class="cv-meta">Seoul, Republic of Korea · Advisor: Prof. Sowon Hahn; Mentor: Dr. Yoon Kyung Lee</p>
+        <p class="cv-meta">Advisor: Prof. Sowon Hahn; Mentor: Dr. Yoon Kyung Lee | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Led a two-person team in a between-subjects study with 94 participants, investigating whether emotion-based or situation-based music recommendation better alleviates negative affect.</li>
           <li>Built Music-bot, a music recommendation chatbot based on a preprocessed Kaggle dataset using Python.</li>
@@ -126,7 +124,7 @@ action_url: /assets/files/Jung_Lee_CV.pdf
       <article class="cv-entry">
         <div class="entry-head"><h3>SNU Human Factors Psychology Lab</h3><span class="entry-date">Mar 2021 - Jan 2022</span></div>
         <p class="cv-role">Research Intern</p>
-        <p class="cv-meta">Seoul, Republic of Korea · Advisor: Prof. Sowon Hahn</p>
+        <p class="cv-meta">Advisor: Prof. Sowon Hahn | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Participated in data validation and sentiment classification for emotion diary research.</li>
           <li>Analyzed emotion words from social media through word2vec and topic modeling in Python workshops.</li>
@@ -150,12 +148,12 @@ action_url: /assets/files/Jung_Lee_CV.pdf
   </section>
 
   <section class="cv-section" aria-labelledby="cv-teaching">
-    <h2 id="cv-teaching">Teaching</h2>
+    <h2 id="cv-teaching">Teaching Experience</h2>
     <div class="cv-section-content">
       <article class="cv-entry">
         <div class="entry-head"><h3>AI Transformation (AX) Accelerating Program</h3><span class="entry-date">Aug 2026 - Sep 2026</span></div>
         <p class="cv-role">Teaching Assistant</p>
-        <p class="cv-meta">Asan City Local Creator Support Program · Asan, Republic of Korea</p>
+        <p class="cv-meta">Asan City Local Creator Support Program | Asan, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Ran hands-on practicum sessions helping local founders apply AI tools to their own products and operations.</li>
         </ul>
@@ -168,16 +166,16 @@ action_url: /assets/files/Jung_Lee_CV.pdf
     <div class="cv-section-content">
       <article class="cv-entry">
         <div class="entry-head"><h3>Doosan CVC</h3><span class="entry-date">Sep 2022 - Dec 2022</span></div>
-        <p class="cv-role">Research Assistant · Korean Industrial Conglomerate</p>
-        <p class="cv-meta">Startup and market research for early-stage investment review · Seoul, Republic of Korea</p>
+        <p class="cv-role">Research Assistant | Korean Industrial Conglomerate</p>
+        <p class="cv-meta">Startup and market research for early-stage investment review | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Investigated AI, drone, biotech, and green-tech market prospects and sized startups under investment review.</li>
         </ul>
       </article>
       <article class="cv-entry">
         <div class="entry-head"><h3>Allprep</h3><span class="entry-date">Jul 2021 - Sep 2021</span></div>
-        <p class="cv-role">Strategic Planning Intern · Edutech Startup</p>
-        <p class="cv-meta">Business model and marketing planning for online test-prep services · Seoul, Republic of Korea</p>
+        <p class="cv-role">Strategic Planning Intern | Edutech Startup</p>
+        <p class="cv-meta">Business model and marketing planning for online test-prep services | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Planned a new business model for online TOEIC and TOEFL education services.</li>
           <li>Analyzed industry trends and competitors to develop marketing strategies.</li>
@@ -185,8 +183,8 @@ action_url: /assets/files/Jung_Lee_CV.pdf
       </article>
       <article class="cv-entry">
         <div class="entry-head"><h3>Fit-account</h3><span class="entry-date">Jul 2021 - Aug 2021</span></div>
-        <p class="cv-role">Content Planning Intern · Mental Healthcare Startup</p>
-        <p class="cv-meta">Translating personality and consumption data into in-app well-being content · Busan, Republic of Korea</p>
+        <p class="cv-role">Content Planning Intern | Mental Healthcare Startup</p>
+        <p class="cv-meta">Translating personality and consumption data into in-app well-being content | Busan, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Created solution content for the mobile application Fit-account.</li>
           <li>Organized happiness solutions based on Big Five personality traits and consumption-type data.</li>
@@ -200,16 +198,16 @@ action_url: /assets/files/Jung_Lee_CV.pdf
     <div class="cv-section-content">
       <article class="cv-entry">
         <div class="entry-head"><h3>Pie Company</h3><span class="entry-date">Nov 2025 - Aug 2026</span></div>
-        <p class="cv-role">Sole Developer · AI Content Service</p>
-        <p class="cv-meta">End-to-end product work · Seoul, Republic of Korea</p>
+        <p class="cv-role">Sole Developer | AI Content Service</p>
+        <p class="cv-meta">End-to-end product work | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Planned, built, and marketed an AI fortune-telling service, attracting 2,000+ new users in a single month.</li>
         </ul>
       </article>
       <article class="cv-entry">
         <div class="entry-head"><h3><a href="{{ '/projects/mapsee/' | relative_url }}">mapsee</a></h3><span class="entry-date">Feb 2022 - Aug 2023</span></div>
-        <p class="cv-role">Product Manager · App Store Application</p>
-        <p class="cv-meta">Location-based diary app built at Happetite (SNU App Development Club) · Seoul, Republic of Korea</p>
+        <p class="cv-role">Product Manager | App Store Application</p>
+        <p class="cv-meta">Location-based diary app built at Happetite (SNU App Development Club) | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Led a five-person team of designers, developers, and planners to launch mapsee, a location-based diary application, on the App Store.</li>
           <li>Conducted user interviews and usability tests, created wireframes, and built the MVP.</li>
