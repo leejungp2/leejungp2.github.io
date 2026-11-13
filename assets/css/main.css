@@ -1570,7 +1570,6 @@ img { max-width: 100%; height: auto; }
 .about .bio ul {
   padding-left: 0;
   list-style-position: inside;
-  text-align: center;
   text-wrap: pretty;
 }
 .about .bio li + li { margin-top: 0.65em; }
