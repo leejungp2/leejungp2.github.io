@@ -1208,10 +1208,10 @@ img { max-width: 100%; height: auto; }
   gap: 0.35rem;
   height: 32px;
   padding: 0 0.75rem;
-  border: 1.5px solid color-mix(in srgb, var(--yellow) 75%, var(--orange));
+  border: 1.5px solid currentColor;
   border-radius: var(--radius);
-  background: color-mix(in srgb, var(--yellow) 20%, var(--card));
-  color: #8a5a12;
+  background: color-mix(in srgb, var(--yellow) 9%, var(--card));
+  color: #a87a24;
   font-size: 0.82rem;
   font-weight: 600;
   white-space: nowrap;
@@ -1222,9 +1222,8 @@ img { max-width: 100%; height: auto; }
   height: 15px;
 }
 [data-theme="dark"] .publication-award {
-  border-color: color-mix(in srgb, var(--yellow) 60%, transparent);
-  background: color-mix(in srgb, var(--yellow) 12%, transparent);
-  color: var(--yellow);
+  background: color-mix(in srgb, var(--yellow) 6%, transparent);
+  color: color-mix(in srgb, var(--yellow) 85%, var(--foreground));
 }
 .publication-links {
   display: flex;
