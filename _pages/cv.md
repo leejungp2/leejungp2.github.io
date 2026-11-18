@@ -197,16 +197,16 @@ action_url: /assets/files/Jung_Lee_CV.pdf
     <h2 id="cv-projects">Project Experience</h2>
     <div class="cv-section-content">
       <article class="cv-entry">
-        <div class="entry-head"><h3>Pie Company</h3><span class="entry-date">Nov 2025 - Aug 2026</span></div>
-        <p class="cv-role">Sole Developer | AI Content Service</p>
+        <div class="entry-head"><h3>Pie Company (AI Content Service)</h3><span class="entry-date">Nov 2025 - Aug 2026</span></div>
+        <p class="cv-role">Sole Developer</p>
         <p class="cv-meta">End-to-end product work | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Planned, built, and marketed an AI fortune-telling service, attracting 2,000+ new users in a single month.</li>
         </ul>
       </article>
       <article class="cv-entry">
-        <div class="entry-head"><h3><a href="{{ '/projects/mapsee/' | relative_url }}">mapsee</a></h3><span class="entry-date">Feb 2022 - Aug 2023</span></div>
-        <p class="cv-role">Product Manager | App Store Application</p>
+        <div class="entry-head"><h3><a href="{{ '/projects/mapsee/' | relative_url }}">mapsee</a> (App Store Application)</h3><span class="entry-date">Feb 2022 - Aug 2023</span></div>
+        <p class="cv-role">Product Manager</p>
         <p class="cv-meta">Location-based diary app built at Happetite (SNU App Development Club) | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Led a five-person team of designers, developers, and planners to launch mapsee, a location-based diary application, on the App Store.</li>
