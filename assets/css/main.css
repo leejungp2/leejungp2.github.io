@@ -1108,7 +1108,7 @@ img { max-width: 100%; height: auto; }
   grid-row: 1 / span 6;
   align-self: start;
   display: block;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 3 / 2;
   margin-top: 0.2rem;
   overflow: hidden;
   border-radius: var(--radius);
