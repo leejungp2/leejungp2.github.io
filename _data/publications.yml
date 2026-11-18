@@ -3,7 +3,7 @@
 # group:    international | domestic
 # authors:  append `*` for equal contribution; the entry matching site.author is highlighted.
 # award:    optional; shown as a badge in the list and on the detail page.
-# award_detail: optional; lighter text after the award (e.g. acceptance rate).
+# award_detail: optional; shown in parentheses after the award (e.g. acceptance rate).
 # image:    teaser figure (.webp); a same-named .png is used for the enlarged view.
 # abstract: original abstract text; leave empty to hide the section.
 # links:    buttons, in order (Paper, then PDF). A label of `PDF` gets the document icon.
@@ -57,7 +57,7 @@
   venue_short: CogSci 2026
   type: Full Paper
   award: Oral Presentation
-  award_detail: Top 9.3%
+  award_detail: top 9.3%
   image: /assets/img/publications/coovercooked.webp
   image_alt: Co-Overcooked human-AI team cooking task
   links:

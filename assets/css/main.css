@@ -1216,13 +1216,6 @@ img { max-width: 100%; height: auto; }
   font-weight: 600;
   white-space: nowrap;
 }
-.publication-award-detail {
-  margin-left: 0.1rem;
-  padding-left: 0.45rem;
-  border-left: 1px solid currentColor;
-  font-weight: 500;
-  opacity: 0.8;
-}
 .publication-award svg {
   flex: none;
   width: 15px;
