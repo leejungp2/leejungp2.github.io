@@ -10,7 +10,7 @@ description: Research publications and conference papers.
 {% assign items = site.data.publications | where: "group", group %}
 {% if items.size > 0 %}
 <section class="publication-group" aria-labelledby="pub-{{ group }}">
-  <h2 class="publication-group-title" id="pub-{{ group }}">{% if group == "domestic" %}Domestic <span>Korea</span>{% else %}International{% endif %}</h2>
+  <h2 class="publication-group-title" id="pub-{{ group }}">{% if group == "domestic" %}Domestic{% else %}International{% endif %}</h2>
   <div class="soft-list publication-list">
     {% for publication in items %}
     {% assign detail_url = "/publications/" | append: publication.slug | append: "/" | relative_url %}

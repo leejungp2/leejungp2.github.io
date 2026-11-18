@@ -1072,14 +1072,6 @@ img { max-width: 100%; height: auto; }
   font-weight: 500;
   letter-spacing: -0.01em;
 }
-.publication-group-title span {
-  color: var(--muted-foreground);
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
 .publication-list {
   display: block;
   border-top: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
@@ -1099,6 +1091,9 @@ img { max-width: 100%; height: auto; }
   backdrop-filter: none;
   padding: 1.45rem 0.65rem;
   transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+.publication-list .soft-item:last-child {
+  border-bottom: 0;
 }
 .publication-list .soft-item > * {
   grid-column: 2;
