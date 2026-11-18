@@ -1165,8 +1165,29 @@ img { max-width: 100%; height: auto; }
   color: inherit;
   text-decoration: none;
 }
-.publication-list .soft-item h3 a:hover {
+.publication-list .soft-item:hover h3 a {
   color: var(--blue-deep);
+}
+/* The title link stretches over the whole row; paper buttons sit above it. */
+.publication-list .publication-card {
+  cursor: pointer;
+}
+.publication-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.publication-card-link:focus-visible {
+  outline: none;
+}
+.publication-list .soft-item:has(.publication-card-link:focus-visible) {
+  outline: 2px solid var(--ring);
+  outline-offset: -2px;
+}
+.publication-list .publication-links {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
 }
 .publication-authors,
 .publication-venue {

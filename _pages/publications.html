@@ -16,14 +16,14 @@ description: Research publications and conference papers.
     {% assign detail_url = "/publications/" | append: publication.slug | append: "/" | relative_url %}
     <article class="soft-item publication-card">
       {% if publication.image %}
-      <a class="publication-thumbnail" href="{{ detail_url }}" tabindex="-1" aria-hidden="true"><img src="{{ publication.image | relative_url }}" alt="" loading="lazy"></a>
+      <div class="publication-thumbnail" aria-hidden="true"><img src="{{ publication.image | relative_url }}" alt="" loading="lazy"></div>
       {% endif %}
       <p class="publication-kicker">{{ publication.venue_short | escape }} · {{ publication.type | escape }}</p>
-      <h3><a href="{{ detail_url }}">{{ publication.title | escape }}</a></h3>
+      <h3><a class="publication-card-link" href="{{ detail_url }}">{{ publication.title | escape }}</a></h3>
       <p class="publication-authors">{% include publication-authors.html publication=publication %}</p>
       <p class="publication-venue"><em>{{ publication.venue | escape }}</em></p>
       {% include publication-award.html publication=publication %}
-      {% include publication-links.html publication=publication show_details=true %}
+      {% include publication-links.html publication=publication %}
     </article>
     {% endfor %}
   </div>
