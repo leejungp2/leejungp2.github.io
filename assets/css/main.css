@@ -1106,9 +1106,10 @@ img { max-width: 100%; height: auto; }
 .publication-list .publication-thumbnail {
   grid-column: 1;
   grid-row: 1 / span 6;
-  align-self: stretch;
+  align-self: start;
   display: block;
-  min-height: 9rem;
+  aspect-ratio: 16 / 10;
+  margin-top: 0.2rem;
   overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid color-mix(in srgb, var(--periwinkle) 42%, var(--border));
