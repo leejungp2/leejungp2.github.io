@@ -1216,6 +1216,7 @@ img { max-width: 100%; height: auto; }
   padding: 0 0.75rem;
   border-color: color-mix(in srgb, var(--border) 60%, var(--muted-foreground));
   background: color-mix(in srgb, var(--card) 80%, transparent);
+  color: var(--muted-foreground);
   font-size: 0.82rem;
 }
 .btn.publication-button svg {
@@ -1226,13 +1227,10 @@ img { max-width: 100%; height: auto; }
   border-color: var(--blue);
   color: var(--blue-deep);
 }
-.btn.publication-button.is-pdf {
-  border-color: color-mix(in srgb, var(--pink-strong) 62%, transparent);
-  color: var(--pink-strong);
-}
 .btn.publication-button.is-pdf:hover {
   border-color: var(--pink-strong);
   background: color-mix(in srgb, var(--pink-strong) 8%, var(--card));
+  color: var(--pink-strong);
 }
 .publication-note {
   margin-top: -0.35rem;
