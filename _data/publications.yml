@@ -5,7 +5,7 @@
 # award:    optional; shown as a badge in the list and on the detail page.
 # image:    teaser figure (.webp); a same-named .png is used for the enlarged view.
 # abstract: original abstract text; leave empty to hide the section.
-# links:    buttons, in order. A label of `PDF` gets the document icon.
+# links:    buttons, in order (Paper, then PDF). A label of `PDF` gets the document icon.
 # bibtex:   TODO(Jung) verify each entry.
 
 - slug: casesense
@@ -18,10 +18,10 @@
   image: /assets/img/publications/casesense.webp
   image_alt: CaseSense interface mapping legal cases along multiple visual axes
   links:
+    - label: Paper
+      url: https://dl.acm.org/doi/10.1145/3830398.3830479
     - label: PDF
       url: https://dl.acm.org/doi/pdf/10.1145/3830398.3830479
-    - label: ACM DL
-      url: https://dl.acm.org/doi/10.1145/3830398.3830479
   abstract: >-
     Legal case research requires combining facts, legal principles, and timelines into persuasive arguments.
     Yet existing retrieval tools return one-dimensional ranked lists, collapsing this structure into a single relevance score.
@@ -59,10 +59,10 @@
   image: /assets/img/publications/coovercooked.webp
   image_alt: Co-Overcooked human-AI team cooking task
   links:
+    - label: Paper
+      url: https://escholarship.org/uc/item/39n1g8g6
     - label: PDF
       url: https://escholarship.org/content/qt39n1g8g6/qt39n1g8g6.pdf
-    - label: eScholarship
-      url: https://escholarship.org/uc/item/39n1g8g6
   # TODO(Jung): paste the original abstract.
   abstract: ""
   bibtex: |-
@@ -85,10 +85,10 @@
   image: /assets/img/publications/what_can_i_control.webp
   image_alt: Attribution reframing chatbot conversation flow
   links:
+    - label: Paper
+      url: https://dl.acm.org/doi/10.1145/3772363.3798873
     - label: PDF
       url: https://dl.acm.org/doi/pdf/10.1145/3772363.3798873
-    - label: ACM DL
-      url: https://dl.acm.org/doi/10.1145/3772363.3798873
   abstract: >-
     Early-career employees are particularly vulnerable to workplace stress due to psychosocial stressors such as high work demands and low job control.
     Despite the importance of addressing these stressors, existing digital interventions for early-career employees focus on information-oriented support like onboarding.
@@ -125,10 +125,10 @@
   image: /assets/img/publications/just_listening.webp
   image_alt: Validating and scaffolding AI companion conditions across relationship stages
   links:
+    - label: Paper
+      url: https://dl.acm.org/doi/10.1145/3772363.3798512
     - label: PDF
       url: https://dl.acm.org/doi/pdf/10.1145/3772363.3798512
-    - label: ACM DL
-      url: https://dl.acm.org/doi/10.1145/3772363.3798512
   abstract: >-
     AI companions provide immediate emotional support, yet longitudinal studies reveal patterns of reduced real-world connection
     and reinforced cognitive distortions among prolonged users.
@@ -166,10 +166,10 @@
   image: /assets/img/publications/legisflow.webp
   image_alt: LegisFlow interface with statute amendment timeline
   links:
+    - label: Paper
+      url: https://dl.acm.org/doi/10.1145/3746059.3747752
     - label: PDF
       url: https://dl.acm.org/doi/pdf/10.1145/3746059.3747752
-    - label: ACM DL
-      url: https://dl.acm.org/doi/10.1145/3746059.3747752
   abstract: >-
     In South Korea's statutory law system, legal research faces challenges like tracking frequent amendments and understanding complex statute relationships.
     LegisFlow, an innovative AI-powered system, tackles these issues with features such as interactive amendment timelines and advanced inter-statute relationship analysis.
@@ -204,7 +204,7 @@
   image: /assets/img/publications/hcik_attribution.webp
   image_alt: Multi-agent attribution retraining chatbot design
   links:
-    - label: DBpia
+    - label: Paper
       url: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745858
   # TODO(Jung): paste the original abstract.
   abstract: ""
@@ -229,7 +229,7 @@
   image: /assets/img/publications/political_injection.webp
   image_alt: Laddering interview framework for probing LLM political orientation
   links:
-    - label: Scholar
+    - label: Paper
       url: https://scholar.google.com/scholar?oi=bibs&cluster=6252816665032242407&btnI=1&hl=ko
   # TODO(Jung): paste the original abstract.
   abstract: ""
