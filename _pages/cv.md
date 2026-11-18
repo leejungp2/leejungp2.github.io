@@ -165,9 +165,8 @@ action_url: /assets/files/Jung_Lee_CV.pdf
     <h2 id="cv-work">Work Experience</h2>
     <div class="cv-section-content">
       <article class="cv-entry">
-        <div class="entry-head"><h3>Doosan CVC</h3><span class="entry-date">Sep 2022 - Dec 2022</span></div>
-        <p class="cv-role">Research Assistant | Korean Industrial Conglomerate</p>
-        <p class="cv-meta">Startup and market research for early-stage investment review | Seoul, Republic of Korea</p>
+        <div class="entry-head"><h3>Doosan CVC (Korean Industrial Conglomerate)</h3><span class="entry-date">Sep 2022 - Dec 2022</span></div>
+        <p class="cv-role">Research Assistant | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Investigated AI, drone, biotech, and green-tech market prospects and sized startups under investment review.</li>
         </ul>
