@@ -1,6 +1,6 @@
 {%- if include.publication.award -%}
-<p class="publication-award">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6" /><path d="m8.5 14 -1.5 8 5-3 5 3-1.5-8" /></svg>
+<span class="publication-award">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.35 6.15 6.15 2.35-6.15 2.35L12 19.5l-2.35-6.15L3.5 11l6.15-2.35z" /><path d="M19 15.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z" opacity=".7" /></svg>
   {{ include.publication.award | escape }}
-</p>
+</span>
 {%- endif -%}

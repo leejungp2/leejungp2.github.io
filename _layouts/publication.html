@@ -10,7 +10,6 @@ layout: default
     <p class="publication-venue"><em>{{ publication.venue | escape }}</em></p>
     {% assign joined_authors = publication.authors | join: ' ' %}
     {% if joined_authors contains '*' %}<p class="publication-note">* Equal contribution</p>{% endif %}
-    {% include publication-award.html publication=publication %}
     {% include publication-links.html publication=publication %}
   </header>
 
