@@ -1,0 +1,39 @@
+---
+layout: default
+---
+{%- comment -%}
+  Case-study page for a project in `_projects/`. Front matter:
+  description (one-line summary), role, timeline, team, context, tools (list),
+  links (label/url/icon), award, hero + hero_caption (optional lead image).
+  The Markdown body holds Overview / What I Did / Outcome / Gallery sections.
+{%- endcomment -%}
+<article class="app-surface publication-detail project-detail">
+  <a class="publication-back" href="{{ '/projects/' | relative_url }}">← projects</a>
+  <header class="publication-detail-header">
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.description %}<p class="project-summary">{{ page.description | escape }}</p>{% endif %}
+
+    <dl class="project-facts">
+      {% if page.role %}<div><dt>Role</dt><dd>{{ page.role | escape }}</dd></div>{% endif %}
+      {% if page.timeline %}<div><dt>Timeline</dt><dd>{{ page.timeline | escape }}</dd></div>{% endif %}
+      {% if page.team %}<div><dt>Team</dt><dd>{{ page.team | escape }}</dd></div>{% endif %}
+      {% if page.context %}<div><dt>Context</dt><dd>{{ page.context | escape }}</dd></div>{% endif %}
+      {% if page.tools %}<div><dt>Tools</dt><dd>{{ page.tools | join: ', ' | escape }}</dd></div>{% endif %}
+    </dl>
+
+    {% if page.links or page.award %}{% include publication-links.html item=page %}{% endif %}
+  </header>
+
+  {% if page.hero %}
+  <figure class="publication-figure">
+    <a href="{{ page.hero | relative_url }}" aria-label="Enlarge figure">
+      <img src="{{ page.hero | relative_url }}" alt="{{ page.hero_alt | default: page.title | escape }}">
+    </a>
+    {% if page.hero_caption %}<figcaption>{{ page.hero_caption | escape }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+
+  <div class="project-body">
+    {{ content }}
+  </div>
+</article>

@@ -1,15 +1,28 @@
+{%- comment -%}
+  Button row for a publication or project, followed by its award chip.
+  Pass `item=` (or the older `publication=`). Each link may set
+  `icon: pdf | code | video | link`; a label of `PDF` defaults to the pdf icon.
+{%- endcomment -%}
+{%- assign item = include.item | default: include.publication -%}
 <div class="publication-links">
-  {%- for link in include.publication.links %}
-  <a class="btn btn-outline publication-button{% if link.label == 'PDF' %} is-pdf{% endif %}" href="{{ link.url | escape }}" target="_blank" rel="noopener">
+  {%- for link in item.links %}
+  {%- assign icon = link.icon | default: 'link' -%}
+  {%- if link.label == 'PDF' and link.icon == nil -%}{%- assign icon = 'pdf' -%}{%- endif %}
+  <a class="btn btn-outline publication-button{% if icon == 'pdf' %} is-pdf{% endif %}" href="{{ link.url | escape }}"{% if link.url contains '://' %} target="_blank" rel="noopener"{% endif %}>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      {%- if link.label == 'PDF' -%}
+      {%- case icon -%}
+      {%- when 'pdf' -%}
       <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5M9 13h6M9 17h4" />
+      {%- when 'code' -%}
+      <path d="m8 6-6 6 6 6M16 6l6 6-6 6" />
+      {%- when 'video' -%}
+      <rect x="2.5" y="5" width="19" height="14" rx="3" /><path d="m10 9.5 4.5 2.5-4.5 2.5z" />
       {%- else -%}
       <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7" /><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7" />
-      {%- endif -%}
+      {%- endcase -%}
     </svg>
     {{ link.label | escape }}
   </a>
   {%- endfor %}
-  {% include publication-award.html publication=include.publication %}
+  {% include publication-award.html item=item %}
 </div>

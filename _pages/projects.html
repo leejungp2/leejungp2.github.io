@@ -1,0 +1,31 @@
+---
+layout: page
+title: projects
+permalink: /projects/
+description: Research prototypes, products, and design work.
+---
+
+{%- assign groups = "research|Research Prototypes,product|Products & Design" | split: "," -%}
+{%- assign sorted = site.projects | sort: "order" -%}
+{%- for entry in groups -%}
+{%- assign parts = entry | split: "|" -%}
+{%- assign items = sorted | where: "group", parts[0] -%}
+{%- if items.size > 0 %}
+<section class="publication-group" aria-labelledby="proj-{{ parts[0] }}">
+<h2 class="publication-group-title" id="proj-{{ parts[0] }}">{{ parts[1] }}</h2>
+<div class="soft-list publication-list project-list">
+{%- for project in items %}
+<article class="soft-item publication-card">
+{%- if project.thumbnail %}
+<div class="publication-thumbnail{% if project.thumbnail_bg %} is-contain{% endif %}" aria-hidden="true"{% if project.thumbnail_bg %} style="background: {{ project.thumbnail_bg }}"{% endif %}><img src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy"></div>
+{%- endif %}
+<h3><a class="publication-card-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
+<p class="publication-authors">{{ project.description | escape }}</p>
+<p class="publication-venue project-meta">{{ project.role | escape }}{% if project.timeline %} · {{ project.timeline | escape }}{% endif %}{% if project.context %} · {{ project.context | escape }}{% endif %}</p>
+{% include publication-links.html item=project %}
+</article>
+{%- endfor %}
+</div>
+</section>
+{%- endif -%}
+{%- endfor %}

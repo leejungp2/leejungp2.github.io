@@ -36,7 +36,8 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: page
+      layout: project
+      body_class: projects
   - scope:
       path: "_pages/publications"
     values:
