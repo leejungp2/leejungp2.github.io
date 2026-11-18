@@ -1079,8 +1079,8 @@ img { max-width: 100%; height: auto; }
 .publication-list .soft-item {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(8rem, 10rem) minmax(0, 1fr);
-  column-gap: clamp(1.25rem, 4vw, 3.25rem);
+  grid-template-columns: minmax(10rem, 13rem) minmax(0, 1fr);
+  column-gap: clamp(1.25rem, 3vw, 2.5rem);
   align-items: start;
   border: 0;
   border-bottom: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
@@ -1106,9 +1106,9 @@ img { max-width: 100%; height: auto; }
 .publication-list .publication-thumbnail {
   grid-column: 1;
   grid-row: 1 / span 6;
-  align-self: center;
+  align-self: stretch;
   display: block;
-  aspect-ratio: 16 / 10;
+  min-height: 9rem;
   overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid color-mix(in srgb, var(--periwinkle) 42%, var(--border));
@@ -1174,6 +1174,18 @@ img { max-width: 100%; height: auto; }
   position: relative;
   z-index: 1;
   width: fit-content;
+}
+/* Venue stays on one line on desktop (full title in the tooltip). */
+.publication-list .publication-venue {
+  overflow: hidden;
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 820px) {
+  .publication-list .publication-venue {
+    white-space: normal;
+  }
 }
 .publication-authors,
 .publication-venue {

@@ -20,7 +20,7 @@ description: Research publications and conference papers.
       {% endif %}
       <h3><a class="publication-card-link" href="{{ detail_url }}">{{ publication.title | escape }}</a></h3>
       <p class="publication-authors">{% include publication-authors.html publication=publication %}</p>
-      <p class="publication-venue"><em>{{ publication.venue | escape }}</em></p>
+      <p class="publication-venue" title="{{ publication.venue | escape }}"><em>{{ publication.venue | escape }}</em></p>
       {% include publication-award.html publication=publication %}
       {% include publication-links.html publication=publication %}
     </article>
