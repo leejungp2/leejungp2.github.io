@@ -1,35 +1,40 @@
 ---
-layout: page
 title: MoAgent
 description: AI agent orchestration B2B SaaS concept validated through SNUSV.
+group: product
+order: 2
+role: Product Manager
+timeline: 2024 – 2025
+context: SNUSV 35th cohort (SNU Venture Startup Network)
+award: SNUSV Demo Day
 thumbnail: /assets/img/projects/moagent/thumbnail-en.webp
-order: 3
+hero: /assets/img/projects/moagent/thumbnail-en.webp
+hero_alt: MoAgent MVP showing a meeting agenda, live transcript, and related Notion and Slack references
+hero_caption: Meeting workspace with a transcript and references alongside the agenda.
+links:
+  - label: Demo Day Slides
+    url: /assets/files/moagent-demo-day.pdf
+    icon: pdf
 ---
-
-## Highlights
-
-- Led proof-of-concept validation for the product direction.
-- Advanced to SNUSV 35th Demo Day.
-- Worked across product planning, customer problem framing, and venture validation.
 
 ## Overview
 
 MoAgent is an AI agent orchestration B2B SaaS concept validated through the
 35th cohort of Seoul National University Venture Startup Network.
 
-## Role
+## What I Did
 
-Product Manager, 2024 - 2025.
+- Led proof-of-concept validation for the product direction.
+- Worked across product planning, customer problem framing, and venture validation.
 
-## MVP Interface
+## Outcome
+
+- Advanced to the SNUSV 35th Demo Day.
+
+## Gallery
 
 The MVP designs explore meeting support: preparing agendas, capturing meeting
 notes, reviewing related sources, and saving the discussion for later reference.
-
-<figure class="project-figure">
-  <a href="{{ '/assets/img/projects/moagent/thumbnail-en.webp' | relative_url }}"><img src="{{ '/assets/img/projects/moagent/thumbnail-en.webp' | relative_url }}" alt="MoAgent MVP showing a meeting agenda, live transcript, and related Notion and Slack references" width="1585" height="992"></a>
-  <figcaption>Meeting workspace with a transcript and references alongside the agenda.</figcaption>
-</figure>
 
 <div class="project-media-grid project-media-grid--natural">
   <figure>
@@ -53,7 +58,3 @@ notes, reviewing related sources, and saving the discussion for later reference.
     <figcaption>Review and share the saved meeting notes.</figcaption>
   </figure>
 </div>
-
-## Links
-
-- [Demo Day presentation (PDF)]({{ '/assets/files/moagent-demo-day.pdf' | relative_url }})

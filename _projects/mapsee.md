@@ -1,32 +1,41 @@
 ---
-layout: page
 title: mapsee
 description: Location-based diary app launched on the App Store through the SNU app club Happetite.
-thumbnail: /assets/img/projects/mapsee.png
+group: product
 order: 1
+role: Product Manager
+timeline: Feb 2022 – Aug 2023
+team: 5 people (design, dev, planning)
+context: Happetite, SNU App Development Club
+tools: [User interviews, Usability testing, Wireframing, React Native]
+award: App Store Launch
+thumbnail: /assets/img/projects/mapsee.png
+thumbnail_bg: "#5ed3cb"
+links:
+  - label: Instagram
+    url: https://www.instagram.com/mapsee_happetite/
 ---
-
-## Highlights
-
-- Led product planning for a location-based diary experience.
-- Conducted user interviews and usability tests to shape the product direction.
-- Created wireframes and developed an MVP as the product planner.
-- Learned React Native to support QA and improve the implementation workflow.
-- Participated in Spring Lounge, a founder talent-sharing network.
 
 ## Overview
 
 mapsee is a map-based diary app released on the App Store through Happetite, a
 Seoul National University app club.
 
-## Role
+## What I Did
 
-Product Manager and Planner, Feb 2022 - Aug 2023.
+- Led a five-person team of designers, developers, and planners through product planning for a location-based diary experience.
+- Conducted user interviews and usability tests to shape the product direction.
+- Created wireframes and developed an MVP as the product planner.
+- Learned React Native to support QA and improve the implementation workflow.
 
-## Launch
+## Outcome
 
-Released on the App Store in April 2023. The developer account has since expired,
-so the screenshots below document the original release.
+- Released on the App Store in April 2023.
+- Participated in Spring Lounge, a founder talent-sharing network.
+
+## Gallery
+
+The developer account has since expired, so the screenshots below document the original release.
 
 <div class="project-media-grid project-media-grid--natural">
   <figure>
@@ -38,7 +47,3 @@ so the screenshots below document the original release.
     <figcaption>Product identity and launch marketing.</figcaption>
   </figure>
 </div>
-
-## Links
-
-- [Project Instagram](https://www.instagram.com/mapsee_happetite/)

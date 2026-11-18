@@ -1,25 +1,39 @@
 ---
-layout: page
 title: StylePrint
 description: AI interface that turns UI reference images into reviewable React/Tailwind designs.
+group: research
+order: 1
+# TODO(Jung): confirm role and timeline.
+role: Designer & Developer
+timeline: 2026
+context: Frontend course final project
+tools: [React, Tailwind CSS]
 thumbnail: /assets/img/projects/style-print.webp
-order: 2
+hero: /assets/img/projects/style-print.webp
+hero_alt: StylePrint upload screen with reference assets and extracted design facets
+hero_caption: Upload reference images and extract reusable design facets.
+links:
+  - label: Repo
+    url: https://github.com/leejungp2/style-print
+    icon: code
+  - label: Video
+    url: https://youtu.be/Ki7SdYj6aTA
+    icon: video
 ---
 
-## Highlights
+## Overview
+
+StylePrint helps users upload UI reference images, extract visual style facets,
+and generate new React/Tailwind UI code from the selected references.
+
+## What I Did
 
 - Built an interface for combining design signals from multiple UI reference images.
 - Structured extracted design intent into facets such as color, typography, layout, spacing, and component style.
 - Used an IntentSpec layer to keep provenance, conflicts, repairs, and coherence checks visible.
 - Focused on making AI-generated UI easier to inspect, judge, and iterate on.
 
-## Overview
-
-StylePrint is a frontend final project that helps users upload UI reference
-images, extract visual style facets, and generate new React/Tailwind UI code
-from the selected references.
-
-## Interface Screens
+## Gallery
 
 <div class="project-media-grid project-media-grid--natural project-media-grid--uniform">
   <figure>
@@ -48,8 +62,6 @@ from the selected references.
   </figure>
 </div>
 
-## Links
+## Further Reading
 
-- [View the repository](https://github.com/leejungp2/style-print)
-- [Watch the presentation](https://youtu.be/Ki7SdYj6aTA)
-- [Read the project reflection: StylePrint Project Reflection: Evaluating AI-Generated Results]({{ '/blog/2026/06/15/tistory-19/' | relative_url }})
+- [StylePrint Project Reflection: Evaluating AI-Generated Results]({{ '/blog/2026/06/15/tistory-19/' | relative_url }})
