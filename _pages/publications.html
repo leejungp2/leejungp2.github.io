@@ -18,7 +18,6 @@ description: Research publications and conference papers.
       {% if publication.image %}
       <div class="publication-thumbnail" aria-hidden="true"><img src="{{ publication.image | relative_url }}" alt="" loading="lazy"></div>
       {% endif %}
-      <p class="publication-kicker">{{ publication.venue_short | escape }} · {{ publication.type | escape }}</p>
       <h3><a class="publication-card-link" href="{{ detail_url }}">{{ publication.title | escape }}</a></h3>
       <p class="publication-authors">{% include publication-authors.html publication=publication %}</p>
       <p class="publication-venue"><em>{{ publication.venue | escape }}</em></p>

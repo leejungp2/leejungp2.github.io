@@ -5,7 +5,6 @@ layout: default
 <article class="app-surface publication-detail">
   <a class="publication-back" href="{{ '/publications/' | relative_url }}">← publications</a>
   <header class="publication-detail-header">
-    <p class="publication-kicker">{{ publication.venue_short | escape }} · {{ publication.type | escape }}</p>
     <h1>{{ publication.title | escape }}</h1>
     <p class="publication-authors">{% include publication-authors.html publication=publication %}</p>
     <p class="publication-venue"><em>{{ publication.venue | escape }}</em></p>
