@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{% assign publication = site.data.publications | where: 'slug', page.publication | first %}
+<article class="app-surface publication-detail">
+  <a class="publication-back" href="{{ '/publications/' | relative_url }}">← publications</a>
+  <header class="publication-detail-header">
+    <p class="publication-kicker">{{ publication.venue_short | escape }} · {{ publication.type | escape }}</p>
+    <h1>{{ publication.title | escape }}</h1>
+    <p class="publication-authors">{% include publication-authors.html publication=publication %}</p>
+    <p class="publication-venue"><em>{{ publication.venue | escape }}</em></p>
+    {% assign joined_authors = publication.authors | join: ' ' %}
+    {% if joined_authors contains '*' %}<p class="publication-note">* Equal contribution</p>{% endif %}
+    {% include publication-award.html publication=publication %}
+    {% include publication-links.html publication=publication %}
+  </header>
+
+  {% if publication.image %}
+  <figure class="publication-figure">
+    <a href="{{ publication.image | replace: '.webp', '.png' | relative_url }}" aria-label="Enlarge figure">
+      <img src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}">
+    </a>
+  </figure>
+  {% endif %}
+
+  {% assign abstract = publication.abstract | strip %}
+  {% if abstract != "" %}
+  <section class="publication-section" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>{{ publication.abstract | escape }}</p>
+  </section>
+  {% endif %}
+
+  {% if publication.bibtex %}
+  <section class="publication-section" aria-labelledby="bibtex-heading">
+    <div class="publication-section-head">
+      <h2 id="bibtex-heading">BibTeX</h2>
+      <button class="publication-copy" type="button" data-copy-target="bibtex-{{ publication.slug }}">Copy</button>
+    </div>
+    <pre class="publication-bibtex" tabindex="0" aria-label="BibTeX citation"><code id="bibtex-{{ publication.slug }}">{{ publication.bibtex | escape }}</code></pre>
+  </section>
+  {% endif %}
+</article>
+<script src="{{ '/assets/js/publication.js' | relative_url }}" defer></script>

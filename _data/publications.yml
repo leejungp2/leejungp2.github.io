@@ -1,0 +1,243 @@
+# Publications shown on /publications/ and on each /publications/<slug>/ page.
+#
+# group:    international | domestic
+# authors:  append `*` for equal contribution; the entry matching site.author is highlighted.
+# award:    optional; shown as a badge in the list and on the detail page.
+# image:    teaser figure (.webp); a same-named .png is used for the enlarged view.
+# abstract: original abstract text; leave empty to hide the section.
+# links:    buttons, in order. A label of `PDF` gets the document icon.
+# bibtex:   TODO(Jung) verify each entry.
+
+- slug: casesense
+  group: international
+  title: "CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration"
+  authors: [Junghwan Kim, Hyeonseok Jeon, Jung Lee, Dongseok Heo, Bongwon Suh]
+  venue: "Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26)"
+  venue_short: UIST 2026
+  type: Full Paper
+  image: /assets/img/publications/casesense.webp
+  image_alt: CaseSense interface mapping legal cases along multiple visual axes
+  links:
+    - label: PDF
+      url: https://dl.acm.org/doi/pdf/10.1145/3830398.3830479
+    - label: ACM DL
+      url: https://dl.acm.org/doi/10.1145/3830398.3830479
+  abstract: >-
+    Legal case research requires combining facts, legal principles, and timelines into persuasive arguments.
+    Yet existing retrieval tools return one-dimensional ranked lists, collapsing this structure into a single relevance score.
+    A formative study with five lawyers confirmed this flat output leads to missed cases, temporal gaps, and fragmented reasoning.
+    We present CaseSense, a visual analytics system for multi-dimensional exploration via tri-axial mapping with dynamic weighting,
+    anchor-based navigation, and purpose-constrained view projections.
+    A within-subjects study with 16 legal professionals compared CaseSense against conventional workflows.
+    CaseSense achieved complete key-case discovery in the Fact Synthesis task, with the largest gains in organization and connection identification.
+    Participants adopted task-matched interaction strategies without instructions.
+    These findings suggest encoding domain reasoning dimensions as manipulable spatial axes supports expert sensemaking,
+    while separating spatial organization from AI-generated content preserves verification behavior.
+  bibtex: |-
+    @inproceedings{kim2026casesense,
+      title     = {CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration},
+      author    = {Kim, Junghwan and Jeon, Hyeonseok and Lee, Jung and Heo, Dongseok and Suh, Bongwon},
+      booktitle = {Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology},
+      series    = {UIST '26},
+      year      = {2026},
+      pages     = {1--22},
+      publisher = {Association for Computing Machinery},
+      address   = {New York, NY, USA},
+      location  = {Detroit, MI, USA},
+      doi       = {10.1145/3830398.3830479},
+      url       = {https://doi.org/10.1145/3830398.3830479}
+    }
+
+- slug: coovercooked
+  group: international
+  title: "Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team Composition"
+  authors: [Junghwan Kim*, Dongseok Heo*, Kyusik Kim, Jung Lee, Bongwon Suh]
+  venue: "Proceedings of the 48th Annual Meeting of the Cognitive Science Society (CogSci '26)"
+  venue_short: CogSci 2026
+  type: Full Paper
+  award: Oral Presentation (top 9.3%)
+  image: /assets/img/publications/coovercooked.webp
+  image_alt: Co-Overcooked human-AI team cooking task
+  links:
+    - label: PDF
+      url: https://escholarship.org/content/qt39n1g8g6/qt39n1g8g6.pdf
+    - label: eScholarship
+      url: https://escholarship.org/uc/item/39n1g8g6
+  # TODO(Jung): paste the original abstract.
+  abstract: ""
+  bibtex: |-
+    @inproceedings{kim2026coovercooked,
+      title     = {Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team Composition},
+      author    = {Kim, Junghwan and Heo, Dongseok and Kim, Kyusik and Lee, Jung and Suh, Bongwon},
+      booktitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+      volume    = {48},
+      year      = {2026},
+      url       = {https://escholarship.org/uc/item/39n1g8g6}
+    }
+
+- slug: what-can-i-control
+  group: international
+  title: "\"What Can I Control?\": Designing an Attribution Reframing Chatbot for Early-Career Employees' Workplace Stress Management"
+  authors: [Jung Lee, Jaehoon Choi, Hyungwoo Song, Minjeong Shin, Bongwon Suh]
+  venue: "Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26)"
+  venue_short: CHI 2026
+  type: Extended Abstract
+  image: /assets/img/publications/what_can_i_control.webp
+  image_alt: Attribution reframing chatbot conversation flow
+  links:
+    - label: PDF
+      url: https://dl.acm.org/doi/pdf/10.1145/3772363.3798873
+    - label: ACM DL
+      url: https://dl.acm.org/doi/10.1145/3772363.3798873
+  abstract: >-
+    Early-career employees are particularly vulnerable to workplace stress due to psychosocial stressors such as high work demands and low job control.
+    Despite the importance of addressing these stressors, existing digital interventions for early-career employees focus on information-oriented support like onboarding.
+    This study presents an attribution reframing chatbot (AR chatbot) for workplace stress management among early-career employees.
+    Attribution reframing offers a cognitive intervention point of psychosocial stressors by shifting how individuals interpret stress causes along locus and controllability dimensions.
+    Following formative interviews with 11 early-career employees exploring stress situations and interpretation patterns,
+    we evaluated the AR chatbot with 14 early-career employees across two common stress situations.
+    In work-related situation, stress and controllability significantly improved alongside confidence and readiness,
+    whereas in interpersonal situation, only confidence showed improvement.
+    This study contributes to a deeper understanding of workplace stress among early-career employees
+    and offers design implications for supporting early-career employees with the AR chatbot.
+  bibtex: |-
+    @inproceedings{lee2026whatcanicontrol,
+      title     = {"What Can I Control?": Designing an Attribution Reframing Chatbot for Early-Career Employees' Workplace Stress Management},
+      author    = {Lee, Jung and Choi, Jaehoon and Song, Hyungwoo and Shin, Minjeong and Suh, Bongwon},
+      booktitle = {Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems},
+      series    = {CHI EA '26},
+      year      = {2026},
+      pages     = {1--7},
+      publisher = {Association for Computing Machinery},
+      address   = {New York, NY, USA},
+      location  = {Barcelona, Spain},
+      doi       = {10.1145/3772363.3798873},
+      url       = {https://doi.org/10.1145/3772363.3798873}
+    }
+
+- slug: just-listening
+  group: international
+  title: "\"Just Listening Was Enough—Until It Wasn't\": Relationship-Stage-Aware Cognitive Scaffolding in AI Companions"
+  authors: [Minchae Kim, Hyungwoo Song, Jung Lee, Bongwon Suh]
+  venue: "Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26)"
+  venue_short: CHI 2026
+  type: Extended Abstract
+  image: /assets/img/publications/just_listening.webp
+  image_alt: Validating and scaffolding AI companion conditions across relationship stages
+  links:
+    - label: PDF
+      url: https://dl.acm.org/doi/pdf/10.1145/3772363.3798512
+    - label: ACM DL
+      url: https://dl.acm.org/doi/10.1145/3772363.3798512
+  abstract: >-
+    AI companions provide immediate emotional support, yet longitudinal studies reveal patterns of reduced real-world connection
+    and reinforced cognitive distortions among prolonged users.
+    To mitigate these risks beyond reactive restrictions while addressing users' core needs,
+    we developed a 'Scaffolding Companion' that integrates cognitive reframing into peer-like interactions,
+    comparing it with a 'Validating Companion' offering unconditional acceptance representative of current AI companions.
+    We conducted a 2 × 2 within-subjects experiment with 16 experienced users,
+    examining both systems across the Exploratory and Affective relationship stages grounded in Social Penetration Theory.
+    Our mixed-methods analysis showed increasing preference for the Scaffolding Companion as relationships deepened without reducing perceived empathy,
+    revealing a paradox where prolonged unconditional validation risked emotional stagnation despite initial relief.
+    This work contributes preliminary insights into reconceptualizing cognitive reframing as an alternative form of comfort
+    and suggests the potential importance of adaptive, stage-sensitive interaction design for AI companions.
+  bibtex: |-
+    @inproceedings{kim2026justlistening,
+      title     = {"Just Listening Was Enough---Until It Wasn't": Relationship-Stage-Aware Cognitive Scaffolding in AI Companions},
+      author    = {Kim, Minchae and Song, Hyungwoo and Lee, Jung and Suh, Bongwon},
+      booktitle = {Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems},
+      series    = {CHI EA '26},
+      year      = {2026},
+      pages     = {1--8},
+      publisher = {Association for Computing Machinery},
+      address   = {New York, NY, USA},
+      location  = {Barcelona, Spain},
+      doi       = {10.1145/3772363.3798512},
+      url       = {https://doi.org/10.1145/3772363.3798512}
+    }
+
+- slug: legisflow
+  group: international
+  title: "LegisFlow: Enhancing Korean Legal Research with Temporal-Aware LLM Interfaces"
+  authors: [Junghwan Kim*, Hyeonseok Jeon*, Dongseok Heo, Jung Lee, Bongwon Suh]
+  venue: "Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST '25)"
+  venue_short: UIST 2025
+  type: Full Paper
+  image: /assets/img/publications/legisflow.webp
+  image_alt: LegisFlow interface with statute amendment timeline
+  links:
+    - label: PDF
+      url: https://dl.acm.org/doi/pdf/10.1145/3746059.3747752
+    - label: ACM DL
+      url: https://dl.acm.org/doi/10.1145/3746059.3747752
+  abstract: >-
+    In South Korea's statutory law system, legal research faces challenges like tracking frequent amendments and understanding complex statute relationships.
+    LegisFlow, an innovative AI-powered system, tackles these issues with features such as interactive amendment timelines and advanced inter-statute relationship analysis.
+    Developed based on insights from Korean legal experts, it provides intuitive visualizations and context-aware search capabilities.
+    A user study with 10 legal professionals demonstrated that LegisFlow significantly enhances efficiency,
+    reducing task completion times by up to 36% (e.g., 440s vs. 690s in inter-statute comparison, p = 0.022)
+    and lowering cognitive load, with workflows streamlined by 70% fewer manual steps.
+    LegisFlow transforms statutory law research by setting a new standard for AI-assisted tools,
+    providing a scalable, user-centered solution for professionals in Korea and beyond.
+  bibtex: |-
+    @inproceedings{kim2025legisflow,
+      title     = {LegisFlow: Enhancing Korean Legal Research with Temporal-Aware LLM Interfaces},
+      author    = {Kim, Junghwan and Jeon, Hyeonseok and Heo, Dongseok and Lee, Jung and Suh, Bongwon},
+      booktitle = {Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+      series    = {UIST '25},
+      year      = {2025},
+      pages     = {1--29},
+      publisher = {Association for Computing Machinery},
+      address   = {New York, NY, USA},
+      location  = {Busan, Republic of Korea},
+      doi       = {10.1145/3746059.3747752},
+      url       = {https://doi.org/10.1145/3746059.3747752}
+    }
+
+- slug: hcik-attribution
+  group: domestic
+  title: "Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management Among Early-Career Employees"
+  authors: [Jung Lee, Jaehoon Choi, Minjeong Shin, Hyungwoo Song, Bongwon Suh]
+  venue: "Proceedings of HCI Korea 2026, pp. 667-673"
+  venue_short: HCI Korea 2026
+  type: Conference Paper
+  image: /assets/img/publications/hcik_attribution.webp
+  image_alt: Multi-agent attribution retraining chatbot design
+  links:
+    - label: DBpia
+      url: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745858
+  # TODO(Jung): paste the original abstract.
+  abstract: ""
+  bibtex: |-
+    @inproceedings{lee2026attributionretraining,
+      title     = {Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management Among Early-Career Employees},
+      author    = {Lee, Jung and Choi, Jaehoon and Shin, Minjeong and Song, Hyungwoo and Suh, Bongwon},
+      booktitle = {Proceedings of HCI Korea 2026},
+      year      = {2026},
+      pages     = {667--673},
+      publisher = {The HCI Society of Korea},
+      url       = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745858}
+    }
+
+- slug: llm-political-orientation
+  group: domestic
+  title: "A Framework for Evaluating and Analyzing the Political Orientation of Large Language Models Using Laddering Interview Techniques"
+  authors: [Kyochul Jang, Jaehoon Choi, Minjeong Shin, Jung Lee, Bongwon Suh]
+  venue: "Proceedings of the 2025 KICS Conference on Artificial Intelligence"
+  venue_short: KICS AI 2025
+  type: Conference Paper
+  image: /assets/img/publications/political_injection.webp
+  image_alt: Laddering interview framework for probing LLM political orientation
+  links:
+    - label: Scholar
+      url: https://scholar.google.com/scholar?oi=bibs&cluster=6252816665032242407&btnI=1&hl=ko
+  # TODO(Jung): paste the original abstract.
+  abstract: ""
+  bibtex: |-
+    @inproceedings{jang2025politicalorientation,
+      title     = {A Framework for Evaluating and Analyzing the Political Orientation of Large Language Models Using Laddering Interview Techniques},
+      author    = {Jang, Kyochul and Choi, Jaehoon and Shin, Minjeong and Lee, Jung and Suh, Bongwon},
+      booktitle = {Proceedings of the 2025 KICS Conference on Artificial Intelligence},
+      year      = {2025},
+      publisher = {Korean Institute of Communications and Information Sciences}
+    }

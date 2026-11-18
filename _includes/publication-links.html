@@ -1,0 +1,20 @@
+<div class="publication-links">
+  {%- for link in include.publication.links %}
+  <a class="btn btn-outline publication-button{% if link.label == 'PDF' %} is-pdf{% endif %}" href="{{ link.url | escape }}" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      {%- if link.label == 'PDF' -%}
+      <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5M9 13h6M9 17h4" />
+      {%- else -%}
+      <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7" /><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7" />
+      {%- endif -%}
+    </svg>
+    {{ link.label | escape }}
+  </a>
+  {%- endfor %}
+  {%- if include.show_details %}
+  <a class="btn btn-outline publication-button" href="{{ '/publications/' | append: include.publication.slug | append: '/' | relative_url }}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+    Details
+  </a>
+  {%- endif %}
+</div>

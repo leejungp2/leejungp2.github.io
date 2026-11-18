@@ -1,6 +1,6 @@
 document.addEventListener("click", (event) => {
   const link = event.target.closest(
-    ".project-figure a[href], .project-media-grid a[href]"
+    ".project-figure a[href], .project-media-grid a[href], .publication-figure a[href]"
   );
   if (!link || !/\.(?:png|jpe?g|webp|gif|svg)(?:$|\?)/i.test(link.href)) return;
 

@@ -1,0 +1,6 @@
+{%- for author in include.publication.authors -%}
+  {%- assign author_name = author | remove: '*' -%}
+  {%- if author_name == site.author -%}<span class="cv-accent">{{ author_name | escape }}</span>{%- else -%}{{ author_name | escape }}{%- endif -%}
+  {%- if author contains '*' -%}<sup>*</sup>{%- endif -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}

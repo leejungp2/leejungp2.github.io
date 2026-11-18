@@ -37,6 +37,11 @@ defaults:
       type: projects
     values:
       layout: page
+  - scope:
+      path: "_pages/publications"
+    values:
+      layout: publication
+      body_class: publications
 
 plugins:
   - jekyll-feed
