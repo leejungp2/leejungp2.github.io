@@ -166,14 +166,15 @@ action_url: /assets/files/Jung_Lee_CV.pdf
     <div class="cv-section-content">
       <article class="cv-entry">
         <div class="entry-head"><h3>Doosan CVC (Korean Industrial Conglomerate)</h3><span class="entry-date">Sep 2022 - Dec 2022</span></div>
-        <p class="cv-role">Research Assistant | Seoul, Republic of Korea</p>
+        <p class="cv-role">Research Assistant</p>
+        <p class="cv-meta">Startup and market research for early-stage investment review | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Investigated AI, drone, biotech, and green-tech market prospects and sized startups under investment review.</li>
         </ul>
       </article>
       <article class="cv-entry">
-        <div class="entry-head"><h3>Allprep</h3><span class="entry-date">Jul 2021 - Sep 2021</span></div>
-        <p class="cv-role">Strategic Planning Intern | Edutech Startup</p>
+        <div class="entry-head"><h3>Allprep (Edutech Startup)</h3><span class="entry-date">Jul 2021 - Sep 2021</span></div>
+        <p class="cv-role">Strategic Planning Intern</p>
         <p class="cv-meta">Business model and marketing planning for online test-prep services | Seoul, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Planned a new business model for online TOEIC and TOEFL education services.</li>
@@ -181,8 +182,8 @@ action_url: /assets/files/Jung_Lee_CV.pdf
         </ul>
       </article>
       <article class="cv-entry">
-        <div class="entry-head"><h3>Fit-account</h3><span class="entry-date">Jul 2021 - Aug 2021</span></div>
-        <p class="cv-role">Content Planning Intern | Mental Healthcare Startup</p>
+        <div class="entry-head"><h3>Fit-account (Mental Healthcare Startup)</h3><span class="entry-date">Jul 2021 - Aug 2021</span></div>
+        <p class="cv-role">Content Planning Intern</p>
         <p class="cv-meta">Translating personality and consumption data into in-app well-being content | Busan, Republic of Korea</p>
         <ul class="cv-bullets">
           <li>Created solution content for the mobile application Fit-account.</li>
