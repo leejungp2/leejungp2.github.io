@@ -6,9 +6,8 @@
   url: /cv/
 - name: publications
   url: /publications/
-# Temporarily hidden; restore these entries to show the Projects tab.
-# - name: projects
-#   url: /projects/
+- name: projects
+  url: /projects/
 - name: blog
   url: /blog/
 - name: misc
