@@ -3,7 +3,8 @@ layout: default
 ---
 {%- comment -%}
   Case-study page for a project in `_projects/`. Front matter:
-  description (one-line summary), role, timeline, team, context, tools (list),
+  description (one-line summary), role, timeline, context (shown as one meta line),
+  team and tools (kept as notes; not rendered),
   links (label/url/icon), award, hero + hero_caption (optional lead image).
   The Markdown body holds Overview / What I Did / Outcome / Gallery sections.
 {%- endcomment -%}
@@ -12,14 +13,7 @@ layout: default
   <header class="publication-detail-header">
     <h1>{{ page.title | escape }}</h1>
     {% if page.description %}<p class="project-summary">{{ page.description | escape }}</p>{% endif %}
-
-    <dl class="project-facts">
-      {% if page.role %}<div><dt>Role</dt><dd>{{ page.role | escape }}</dd></div>{% endif %}
-      {% if page.timeline %}<div><dt>Timeline</dt><dd>{{ page.timeline | escape }}</dd></div>{% endif %}
-      {% if page.team %}<div><dt>Team</dt><dd>{{ page.team | escape }}</dd></div>{% endif %}
-      {% if page.context %}<div><dt>Context</dt><dd>{{ page.context | escape }}</dd></div>{% endif %}
-      {% if page.tools %}<div><dt>Tools</dt><dd>{{ page.tools | join: ', ' | escape }}</dd></div>{% endif %}
-    </dl>
+    <p class="publication-venue project-meta">{{ page.role | escape }}{% if page.timeline %} · {{ page.timeline | escape }}{% endif %}{% if page.context %} · {{ page.context | escape }}{% endif %}</p>
 
     {% if page.links or page.award %}{% include publication-links.html item=page %}{% endif %}
   </header>

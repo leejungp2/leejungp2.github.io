@@ -1377,34 +1377,12 @@ img { max-width: 100%; height: auto; }
 
 /* project case-study page */
 .project-summary {
-  margin: 0;
+  margin: 0 0 0.75rem;
   color: var(--muted-foreground);
   font-family: var(--font-serif);
   font-size: 1.15rem;
   font-style: italic;
   line-height: 1.5;
-}
-.project-facts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-  gap: 1rem 1.25rem;
-  margin: 1.5rem 0 0;
-  padding: 1.1rem 0;
-  border-top: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
-  border-bottom: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
-}
-.project-facts dt {
-  margin-bottom: 0.2rem;
-  color: var(--muted-foreground);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-.project-facts dd {
-  margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.45;
 }
 .publication-figure figcaption {
   margin-top: 0.5rem;
