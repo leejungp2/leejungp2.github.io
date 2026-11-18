@@ -8,7 +8,6 @@ timeline: Feb 2022 – Aug 2023
 team: 5 people (design, dev, planning)
 context: Happetite, SNU App Development Club
 tools: [User interviews, Usability testing, Wireframing, React Native]
-award: App Store Launch
 thumbnail: /assets/img/projects/mapsee.png
 thumbnail_bg: "#5ed3cb"
 links:

@@ -7,7 +7,6 @@ role: Lead Researcher
 timeline: Oct – Dec 2023
 context: SNU Research Grant for the Social Sciences
 tools: [ChatGPT API, Chatfuel, Instagram DM]
-award: SNU Research Grant
 thumbnail: /assets/img/projects/diarybot-thumbnail-en.webp
 hero: /assets/img/projects/diarybot-thumbnail-en.webp
 hero_alt: diaryBot Instagram conversation guiding a user through three grateful moments and reflecting on their emotions

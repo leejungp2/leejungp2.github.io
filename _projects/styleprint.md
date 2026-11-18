@@ -15,7 +15,7 @@ hero_caption: Upload reference images and extract reusable design facets.
 links:
   - label: Repo
     url: https://github.com/leejungp2/style-print
-    icon: code
+    icon: github
   - label: Video
     url: https://youtu.be/Ki7SdYj6aTA
     icon: video

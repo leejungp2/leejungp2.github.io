@@ -8,7 +8,6 @@ timeline: 2021
 team: Two-person research team
 context: SNU Undergraduate Research Opportunity Program
 tools: [Chatfuel, Instagram DM, Python]
-award: SNU UROP
 thumbnail: /assets/img/projects/musicbot-thumbnail-en.webp
 hero: /assets/img/projects/musicbot-thumbnail-en.webp
 hero_alt: Musicbot Instagram conversation asking about a difficult situation, recommending music, and collecting feedback

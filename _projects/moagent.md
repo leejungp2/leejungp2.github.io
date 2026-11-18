@@ -6,7 +6,6 @@ order: 2
 role: Product Manager
 timeline: 2024 – 2025
 context: SNUSV 35th cohort (SNU Venture Startup Network)
-award: SNUSV Demo Day
 thumbnail: /assets/img/projects/moagent/thumbnail-en.webp
 hero: /assets/img/projects/moagent/thumbnail-en.webp
 hero_alt: MoAgent MVP showing a meeting agenda, live transcript, and related Notion and Slack references
