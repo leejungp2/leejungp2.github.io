@@ -9,9 +9,6 @@ team: Two-person research team
 context: SNU Undergraduate Research Opportunity Program
 tools: [Chatfuel, Instagram DM, Python]
 thumbnail: /assets/img/projects/musicbot-thumbnail-en.webp
-hero: /assets/img/projects/musicbot-thumbnail-en.webp
-hero_alt: Musicbot Instagram conversation asking about a difficult situation, recommending music, and collecting feedback
-hero_caption: Conversation, music recommendation, and user feedback in Instagram DMs.
 links:
   - label: Report (KOR)
     url: /assets/files/musicbot-paper.pdf
@@ -45,3 +42,10 @@ The study examined chatbot satisfaction alongside music use for mood regulation
 - [Online poster presentation](https://youtu.be/__iEef7Lw_0)
 - [Research report (PDF)]({{ '/assets/files/musicbot-paper.pdf' | relative_url }})
 - [Korean abstract]({{ '/assets/files/musicbot_abstract.webp' | relative_url }})
+
+## Gallery
+
+<figure class="project-figure">
+  <a href="{{ '/assets/img/projects/musicbot-thumbnail-en.webp' | relative_url }}"><img src="{{ '/assets/img/projects/musicbot-thumbnail-en.webp' | relative_url }}" alt="Musicbot Instagram conversation asking about a difficult situation, recommending music, and collecting feedback" width="1530" height="1028"></a>
+  <figcaption>Conversation, music recommendation, and user feedback in Instagram DMs.</figcaption>
+</figure>

@@ -7,9 +7,6 @@ role: Product Manager
 timeline: 2024 – 2025
 context: SNUSV 35th cohort (SNU Venture Startup Network)
 thumbnail: /assets/img/projects/moagent/thumbnail-en.webp
-hero: /assets/img/projects/moagent/thumbnail-en.webp
-hero_alt: MoAgent MVP showing a meeting agenda, live transcript, and related Notion and Slack references
-hero_caption: Meeting workspace with a transcript and references alongside the agenda.
 links:
   - label: Slides
     url: /assets/files/moagent-demo-day.pdf
@@ -34,6 +31,11 @@ MoAgent is an AI agent orchestration B2B SaaS concept validated through the
 
 The MVP designs explore meeting support: preparing agendas, capturing meeting
 notes, reviewing related sources, and saving the discussion for later reference.
+
+<figure class="project-figure">
+  <a href="{{ '/assets/img/projects/moagent/thumbnail-en.webp' | relative_url }}"><img src="{{ '/assets/img/projects/moagent/thumbnail-en.webp' | relative_url }}" alt="MoAgent MVP showing a meeting agenda, live transcript, and related Notion and Slack references" width="1585" height="992"></a>
+  <figcaption>Meeting workspace with a transcript and references alongside the agenda.</figcaption>
+</figure>
 
 <div class="project-media-grid project-media-grid--natural">
   <figure>

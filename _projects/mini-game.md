@@ -7,8 +7,6 @@ role: Design Lead
 timeline: 2021
 tools: [Game design, Visual design]
 thumbnail: /assets/img/projects/tteokbokki/tteokbokki-01.webp
-hero: /assets/img/projects/tteokbokki/tteokbokki-01.webp
-hero_alt: Opening screen of the mini game
 links:
   - label: Play
     url: https://irenelynnq.github.io/isc20_tteokbokki/

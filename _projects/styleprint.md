@@ -9,9 +9,6 @@ timeline: 2026
 context: Frontend course final project
 tools: [React, Tailwind CSS]
 thumbnail: /assets/img/projects/style-print.webp
-hero: /assets/img/projects/style-print.webp
-hero_alt: StylePrint upload screen with reference assets and extracted design facets
-hero_caption: Upload reference images and extract reusable design facets.
 links:
   - label: Repo
     url: https://github.com/leejungp2/style-print
@@ -33,7 +30,16 @@ and generate new React/Tailwind UI code from the selected references.
 - Used an IntentSpec layer to keep provenance, conflicts, repairs, and coherence checks visible.
 - Focused on making AI-generated UI easier to inspect, judge, and iterate on.
 
+## Further Reading
+
+- [StylePrint Project Reflection: Evaluating AI-Generated Results]({{ '/blog/2026/06/15/tistory-19/' | relative_url }})
+
 ## Gallery
+
+<figure class="project-figure">
+  <a href="{{ '/assets/img/projects/style-print.webp' | relative_url }}"><img src="{{ '/assets/img/projects/style-print.webp' | relative_url }}" alt="StylePrint upload screen with reference assets and extracted design facets" width="2082" height="1315"></a>
+  <figcaption>Upload reference images and extract reusable design facets.</figcaption>
+</figure>
 
 <div class="project-media-grid project-media-grid--natural project-media-grid--uniform">
   <figure>
@@ -61,7 +67,3 @@ and generate new React/Tailwind UI code from the selected references.
     <figcaption>Check facet differences and trace each design choice to its source.</figcaption>
   </figure>
 </div>
-
-## Further Reading
-
-- [StylePrint Project Reflection: Evaluating AI-Generated Results]({{ '/blog/2026/06/15/tistory-19/' | relative_url }})

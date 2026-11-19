@@ -8,11 +8,8 @@ timeline: Oct – Dec 2023
 context: SNU Research Grant for the Social Sciences
 tools: [ChatGPT API, Chatfuel, Instagram DM]
 thumbnail: /assets/img/projects/diarybot-thumbnail-en.webp
-hero: /assets/img/projects/diarybot-thumbnail-en.webp
-hero_alt: diaryBot Instagram conversation guiding a user through three grateful moments and reflecting on their emotions
-hero_caption: diaryBot guides gratitude writing through an Instagram DM conversation.
 links:
-  - label: Report
+  - label: Report (KOR)
     url: /assets/files/diarybot-paper.pdf
     icon: pdf
 ---
@@ -40,3 +37,10 @@ gratitude propensity (K-GQ-6), and perceived stress (K-PSS).
 
 - [Research report (PDF)]({{ '/assets/files/diarybot-paper.pdf' | relative_url }})
 - [English abstract, page 1]({{ '/assets/files/diarybot_1.webp' | relative_url }}) · [page 2]({{ '/assets/files/diarybot_2.webp' | relative_url }})
+
+## Gallery
+
+<figure class="project-figure">
+  <a href="{{ '/assets/img/projects/diarybot-thumbnail-en.webp' | relative_url }}"><img src="{{ '/assets/img/projects/diarybot-thumbnail-en.webp' | relative_url }}" alt="diaryBot Instagram conversation guiding a user through three grateful moments and reflecting on their emotions" width="1354" height="1161"></a>
+  <figcaption>diaryBot guides gratitude writing through an Instagram DM conversation.</figcaption>
+</figure>

@@ -5,8 +5,8 @@ layout: default
   Case-study page for a project in `_projects/`. Front matter:
   description (one-line summary), role, timeline, context (shown as one meta line),
   team and tools (kept as notes; not rendered),
-  links (label/url/icon), award, hero + hero_caption (optional lead image).
-  The Markdown body holds Overview / What I Did / Outcome / Gallery sections.
+  links (label/url/icon). The Markdown body holds Overview / What I Did /
+  Outcome / Resources, with images collected in a final Gallery section.
 {%- endcomment -%}
 <article class="app-surface publication-detail project-detail">
   <a class="publication-back" href="{{ '/projects/' | relative_url }}">← projects</a>
@@ -17,15 +17,6 @@ layout: default
 
     {% if page.links or page.award %}{% include publication-links.html item=page %}{% endif %}
   </header>
-
-  {% if page.hero %}
-  <figure class="publication-figure">
-    <a href="{{ page.hero | relative_url }}" aria-label="Enlarge figure">
-      <img src="{{ page.hero | relative_url }}" alt="{{ page.hero_alt | default: page.title | escape }}">
-    </a>
-    {% if page.hero_caption %}<figcaption>{{ page.hero_caption | escape }}</figcaption>{% endif %}
-  </figure>
-  {% endif %}
 
   <div class="project-body">
     {{ content }}
