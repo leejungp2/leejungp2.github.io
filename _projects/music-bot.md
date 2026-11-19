@@ -13,10 +13,7 @@ hero: /assets/img/projects/musicbot-thumbnail-en.webp
 hero_alt: Musicbot Instagram conversation asking about a difficult situation, recommending music, and collecting feedback
 hero_caption: Conversation, music recommendation, and user feedback in Instagram DMs.
 links:
-  - label: Poster Talk
-    url: https://youtu.be/__iEef7Lw_0
-    icon: video
-  - label: Report
+  - label: Report (KOR)
     url: /assets/files/musicbot-paper.pdf
     icon: pdf
 ---

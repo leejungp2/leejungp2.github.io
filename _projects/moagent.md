@@ -11,7 +11,7 @@ hero: /assets/img/projects/moagent/thumbnail-en.webp
 hero_alt: MoAgent MVP showing a meeting agenda, live transcript, and related Notion and Slack references
 hero_caption: Meeting workspace with a transcript and references alongside the agenda.
 links:
-  - label: Demo Day Slides
+  - label: Slides
     url: /assets/files/moagent-demo-day.pdf
     icon: pdf
 ---
