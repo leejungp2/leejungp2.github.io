@@ -11,3 +11,6 @@ references/
 .env.*
 !.env.example
 .translation-cache/
+
+# Local reference papers and notes (not used by the site)
+docs/
