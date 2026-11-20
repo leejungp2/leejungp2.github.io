@@ -8,7 +8,8 @@
   url: /publications/
 - name: projects
   url: /projects/
-- name: blog
-  url: /blog/
+# Temporarily hidden; restore these entries to show the Blog tab.
+# - name: blog
+#   url: /blog/
 - name: misc
   url: /misc/

@@ -22,7 +22,7 @@ description: Research prototypes, products, and design work.
 <h3><a class="publication-card-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
 <p class="publication-authors">{{ project.description | escape }}</p>
 <p class="publication-venue project-meta">{{ project.role | escape }}{% if project.timeline %} · {{ project.timeline | escape }}{% endif %}{% if project.context %} · {{ project.context | escape }}{% endif %}</p>
-{% include publication-links.html item=project %}
+{% if project.links %}{% include publication-links.html item=project %}{% endif %}
 </article>
 {%- endfor %}
 </div>
