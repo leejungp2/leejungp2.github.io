@@ -1,5 +1,5 @@
 ---
-title: I Want to Eat Tteokbokki, but I Want to Die
+title: I Want to Eat Tteokbokki
 description: A mini game designed to create an indirect experience of depression.
 group: product
 order: 3
@@ -17,8 +17,7 @@ links:
 
 ## Overview
 
-I Want to Eat Tteokbokki, but I Want to Die ("떡볶이는 먹고 싶지만 죽고싶어")
-is a mini game designed to create an indirect experience of depression through
+I Want to Eat Tteokbokki is a mini game designed to create an indirect experience of depression through
 everyday actions and emotional friction.
 
 ## What I Did

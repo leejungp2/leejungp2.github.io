@@ -1,6 +1,6 @@
 ---
 title: MoAgent
-description: AI agent orchestration B2B SaaS concept validated through SNUSV.
+description: Exploring how AI agents can support team meetings by linking agendas, live discussion, and workplace sources.
 group: product
 order: 2
 role: Product Manager
@@ -15,8 +15,10 @@ links:
 
 ## Overview
 
-MoAgent is an AI agent orchestration B2B SaaS concept validated through the
-35th cohort of Seoul National University Venture Startup Network.
+MoAgent explores how AI agents can support team meetings: preparing agendas,
+capturing the discussion, and surfacing related sources from workplace tools such
+as Notion and Slack. The concept was validated through the
+35th cohort of the Seoul National University Venture Startup Network (SNUSV).
 
 ## What I Did
 
