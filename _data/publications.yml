@@ -211,7 +211,7 @@
 - slug: hcik-attribution
   group: domestic
   title: "Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management in Early-Career Employees"
-  authors: [Jung Lee, Jaehoon Choi, Minjeong Shin, Hyeongwoo Song, Bongwon Suh]
+  authors: [Jung Lee, Jaehoon Choi, Minjeong Shin, Hyungwoo Song, Bongwon Suh]
   venue: "Proceedings of HCI Korea 2026, pp. 667-673"
   venue_short: HCI Korea 2026
   type: Conference Paper
@@ -235,7 +235,7 @@
   bibtex: |-
     @inproceedings{lee2026attributionretraining,
       title     = {Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management in Early-Career Employees},
-      author    = {Lee, Jung and Choi, Jaehoon and Shin, Minjeong and Song, Hyeongwoo and Suh, Bongwon},
+      author    = {Lee, Jung and Choi, Jaehoon and Shin, Minjeong and Song, Hyungwoo and Suh, Bongwon},
       booktitle = {Proceedings of HCI Korea 2026},
       year      = {2026},
       pages     = {667--673},
