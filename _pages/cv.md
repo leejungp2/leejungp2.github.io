@@ -78,14 +78,14 @@ action_url: /assets/files/Jung_Lee_CV.pdf
       <h3 class="cv-publication-group">Domestic | Korea</h3>
       <ol class="cv-publications">
         <li>
-          <h4><a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745858">Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management Among Early-Career Employees</a></h4>
-          <p class="cv-authors"><strong>Jung Lee</strong>, Jaehoon Choi, Minjeong Shin, Hyungwoo Song, and Bongwon Suh.</p>
+          <h4><a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745858">Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management in Early-Career Employees</a></h4>
+          <p class="cv-authors"><strong>Jung Lee</strong>, Jaehoon Choi, Minjeong Shin, Hyeongwoo Song, and Bongwon Suh.</p>
           <p class="cv-meta"><em>Proceedings of HCI Korea 2026, pp. 667-673.</em></p>
         </li>
         <li>
-          <h4><a href="https://scholar.google.com/scholar?oi=bibs&amp;cluster=6252816665032242407&amp;btnI=1&amp;hl=ko">A Framework for Evaluating and Analyzing the Political Orientation of Large Language Models Using Laddering Interview Techniques</a></h4>
+          <h4><a href="https://scholar.google.com/scholar?oi=bibs&amp;cluster=6252816665032242407&amp;btnI=1&amp;hl=ko">A Framework for Analyzing Political Knowledge Injection of LLMs (Large Language Models) Using the Laddering Interview Technique</a></h4>
           <p class="cv-authors">Kyochul Jang, Jaehoon Choi, Minjeong Shin, <strong>Jung Lee</strong>, and Bongwon Suh.</p>
-          <p class="cv-meta"><em>Proceedings of the 2025 KICS Conference on Artificial Intelligence.</em></p>
+          <p class="cv-meta"><em>Proceedings of the 6th Korea Artificial Intelligence Conference.</em></p>
         </li>
       </ol>
       <p class="cv-meta">* Equal contribution.</p>

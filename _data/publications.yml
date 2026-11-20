@@ -210,8 +210,8 @@
 
 - slug: hcik-attribution
   group: domestic
-  title: "Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management Among Early-Career Employees"
-  authors: [Jung Lee, Jaehoon Choi, Minjeong Shin, Hyungwoo Song, Bongwon Suh]
+  title: "Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management in Early-Career Employees"
+  authors: [Jung Lee, Jaehoon Choi, Minjeong Shin, Hyeongwoo Song, Bongwon Suh]
   venue: "Proceedings of HCI Korea 2026, pp. 667-673"
   venue_short: HCI Korea 2026
   type: Conference Paper
@@ -234,8 +234,8 @@
     직장인 대상 정신건강 지원 시스템 설계에 기여한다는 점에서 의의가 있다.
   bibtex: |-
     @inproceedings{lee2026attributionretraining,
-      title     = {Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management Among Early-Career Employees},
-      author    = {Lee, Jung and Choi, Jaehoon and Shin, Minjeong and Song, Hyungwoo and Suh, Bongwon},
+      title     = {Designing an Attribution Retraining-Based LLM Chatbot for Workplace Stress Management in Early-Career Employees},
+      author    = {Lee, Jung and Choi, Jaehoon and Shin, Minjeong and Song, Hyeongwoo and Suh, Bongwon},
       booktitle = {Proceedings of HCI Korea 2026},
       year      = {2026},
       pages     = {667--673},
@@ -245,10 +245,10 @@
 
 - slug: llm-political-orientation
   group: domestic
-  title: "A Framework for Evaluating and Analyzing the Political Orientation of Large Language Models Using Laddering Interview Techniques"
+  title: "A Framework for Analyzing Political Knowledge Injection of LLMs (Large Language Models) Using the Laddering Interview Technique"
   authors: [Kyochul Jang, Jaehoon Choi, Minjeong Shin, Jung Lee, Bongwon Suh]
-  venue: "Proceedings of the 2025 KICS Conference on Artificial Intelligence"
-  venue_short: KICS AI 2025
+  venue: "Proceedings of the 6th Korea Artificial Intelligence Conference"
+  venue_short: Korea AI Conference 2025
   type: Conference Paper
   image: /assets/img/publications/political_injection.webp
   image_alt: Laddering interview framework for probing LLM political orientation
@@ -263,9 +263,8 @@
     좌(진보)/우(보수)로 파인튜닝된 LLM의 정치적 성향을 체계적이고 정량적으로 분석하고 평가하는 프레임워크 개발을 목표로 한다.
   bibtex: |-
     @inproceedings{jang2025politicalorientation,
-      title     = {A Framework for Evaluating and Analyzing the Political Orientation of Large Language Models Using Laddering Interview Techniques},
+      title     = {A Framework for Analyzing Political Knowledge Injection of LLMs (Large Language Models) Using the Laddering Interview Technique},
       author    = {Jang, Kyochul and Choi, Jaehoon and Shin, Minjeong and Lee, Jung and Suh, Bongwon},
-      booktitle = {Proceedings of the 2025 KICS Conference on Artificial Intelligence},
-      year      = {2025},
-      publisher = {Korean Institute of Communications and Information Sciences}
+      booktitle = {Proceedings of the 6th Korea Artificial Intelligence Conference},
+      year      = {2025}
     }
