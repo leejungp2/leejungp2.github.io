@@ -65,8 +65,20 @@
       url: https://escholarship.org/uc/item/39n1g8g6
     - label: PDF
       url: https://escholarship.org/content/qt39n1g8g6/qt39n1g8g6.pdf
-  # TODO(Jung): paste the original abstract.
-  abstract: ""
+  abstract: >-
+    Effective collaboration requires accurate mental models of one's partners.
+    Current AI agents, however, may not model humans the way humans model each other under real-time constraints,
+    creating an asymmetry in human-AI teamwork.
+    Prior research has focused on one-human-one-AI settings, leaving open how coordination changes
+    when multiple humans work with multiple AI agents simultaneously.
+    We developed Co-Overcooked, a four-player cooking game where teams of humans and LLM agents must coordinate in real time.
+    In a within-subjects experiment (N=40), participants experienced four team compositions varying in human-to-AI ratio:
+    four humans (H4A0), three humans with one AI (H3A1), two humans with two AIs (H2A2), and one human with three AIs (H1A3).
+    Results revealed nonlinear patterns: H3A1 and H1A3 teams performed worse than pure AI teams,
+    while H2A2 teams showed better performance through spontaneous one-human-one-AI pairing strategies.
+    We identified expectation conflict, where multiple humans hold divergent models of a shared AI partner,
+    as a coordination difficulty specific to hybrid teams,
+    and propose cognitive ownership as a design principle for human-AI team configuration.
   bibtex: |-
     @inproceedings{kim2026coovercooked,
       title     = {Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team Composition},
@@ -109,7 +121,7 @@
       booktitle = {Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems},
       series    = {CHI EA '26},
       year      = {2026},
-      pages     = {1--7},
+      pages     = {1--6},
       publisher = {Association for Computing Machinery},
       address   = {New York, NY, USA},
       location  = {Barcelona, Spain},
@@ -233,8 +245,12 @@
   links:
     - label: Paper
       url: https://scholar.google.com/scholar?oi=bibs&cluster=6252816665032242407&btnI=1&hl=ko
-  # TODO(Jung): paste the original abstract.
-  abstract: ""
+  abstract: >-
+    대규모 언어 모델(LLM: Large Language Model)은 사회 전반에 막대한 영향을 미치며,
+    특히 정치적 사안에 대한 편향된 답변은 여론에 큰 영향을 줄 수 있다.
+    기존의 단순한 질문 응답 방식으로는 모델이 내포한 복잡한 가치관과 정치적 성향을 심층적으로 평가하기 어렵기 때문에,
+    본 연구에서는 사다리 인터뷰(Laddering Interview) 기법을 도입하여
+    좌(진보)/우(보수)로 파인튜닝된 LLM의 정치적 성향을 체계적이고 정량적으로 분석하고 평가하는 프레임워크 개발을 목표로 한다.
   bibtex: |-
     @inproceedings{jang2025politicalorientation,
       title     = {A Framework for Evaluating and Analyzing the Political Orientation of Large Language Models Using Laddering Interview Techniques},
