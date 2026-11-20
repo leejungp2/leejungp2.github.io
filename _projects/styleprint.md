@@ -30,10 +30,6 @@ and generate new React/Tailwind UI code from the selected references.
 - Used an IntentSpec layer to keep provenance, conflicts, repairs, and coherence checks visible.
 - Focused on making AI-generated UI easier to inspect, judge, and iterate on.
 
-## Further Reading
-
-- [StylePrint Project Reflection: Evaluating AI-Generated Results]({{ '/blog/2026/06/15/tistory-19/' | relative_url }})
-
 ## Gallery
 
 <figure class="project-figure">
