@@ -1534,6 +1534,14 @@ img { max-width: 100%; height: auto; }
   aspect-ratio: 16 / 10;
   object-fit: contain;
 }
+.project-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  border-radius: var(--radius);
+  background: #f6f7fb;
+}
 .project-figure img {
   display: block;
   width: 100%;

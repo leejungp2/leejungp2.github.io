@@ -34,6 +34,11 @@ as Notion and Slack. The concept was validated through the
 The MVP designs explore meeting support: preparing agendas, capturing meeting
 notes, reviewing related sources, and saving the discussion for later reference.
 
+<figure class="project-figure project-video">
+  <video src="{{ '/assets/video/moagent-film.mp4' | relative_url }}" poster="{{ '/assets/video/moagent-film-poster.webp' | relative_url }}" autoplay muted loop playsinline preload="metadata" width="1920" height="1080" aria-label="MoAgent walkthrough: a spoken sentence becomes the live transcript, notes and linked sources form around it, and the meeting is saved as notes."></video>
+  <figcaption>From a spoken sentence to structured, sourced meeting notes.</figcaption>
+</figure>
+
 <figure class="project-figure">
   <a href="{{ '/assets/img/projects/moagent/thumbnail-en.webp' | relative_url }}"><img src="{{ '/assets/img/projects/moagent/thumbnail-en.webp' | relative_url }}" alt="MoAgent MVP showing a meeting agenda, live transcript, and related Notion and Slack references" width="1585" height="992"></a>
   <figcaption>Meeting workspace with a transcript and references alongside the agenda.</figcaption>
