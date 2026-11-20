@@ -1,6 +1,6 @@
 ---
 title: MoAgent
-description: Exploring how AI agents can support team meetings by linking agendas, live discussion, and workplace sources.
+description: An AI meeting assistant concept that connects agendas, live transcripts, and related documents.
 group: product
 order: 2
 role: Product Manager
