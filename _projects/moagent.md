@@ -35,8 +35,8 @@ The MVP designs explore meeting support: preparing agendas, capturing meeting
 notes, reviewing related sources, and saving the discussion for later reference.
 
 <figure class="project-figure project-video">
-  <video src="{{ '/assets/video/moagent-film.mp4' | relative_url }}" poster="{{ '/assets/video/moagent-film-poster.webp' | relative_url }}" autoplay muted loop playsinline preload="metadata" width="1920" height="1080" aria-label="MoAgent walkthrough: a spoken sentence becomes the live transcript, notes and linked sources form around it, and the meeting is saved as notes."></video>
-  <figcaption>From a spoken sentence to structured, sourced meeting notes.</figcaption>
+  <video src="{{ '/assets/video/moagent-film.mp4' | relative_url }}" poster="{{ '/assets/video/moagent-film-poster.webp' | relative_url }}" autoplay muted loop playsinline preload="metadata" width="1920" height="1080" aria-label="MoAgent walkthrough: Slack and Notion context is pulled into the meeting, a spoken sentence becomes the live transcript, notes link back to those sources, and the saved notes are shared back to Slack and Notion."></video>
+  <figcaption>Context from Slack and Notion, live notes from the conversation, and the summary shared back.</figcaption>
 </figure>
 
 <figure class="project-figure">
